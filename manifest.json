@@ -1,0 +1,44 @@
+{
+  "title": "365 original cybersecurity practice questions",
+  "questionCount": 365,
+  "language": "en",
+  "schemaVersion": "1.0",
+  "contentType": "Original unofficial multiple-choice study questions, not copied exam items",
+  "securityPlusReference": "SY0-701 / V7 topic coverage; not a claim of official exam weighting or complete objective mapping",
+  "btl1Reference": "Public BTL1 course topics; the actual exam is practical",
+  "extraCoverage": [
+    "AI-related security concepts; supplementary, not a claim of SY0-701 objective alignment"
+  ],
+  "sources": [
+    {
+      "title": "Official BTL1 course and practical exam overview",
+      "url": "https://www.securityblue.team/certifications/blue-team-level-1"
+    },
+    {
+      "title": "Official CompTIA Security+ overview and version information",
+      "url": "https://www.comptia.org/en/certifications/security/"
+    },
+    {
+      "title": "CompTIA SY0-601 versus SY0-701 domains",
+      "url": "https://www.comptia.org/en/blog/comptia-security-601-vs-701-whats-the-difference/"
+    }
+  ],
+  "categories": {
+    "Digital forensics": 28,
+    "General security concepts": 38,
+    "Incident response": 21,
+    "Phishing analysis": 25,
+    "Security architecture": 61,
+    "Security operations": 99,
+    "Security program management": 45,
+    "Threat intelligence": 16,
+    "Threats and mitigations": 32
+  },
+  "answerIndexCounts": {
+    "0": 92,
+    "1": 91,
+    "2": 91,
+    "3": 91
+  },
+  "reviewNote": "Schema, counts, uniqueness, and answer positions were checked programmatically. This is an AI-authored starter bank, not independently expert-reviewed. Review subject accuracy and distractor quality before high-stakes or public educational use."
+}

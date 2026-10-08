@@ -1,0 +1,6396 @@
+[
+  {
+    "id": "cyber-001",
+    "category": "Threat intelligence",
+    "topic": "Indicator categories",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An investigation finds a hostname used for command-and-control lookups. What type of indicator is this?",
+    "choices": [
+      "Domain indicator",
+      "URL indicator",
+      "File hash indicator",
+      "Behavioral TTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Domains can support detection, but ownership and use can change."
+  },
+  {
+    "id": "cyber-002",
+    "category": "Security architecture",
+    "topic": "Recovery sites",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which design serves production requests from two locations simultaneously?",
+    "choices": [
+      "Warm site",
+      "Active-active design",
+      "Active-passive design",
+      "Cold site"
+    ],
+    "correctIndex": 1,
+    "explanation": "Active-active systems provide service concurrently across locations."
+  },
+  {
+    "id": "cyber-003",
+    "category": "General security concepts",
+    "topic": "Control categories",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A locked cage prevents access to server hardware. Which category applies?",
+    "choices": [
+      "Managerial control",
+      "Technical control",
+      "Physical control",
+      "Operational control"
+    ],
+    "correctIndex": 2,
+    "explanation": "Physical controls protect facilities and tangible assets."
+  },
+  {
+    "id": "cyber-004",
+    "category": "General security concepts",
+    "topic": "Trust and privileges",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A service validates every access request rather than trusting the user's network location. Which approach is illustrated?",
+    "choices": [
+      "Just-in-time access",
+      "Separation of duties",
+      "Least privilege",
+      "Zero trust"
+    ],
+    "correctIndex": 3,
+    "explanation": "Zero trust does not grant implicit trust solely because of location."
+  },
+  {
+    "id": "cyber-005",
+    "category": "Security program management",
+    "topic": "Privacy principles",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A service uses personal data only for the clearly stated purpose for which it was collected. Which principle is applied?",
+    "choices": [
+      "Purpose limitation",
+      "Storage limitation",
+      "Data minimization",
+      "Legal hold"
+    ],
+    "correctIndex": 0,
+    "explanation": "Purpose limitation restricts incompatible reuse of personal data."
+  },
+  {
+    "id": "cyber-006",
+    "category": "Security program management",
+    "topic": "Risk treatment",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A business stops offering a feature because its exposure is unacceptable. Which treatment is this?",
+    "choices": [
+      "Risk acceptance",
+      "Risk avoidance",
+      "Risk transfer",
+      "Residual risk"
+    ],
+    "correctIndex": 1,
+    "explanation": "Avoidance removes the activity creating the risk."
+  },
+  {
+    "id": "cyber-007",
+    "category": "Security architecture",
+    "topic": "Endpoint hardening",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which boot feature validates signed boot components before allowing them to run?",
+    "choices": [
+      "Application allowlisting",
+      "Full-disk encryption",
+      "Secure Boot",
+      "Disable unnecessary services"
+    ],
+    "correctIndex": 2,
+    "explanation": "Secure Boot checks trusted signatures in the boot chain."
+  },
+  {
+    "id": "cyber-008",
+    "category": "General security concepts",
+    "topic": "Control functions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A legacy system cannot support MFA, so a monitored access gateway provides an approved alternative safeguard. What is the gateway in this context?",
+    "choices": [
+      "Detective control",
+      "Deterrent control",
+      "Preventive control",
+      "Compensating control"
+    ],
+    "correctIndex": 3,
+    "explanation": "A compensating control addresses risk when the preferred control cannot be implemented."
+  },
+  {
+    "id": "cyber-009",
+    "category": "Security operations",
+    "topic": "Vulnerability management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which activity checks that a deployed fix actually removed the identified weakness?",
+    "choices": [
+      "Remediation verification",
+      "CVSS",
+      "Vulnerability scanning",
+      "CISA Known Exploited Vulnerabilities catalog"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rescanning or targeted testing validates that remediation achieved its goal."
+  },
+  {
+    "id": "cyber-010",
+    "category": "Threats and mitigations",
+    "topic": "Vulnerability conditions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A device ships with a publicly known administrator password that remains unchanged. Which weakness is present?",
+    "choices": [
+      "Zero-day vulnerability",
+      "Default credentials",
+      "Unpatched vulnerability",
+      "End-of-life software"
+    ],
+    "correctIndex": 1,
+    "explanation": "Unchanged default credentials permit predictable authentication attempts."
+  },
+  {
+    "id": "cyber-011",
+    "category": "Security operations",
+    "topic": "Authentication factors",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A login requires a secret passphrase. Which factor category is this?",
+    "choices": [
+      "Something you are",
+      "Something you have",
+      "Something you know",
+      "Multifactor authentication"
+    ],
+    "correctIndex": 2,
+    "explanation": "Knowledge factors include passwords and PINs."
+  },
+  {
+    "id": "cyber-012",
+    "category": "Security operations",
+    "topic": "Change and configuration",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An approved emergency change bypasses normal lead time but is reviewed afterward. What process applies?",
+    "choices": [
+      "Change management",
+      "Rollback",
+      "Configuration drift",
+      "Emergency change procedure"
+    ],
+    "correctIndex": 3,
+    "explanation": "Emergency changes still require authorization, documentation, and appropriate follow-up."
+  },
+  {
+    "id": "cyber-013",
+    "category": "Security operations",
+    "topic": "Security testing",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which software test exercises a running application from the outside?",
+    "choices": [
+      "DAST",
+      "Purple-team exercise",
+      "Software composition analysis",
+      "Penetration testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dynamic testing probes a running application."
+  },
+  {
+    "id": "cyber-014",
+    "category": "Security operations",
+    "topic": "Detection and hunting",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A packet-inspection engine applies network signatures and generates alerts. Which tool fits?",
+    "choices": [
+      "YARA",
+      "Suricata",
+      "Adversary emulation",
+      "Sigma"
+    ],
+    "correctIndex": 1,
+    "explanation": "Suricata supports network intrusion detection and prevention."
+  },
+  {
+    "id": "cyber-015",
+    "category": "Phishing analysis",
+    "topic": "Phishing response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An endpoint executed a malicious attachment. Which action helps limit further network spread?",
+    "choices": [
+      "Search and quarantine matching messages",
+      "Scope the campaign using delivery and activity logs",
+      "Isolate the affected endpoint",
+      "Reset credentials and revoke sessions"
+    ],
+    "correctIndex": 2,
+    "explanation": "Endpoint isolation is a containment measure; evidence preservation must also be considered."
+  },
+  {
+    "id": "cyber-016",
+    "category": "Digital forensics",
+    "topic": "Forensic tools",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which tool is designed to rapidly collect and process targeted forensic artifacts?",
+    "choices": [
+      "CyberChef",
+      "Volatility",
+      "Autopsy",
+      "KAPE"
+    ],
+    "correctIndex": 3,
+    "explanation": "KAPE supports targeted collection and processing of forensic data."
+  },
+  {
+    "id": "cyber-017",
+    "category": "Threat intelligence",
+    "topic": "Intelligence levels",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A feed supplies malware hashes and malicious domains for tool ingestion. Which level fits?",
+    "choices": [
+      "Technical intelligence",
+      "Analysis into actionable intelligence",
+      "Tactical intelligence",
+      "Strategic intelligence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Technical intelligence includes machine-consumable indicators and technical artifacts."
+  },
+  {
+    "id": "cyber-018",
+    "category": "Digital forensics",
+    "topic": "Acquisition types",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An examiner gathers running processes, connections, and other data while the host remains on. Which approach is this?",
+    "choices": [
+      "Logical acquisition",
+      "Live response collection",
+      "Packet capture",
+      "Memory acquisition"
+    ],
+    "correctIndex": 1,
+    "explanation": "Live collection can preserve transient state but also changes the running system."
+  },
+  {
+    "id": "cyber-019",
+    "category": "Threats and mitigations",
+    "topic": "Web attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker tricks a logged-in user into submitting an unwanted state-changing request. Which attack is this?",
+    "choices": [
+      "SQL injection",
+      "Stored XSS",
+      "CSRF",
+      "Path traversal"
+    ],
+    "correctIndex": 2,
+    "explanation": "CSRF abuses a victim's authenticated browser context to send unwanted requests."
+  },
+  {
+    "id": "cyber-020",
+    "category": "Incident response",
+    "topic": "Ransomware response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What should a team validate before relying on a recovered backup?",
+    "choices": [
+      "Root cause addressed and attacker access removed",
+      "Payment does not guarantee recovery or non-disclosure",
+      "Protect backups from attacker access",
+      "Backup integrity and successful restoration"
+    ],
+    "correctIndex": 3,
+    "explanation": "A backup must be both trustworthy and recoverable."
+  },
+  {
+    "id": "cyber-021",
+    "category": "Security operations",
+    "topic": "Malware triage interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A Base64 string is found in a script. Which conclusion is justified?",
+    "choices": [
+      "Encoding alone does not establish maliciousness",
+      "The sample may require conditions absent from the sandbox",
+      "Assess execution and affected-host context",
+      "No detections is not proof of safety"
+    ],
+    "correctIndex": 0,
+    "explanation": "Base64 is widely used for benign data representation as well as concealment."
+  },
+  {
+    "id": "cyber-022",
+    "category": "General security concepts",
+    "topic": "Cryptographic design",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which mechanism combines encryption with integrity protection and uses a nonce?",
+    "choices": [
+      "Diffie-Hellman key exchange",
+      "AES-GCM",
+      "SHA-256",
+      "Argon2id"
+    ],
+    "correctIndex": 1,
+    "explanation": "GCM is an authenticated encryption mode; nonce reuse with a key is dangerous."
+  },
+  {
+    "id": "cyber-023",
+    "category": "Incident response",
+    "topic": "Response governance",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A report states what happened, affected assets, actions, and remaining uncertainty. What deliverable is this?",
+    "choices": [
+      "Phishing response playbook",
+      "Escalate through the incident process",
+      "Incident report",
+      "Designated incident commander"
+    ],
+    "correctIndex": 2,
+    "explanation": "Incident reports preserve findings and decisions for stakeholders and future review."
+  },
+  {
+    "id": "cyber-024",
+    "category": "Security architecture",
+    "topic": "Secure protocols",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which directory-access protocol uses TLS from connection establishment, commonly on TCP 636?",
+    "choices": [
+      "SNMPv3",
+      "HTTPS",
+      "SFTP",
+      "LDAPS"
+    ],
+    "correctIndex": 3,
+    "explanation": "LDAPS protects LDAP traffic with TLS on the dedicated secure port."
+  },
+  {
+    "id": "cyber-025",
+    "category": "Security architecture",
+    "topic": "Data-loss controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which technology can detect and block sensitive data sent through monitored channels?",
+    "choices": [
+      "DLP",
+      "Application and destination restrictions",
+      "Information rights management",
+      "Cloud security posture management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Data-loss prevention evaluates content and context to enforce data-handling policy."
+  },
+  {
+    "id": "cyber-026",
+    "category": "Security operations",
+    "topic": "DNS and egress investigations",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A host sends many long, high-entropy DNS labels to one domain. What hypothesis is reasonable to investigate?",
+    "choices": [
+      "Data exfiltration",
+      "DNS tunneling",
+      "Fast flux",
+      "Command-and-control beaconing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Encoded DNS labels can carry data, but the pattern needs corroboration."
+  },
+  {
+    "id": "cyber-027",
+    "category": "Threat intelligence",
+    "topic": "MITRE ATT&CK",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "In ATT&CK, what provides a more specific variant of a technique?",
+    "choices": [
+      "Tactic",
+      "Procedure",
+      "Sub-technique",
+      "Technique"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sub-techniques distinguish more specific forms of a parent technique."
+  },
+  {
+    "id": "cyber-028",
+    "category": "Security operations",
+    "topic": "Authorization models",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A central policy compares clearance and classification labels that users cannot freely change. Which model is used?",
+    "choices": [
+      "RBAC",
+      "DAC",
+      "Rule-based access control",
+      "MAC"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mandatory access control centrally enforces classification-based policy."
+  },
+  {
+    "id": "cyber-029",
+    "category": "Incident response",
+    "topic": "Ransomware response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Why is a clean backup insufficient to conclude that no data breach occurred?",
+    "choices": [
+      "Exfiltration may have preceded encryption",
+      "Backup integrity and successful restoration",
+      "Protect backups from attacker access",
+      "Root cause addressed and attacker access removed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Data theft and encryption can occur as separate parts of an incident."
+  },
+  {
+    "id": "cyber-030",
+    "category": "Security architecture",
+    "topic": "Cloud safeguards",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which cloud capability records management API activity for later investigation?",
+    "choices": [
+      "Public-access restrictions",
+      "Cloud audit logging",
+      "Cloud provider",
+      "Customer"
+    ],
+    "correctIndex": 1,
+    "explanation": "Control-plane audit logs record administrative API actions."
+  },
+  {
+    "id": "cyber-031",
+    "category": "Security operations",
+    "topic": "Windows security events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Windows Security event ID records creation of a user account?",
+    "choices": [
+      "4625",
+      "4688",
+      "4720",
+      "4624"
+    ],
+    "correctIndex": 2,
+    "explanation": "Event 4720 records user-account creation."
+  },
+  {
+    "id": "cyber-032",
+    "category": "Threats and mitigations",
+    "topic": "Malware behavior",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Malware secretly records a user's browsing and sensitive information. Which type best fits?",
+    "choices": [
+      "Ransomware",
+      "Trojan",
+      "Worm",
+      "Spyware"
+    ],
+    "correctIndex": 3,
+    "explanation": "Spyware covertly collects information about a user or system."
+  },
+  {
+    "id": "cyber-033",
+    "category": "Incident response",
+    "topic": "PICERL lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which response phase determines whether suspicious activity constitutes an incident?",
+    "choices": [
+      "Identification",
+      "Recovery",
+      "Preparation",
+      "Containment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Identification evaluates evidence and establishes the incident's nature and scope."
+  },
+  {
+    "id": "cyber-034",
+    "category": "Threats and mitigations",
+    "topic": "Network attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Many compromised devices overwhelm an online service with traffic. Which attack is this?",
+    "choices": [
+      "ARP poisoning",
+      "Distributed denial of service",
+      "DNS cache poisoning",
+      "Evil twin"
+    ],
+    "correctIndex": 1,
+    "explanation": "DDoS uses multiple sources to degrade availability."
+  },
+  {
+    "id": "cyber-035",
+    "category": "Security architecture",
+    "topic": "Cloud models",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A customer manages the operating system of a rented cloud virtual machine. Which service model is most likely?",
+    "choices": [
+      "SaaS",
+      "Hybrid cloud",
+      "IaaS",
+      "Multicloud"
+    ],
+    "correctIndex": 2,
+    "explanation": "IaaS generally leaves guest operating systems and applications to the customer."
+  },
+  {
+    "id": "cyber-036",
+    "category": "Security operations",
+    "topic": "Splunk SPL basics",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which SPL command filters events using an evaluated Boolean expression?",
+    "choices": [
+      "table",
+      "rex",
+      "stats",
+      "where"
+    ],
+    "correctIndex": 3,
+    "explanation": "where keeps results whose expression evaluates to true."
+  },
+  {
+    "id": "cyber-037",
+    "category": "Threat intelligence",
+    "topic": "Indicator categories",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An investigation finds an exact SHA-256 value for a malware sample. What type of indicator is this?",
+    "choices": [
+      "File hash indicator",
+      "Domain indicator",
+      "IP address indicator",
+      "Behavioral TTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "A file hash identifies a particular set of bytes and can change when the sample changes."
+  },
+  {
+    "id": "cyber-038",
+    "category": "Security architecture",
+    "topic": "Network boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Public web servers are separated from internal workstations in a dedicated perimeter network. What is this zone commonly called?",
+    "choices": [
+      "Microsegmentation",
+      "DMZ",
+      "Jump host",
+      "Network segmentation"
+    ],
+    "correctIndex": 1,
+    "explanation": "A DMZ separates public-facing services from more trusted internal resources."
+  },
+  {
+    "id": "cyber-039",
+    "category": "Security operations",
+    "topic": "Vulnerability management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which system expresses standardized technical severity for a vulnerability?",
+    "choices": [
+      "Vulnerability scanning",
+      "Authenticated scanning",
+      "CVSS",
+      "Remediation verification"
+    ],
+    "correctIndex": 2,
+    "explanation": "CVSS represents technical severity and is not a complete business-risk ranking."
+  },
+  {
+    "id": "cyber-040",
+    "category": "Security architecture",
+    "topic": "Recovery sites",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which recovery location is equipped and maintained for rapid takeover?",
+    "choices": [
+      "Active-passive design",
+      "Active-active design",
+      "Warm site",
+      "Hot site"
+    ],
+    "correctIndex": 3,
+    "explanation": "A hot site has ready infrastructure and typically current or near-current data."
+  },
+  {
+    "id": "cyber-041",
+    "category": "Threats and mitigations",
+    "topic": "Vulnerability conditions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A flaw is exploited before a fix is available to defenders. Which term best fits?",
+    "choices": [
+      "Zero-day vulnerability",
+      "Default credentials",
+      "Unpatched vulnerability",
+      "End-of-life software"
+    ],
+    "correctIndex": 0,
+    "explanation": "A zero-day leaves defenders without an available remediation patch at the time of exploitation."
+  },
+  {
+    "id": "cyber-042",
+    "category": "General security concepts",
+    "topic": "Trust and privileges",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A contractor only needs to read one project folder. Which principle limits permissions to that requirement?",
+    "choices": [
+      "Just-in-time access",
+      "Least privilege",
+      "Separation of duties",
+      "Zero trust"
+    ],
+    "correctIndex": 1,
+    "explanation": "Least privilege grants only the access necessary for the task."
+  },
+  {
+    "id": "cyber-043",
+    "category": "Security architecture",
+    "topic": "Secure protocols",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which network-management version supports authentication and privacy when configured appropriately?",
+    "choices": [
+      "HTTPS",
+      "LDAPS",
+      "SNMPv3",
+      "SFTP"
+    ],
+    "correctIndex": 2,
+    "explanation": "SNMPv3 can provide authentication and encryption, depending on its security settings."
+  },
+  {
+    "id": "cyber-044",
+    "category": "Incident response",
+    "topic": "Ransomware response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What is an important limitation of paying a ransomware demand?",
+    "choices": [
+      "Exfiltration may have preceded encryption",
+      "Root cause addressed and attacker access removed",
+      "Backup integrity and successful restoration",
+      "Payment does not guarantee recovery or non-disclosure"
+    ],
+    "correctIndex": 3,
+    "explanation": "Attackers may not provide working decryption or honor promises; legal constraints can also apply."
+  },
+  {
+    "id": "cyber-045",
+    "category": "Security operations",
+    "topic": "Federated identity",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which authentication protocol uses tickets and a key distribution center?",
+    "choices": [
+      "Kerberos",
+      "OpenID Connect",
+      "OAuth 2.0",
+      "SAML"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kerberos authenticates principals using tickets issued by a KDC."
+  },
+  {
+    "id": "cyber-046",
+    "category": "Security architecture",
+    "topic": "Data-loss controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control reduces unauthorized copying from managed workstations to removable media?",
+    "choices": [
+      "Application and destination restrictions",
+      "USB device control",
+      "Cloud security posture management",
+      "Information rights management"
+    ],
+    "correctIndex": 1,
+    "explanation": "Device controls restrict or govern removable-media usage."
+  },
+  {
+    "id": "cyber-047",
+    "category": "Security architecture",
+    "topic": "Physical security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control helps keep systems running through a short loss of mains power?",
+    "choices": [
+      "Access control vestibule",
+      "CCTV",
+      "UPS",
+      "Tailgating"
+    ],
+    "correctIndex": 2,
+    "explanation": "An uninterruptible power supply provides temporary power."
+  },
+  {
+    "id": "cyber-048",
+    "category": "Security operations",
+    "topic": "Automation safety",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A response integration needs permission only to quarantine email, not administer all mailboxes. Which design is appropriate?",
+    "choices": [
+      "Idempotency",
+      "Dry-run testing",
+      "Human approval for high-impact action",
+      "Least-privilege automation identity"
+    ],
+    "correctIndex": 3,
+    "explanation": "Automation accounts should receive only the permissions needed for their tasks."
+  },
+  {
+    "id": "cyber-049",
+    "category": "Security operations",
+    "topic": "Detection outcomes",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A malware alert correctly identifies an infected workstation. Which outcome is this?",
+    "choices": [
+      "True positive",
+      "True negative",
+      "Alert fatigue",
+      "False positive"
+    ],
+    "correctIndex": 0,
+    "explanation": "A true positive is an alert on a condition that really meets the detection target."
+  },
+  {
+    "id": "cyber-050",
+    "category": "Security architecture",
+    "topic": "Physical security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control creates a controlled two-door entry area that helps prevent unauthorized following?",
+    "choices": [
+      "Tailgating",
+      "Access control vestibule",
+      "UPS",
+      "CCTV"
+    ],
+    "correctIndex": 1,
+    "explanation": "A vestibule can restrict entry sequencing and support identity checks."
+  },
+  {
+    "id": "cyber-051",
+    "category": "Security architecture",
+    "topic": "API security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which practice grants an API token only the capabilities required by its client?",
+    "choices": [
+      "Explicit allowed-field mapping",
+      "Rate limiting",
+      "Scoped access tokens",
+      "Object-level authorization"
+    ],
+    "correctIndex": 2,
+    "explanation": "Narrow scopes reduce the impact of token exposure."
+  },
+  {
+    "id": "cyber-052",
+    "category": "Threats and mitigations",
+    "topic": "Vulnerability conditions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A vendor-supported fix exists, but an administrator has not applied it. Which condition is present?",
+    "choices": [
+      "Zero-day vulnerability",
+      "Security misconfiguration",
+      "Default credentials",
+      "Unpatched vulnerability"
+    ],
+    "correctIndex": 3,
+    "explanation": "The weakness remains because an available patch has not been deployed."
+  },
+  {
+    "id": "cyber-053",
+    "category": "Security architecture",
+    "topic": "Data-loss controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which policy mechanism prevents users from sending restricted files to personal cloud storage on managed devices?",
+    "choices": [
+      "Application and destination restrictions",
+      "USB device control",
+      "Information rights management",
+      "Cloud security posture management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Restricting unauthorized apps and destinations can reduce unapproved transfers."
+  },
+  {
+    "id": "cyber-054",
+    "category": "Security operations",
+    "topic": "Authentication factors",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A login requires a fingerprint match. Which factor category is this?",
+    "choices": [
+      "Something you have",
+      "Something you are",
+      "Multiple knowledge checks",
+      "Multifactor authentication"
+    ],
+    "correctIndex": 1,
+    "explanation": "Biometric factors rely on physical characteristics."
+  },
+  {
+    "id": "cyber-055",
+    "category": "Threats and mitigations",
+    "topic": "Web attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker stores a script in a comment that executes in other visitors' browsers. Which attack is this?",
+    "choices": [
+      "Path traversal",
+      "SSRF",
+      "Stored XSS",
+      "CSRF"
+    ],
+    "correctIndex": 2,
+    "explanation": "Stored cross-site scripting persists malicious content for later browser execution."
+  },
+  {
+    "id": "cyber-056",
+    "category": "Incident response",
+    "topic": "Incident prioritization",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An issue has an active exploit and continuing damage. What factor increases response urgency?",
+    "choices": [
+      "Confidence in the finding",
+      "Operational and safety consequences",
+      "Incident scope",
+      "Ongoing exploitation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Active harm generally raises urgency relative to a hypothetical exposure."
+  },
+  {
+    "id": "cyber-057",
+    "category": "Phishing analysis",
+    "topic": "Phishing response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A confirmed malicious email was sent to many employees. Which action addresses copies already delivered?",
+    "choices": [
+      "Search and quarantine matching messages",
+      "Reset credentials and revoke sessions",
+      "Scope the campaign using delivery and activity logs",
+      "Apply an approved URL or domain block"
+    ],
+    "correctIndex": 0,
+    "explanation": "Campaign-wide message removal reduces further exposure."
+  },
+  {
+    "id": "cyber-058",
+    "category": "Digital forensics",
+    "topic": "Evidence principles",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which comparison checks whether an acquired image matches the source bytes that were hashed?",
+    "choices": [
+      "Write blocker",
+      "Hash verification",
+      "Chain of custody",
+      "Volatile memory"
+    ],
+    "correctIndex": 1,
+    "explanation": "Matching cryptographic hashes support integrity for the hashed scope."
+  },
+  {
+    "id": "cyber-059",
+    "category": "Phishing analysis",
+    "topic": "Email identities",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which email field presents the author address normally displayed by a mail client?",
+    "choices": [
+      "Received",
+      "Return-Path",
+      "From",
+      "Reply-To"
+    ],
+    "correctIndex": 2,
+    "explanation": "The visible From field is not by itself proof of authenticated origin."
+  },
+  {
+    "id": "cyber-060",
+    "category": "Security architecture",
+    "topic": "Resilience metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which metric estimates the average time needed to restore or repair a failed system?",
+    "choices": [
+      "RTO",
+      "RPO",
+      "MTBF",
+      "MTTR"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mean time to repair or restore measures recovery duration; the definition should be stated locally."
+  },
+  {
+    "id": "cyber-061",
+    "category": "Security operations",
+    "topic": "Asset and exposure management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which activity identifies publicly reachable domains, services, and systems associated with an organization?",
+    "choices": [
+      "External attack surface discovery",
+      "Asset inventory",
+      "Shadow IT",
+      "Approved media sanitization"
+    ],
+    "correctIndex": 0,
+    "explanation": "External discovery finds internet-facing exposure, including overlooked assets."
+  },
+  {
+    "id": "cyber-062",
+    "category": "Incident response",
+    "topic": "PICERL lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which response phase restores service and verifies safe operation after remediation?",
+    "choices": [
+      "Containment",
+      "Recovery",
+      "Preparation",
+      "Identification"
+    ],
+    "correctIndex": 1,
+    "explanation": "Recovery returns systems to service with validation and monitoring."
+  },
+  {
+    "id": "cyber-063",
+    "category": "Security architecture",
+    "topic": "Secure protocols",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which protocol provides encrypted remote terminal access?",
+    "choices": [
+      "HTTPS",
+      "LDAPS",
+      "SSH",
+      "SNMPv3"
+    ],
+    "correctIndex": 2,
+    "explanation": "SSH protects remote shell sessions and supports strong authentication."
+  },
+  {
+    "id": "cyber-064",
+    "category": "Security operations",
+    "topic": "Malware triage interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A binary is signed with a valid certificate. Which conclusion is justified?",
+    "choices": [
+      "Encoding alone does not establish maliciousness",
+      "Assess execution and affected-host context",
+      "The sample may require conditions absent from the sandbox",
+      "A valid signature does not guarantee benign behavior"
+    ],
+    "correctIndex": 3,
+    "explanation": "Signatures establish integrity and signer context, not harmlessness."
+  },
+  {
+    "id": "cyber-065",
+    "category": "Security operations",
+    "topic": "Detection outcomes",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Analysts become desensitized after receiving too many low-value alerts. What operational problem is this?",
+    "choices": [
+      "Alert fatigue",
+      "True negative",
+      "False positive",
+      "False negative"
+    ],
+    "correctIndex": 0,
+    "explanation": "Excessive low-value alerts can impair attention and response effectiveness."
+  },
+  {
+    "id": "cyber-066",
+    "category": "Digital forensics",
+    "topic": "Acquisition types",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An examiner collects selected folders and active files rather than all disk sectors. Which acquisition type is this?",
+    "choices": [
+      "Packet capture",
+      "Logical acquisition",
+      "Live response collection",
+      "Physical disk image"
+    ],
+    "correctIndex": 1,
+    "explanation": "Logical acquisition selects filesystem-visible data."
+  },
+  {
+    "id": "cyber-067",
+    "category": "Threat intelligence",
+    "topic": "Indicator categories",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An investigation describes how the attacker repeatedly uses scheduled tasks for persistence. What type of intelligence is this?",
+    "choices": [
+      "URL indicator",
+      "IP address indicator",
+      "Behavioral TTP",
+      "File hash indicator"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tactics, techniques, and procedures describe behavior rather than one artifact."
+  },
+  {
+    "id": "cyber-068",
+    "category": "Security architecture",
+    "topic": "API security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control limits excessive API request volume from a client?",
+    "choices": [
+      "Explicit allowed-field mapping",
+      "Object-level authorization",
+      "Scoped access tokens",
+      "Rate limiting"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rate limits reduce abusive volume but must be designed around identities and resource costs."
+  },
+  {
+    "id": "cyber-069",
+    "category": "Security operations",
+    "topic": "Linux investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which command searches text for matching patterns?",
+    "choices": [
+      "grep",
+      "sha256sum",
+      "journalctl",
+      "ss -lntp"
+    ],
+    "correctIndex": 0,
+    "explanation": "grep selects lines that match a supplied pattern."
+  },
+  {
+    "id": "cyber-070",
+    "category": "Security operations",
+    "topic": "DNS and egress investigations",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A host makes periodic small outbound requests with nearly identical intervals. What hypothesis is reasonable to investigate?",
+    "choices": [
+      "Data exfiltration",
+      "Command-and-control beaconing",
+      "DNS tunneling",
+      "Fast flux"
+    ],
+    "correctIndex": 1,
+    "explanation": "Regular callbacks can indicate beaconing, but legitimate software can behave similarly."
+  },
+  {
+    "id": "cyber-071",
+    "category": "General security concepts",
+    "topic": "Cryptographic primitives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which primitive authenticates a message using a shared secret and a hash function?",
+    "choices": [
+      "Asymmetric cryptography",
+      "Digital signature",
+      "HMAC",
+      "Symmetric encryption"
+    ],
+    "correctIndex": 2,
+    "explanation": "HMAC provides keyed message authentication and integrity checking."
+  },
+  {
+    "id": "cyber-072",
+    "category": "Security program management",
+    "topic": "Risk treatment",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An authorized owner documents a tolerable risk and chooses not to add controls. Which treatment is this?",
+    "choices": [
+      "Risk transfer",
+      "Residual risk",
+      "Risk avoidance",
+      "Risk acceptance"
+    ],
+    "correctIndex": 3,
+    "explanation": "Acceptance is an explicit decision within organizational risk authority."
+  },
+  {
+    "id": "cyber-073",
+    "category": "Security program management",
+    "topic": "Data roles and classification",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which privacy role determines the purposes and means of personal-data processing?",
+    "choices": [
+      "Data controller",
+      "Data owner",
+      "Data processor",
+      "Public classification"
+    ],
+    "correctIndex": 0,
+    "explanation": "A controller determines why and how personal data is processed."
+  },
+  {
+    "id": "cyber-074",
+    "category": "Security operations",
+    "topic": "DNS and egress investigations",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A domain resolves to many rapidly changing addresses across short intervals. What infrastructure pattern might be involved?",
+    "choices": [
+      "Command-and-control beaconing",
+      "Fast flux",
+      "DNS sinkholing",
+      "Data exfiltration"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fast flux uses changing address mappings, though benign services can also rotate addresses."
+  },
+  {
+    "id": "cyber-075",
+    "category": "Incident response",
+    "topic": "Response governance",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A ransomware case needs coordinated legal, communications, and executive decisions. Who should coordinate the response effort?",
+    "choices": [
+      "Incident report",
+      "Escalate through the incident process",
+      "Designated incident commander",
+      "Phishing response playbook"
+    ],
+    "correctIndex": 2,
+    "explanation": "A named incident lead coordinates roles, decisions, and information flow."
+  },
+  {
+    "id": "cyber-076",
+    "category": "Security operations",
+    "topic": "Detection and hunting",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A rule matches characteristic byte or string patterns inside files. Which rule technology fits?",
+    "choices": [
+      "Sigma",
+      "Threat hunting",
+      "Adversary emulation",
+      "YARA"
+    ],
+    "correctIndex": 3,
+    "explanation": "YARA identifies content patterns often used in malware classification."
+  },
+  {
+    "id": "cyber-077",
+    "category": "Incident response",
+    "topic": "Containment choices",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "One destination is confirmed malicious and several hosts are contacting it. Which network measure can reduce access across those hosts?",
+    "choices": [
+      "Block the destination at an appropriate control",
+      "EDR network isolation",
+      "Revoke active sessions and tokens",
+      "Shutdown can destroy volatile evidence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Central blocking can limit traffic, but shared infrastructure and bypass paths need review."
+  },
+  {
+    "id": "cyber-078",
+    "category": "General security concepts",
+    "topic": "Control categories",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Personnel follow an established incident escalation procedure. Which category best describes this activity?",
+    "choices": [
+      "Physical control",
+      "Operational control",
+      "Technical control",
+      "Directive control"
+    ],
+    "correctIndex": 1,
+    "explanation": "Operational controls are performed through people and operating processes."
+  },
+  {
+    "id": "cyber-079",
+    "category": "Digital forensics",
+    "topic": "Evidence principles",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which record documents who collected, transferred, and handled an evidence item?",
+    "choices": [
+      "Volatile memory",
+      "Hash verification",
+      "Chain of custody",
+      "Write blocker"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chain of custody documents evidence handling and accountability."
+  },
+  {
+    "id": "cyber-080",
+    "category": "Security operations",
+    "topic": "Linux investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which command lists current processes in a broadly used BSD-style format?",
+    "choices": [
+      "grep",
+      "sha256sum",
+      "journalctl",
+      "ps aux"
+    ],
+    "correctIndex": 3,
+    "explanation": "ps aux shows process listings with user and resource information."
+  },
+  {
+    "id": "cyber-081",
+    "category": "Security operations",
+    "topic": "Account lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A newly hired employee needs a standard account and approved group memberships. Which process applies?",
+    "choices": [
+      "Provisioning",
+      "Deprovisioning",
+      "Service account",
+      "Access recertification"
+    ],
+    "correctIndex": 0,
+    "explanation": "Provisioning creates and configures authorized access."
+  },
+  {
+    "id": "cyber-082",
+    "category": "Security operations",
+    "topic": "Sysmon events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Sysmon event ID records process access events useful when investigating access to LSASS?",
+    "choices": [
+      "Sysmon 3",
+      "Sysmon 10",
+      "Sysmon 22",
+      "Sysmon 11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sysmon Event 10 records one process accessing another; context determines significance."
+  },
+  {
+    "id": "cyber-083",
+    "category": "Security operations",
+    "topic": "Log sources",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which source is most useful for seeing allowed and blocked connections through a network boundary?",
+    "choices": [
+      "Proxy logs",
+      "Endpoint process telemetry",
+      "Firewall logs",
+      "DNS logs"
+    ],
+    "correctIndex": 2,
+    "explanation": "Firewall logs record network-policy decisions and connection details."
+  },
+  {
+    "id": "cyber-084",
+    "category": "Security operations",
+    "topic": "Log engineering",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Logs are kept for a policy-defined duration before approved deletion. Which practice is this?",
+    "choices": [
+      "Enrichment",
+      "Correlation",
+      "Normalization",
+      "Retention management"
+    ],
+    "correctIndex": 3,
+    "explanation": "Retention balances investigative needs, legal requirements, cost, and privacy."
+  },
+  {
+    "id": "cyber-085",
+    "category": "Digital forensics",
+    "topic": "Timeline interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An attacker deliberately changes file timestamps to obscure activity. What is this technique called?",
+    "choices": [
+      "Timestomping",
+      "Correlate independent evidence sources",
+      "Normalize time zones",
+      "Clock skew"
+    ],
+    "correctIndex": 0,
+    "explanation": "Timestomping manipulates timestamp metadata to mislead analysis."
+  },
+  {
+    "id": "cyber-086",
+    "category": "Threats and mitigations",
+    "topic": "Malware behavior",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Files become unreadable and a note demands payment for a decryption key. Which malware type best fits?",
+    "choices": [
+      "Rootkit",
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ransomware commonly encrypts or otherwise denies access to data for extortion."
+  },
+  {
+    "id": "cyber-087",
+    "category": "General security concepts",
+    "topic": "Cryptographic primitives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which primitive lets a verifier check a message using the signer's public key?",
+    "choices": [
+      "HMAC",
+      "Asymmetric cryptography",
+      "Digital signature",
+      "Symmetric encryption"
+    ],
+    "correctIndex": 2,
+    "explanation": "A signature is generated using the private key and verified using the corresponding public key."
+  },
+  {
+    "id": "cyber-088",
+    "category": "Security operations",
+    "topic": "Persistence investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A malicious executable starts as a background component during Windows boot. Which artifact should be examined?",
+    "choices": [
+      "Scheduled task",
+      "Cron entry",
+      "Registry Run key",
+      "Windows service"
+    ],
+    "correctIndex": 3,
+    "explanation": "Services can run persistently and may have elevated permissions."
+  },
+  {
+    "id": "cyber-089",
+    "category": "Security architecture",
+    "topic": "Secure protocols",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which file-transfer protocol operates over SSH?",
+    "choices": [
+      "SFTP",
+      "SNMPv3",
+      "HTTPS",
+      "SSH"
+    ],
+    "correctIndex": 0,
+    "explanation": "SFTP uses the SSH transport and is distinct from FTP over TLS."
+  },
+  {
+    "id": "cyber-090",
+    "category": "General security concepts",
+    "topic": "Data protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which technique transforms readable data into ciphertext using a key?",
+    "choices": [
+      "Anonymization",
+      "Encryption",
+      "Steganography",
+      "Tokenization"
+    ],
+    "correctIndex": 1,
+    "explanation": "Encryption protects confidentiality through a reversible keyed transformation."
+  },
+  {
+    "id": "cyber-091",
+    "category": "Security operations",
+    "topic": "Windows security events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Windows Security event ID records process creation when the relevant auditing is enabled?",
+    "choices": [
+      "4625",
+      "4624",
+      "4688",
+      "1102"
+    ],
+    "correctIndex": 2,
+    "explanation": "Event 4688 records process creation; command-line collection requires additional configuration."
+  },
+  {
+    "id": "cyber-092",
+    "category": "Security operations",
+    "topic": "Persistence investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A new public key permits unauthorized SSH login to a user account. Which file should be examined?",
+    "choices": [
+      "Registry Run key",
+      "Windows service",
+      "Cron entry",
+      "authorized_keys"
+    ],
+    "correctIndex": 3,
+    "explanation": "The authorized_keys file grants key-based access for the corresponding account."
+  },
+  {
+    "id": "cyber-093",
+    "category": "Security operations",
+    "topic": "Log sources",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which source is most useful for seeing a process's parent, command line, and execution time?",
+    "choices": [
+      "Endpoint process telemetry",
+      "Authentication logs",
+      "Firewall logs",
+      "DNS logs"
+    ],
+    "correctIndex": 0,
+    "explanation": "Process telemetry provides execution details when the required collection is enabled."
+  },
+  {
+    "id": "cyber-094",
+    "category": "Security architecture",
+    "topic": "Security devices",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which system can inspect traffic inline and block detected attacks?",
+    "choices": [
+      "NAC",
+      "IPS",
+      "Firewall",
+      "WAF"
+    ],
+    "correctIndex": 1,
+    "explanation": "An intrusion prevention system can take inline preventive action."
+  },
+  {
+    "id": "cyber-095",
+    "category": "General security concepts",
+    "topic": "Control functions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A firewall denies connections to an unauthorized service. What is its primary function in this scenario?",
+    "choices": [
+      "Deterrent control",
+      "Detective control",
+      "Preventive control",
+      "Corrective control"
+    ],
+    "correctIndex": 2,
+    "explanation": "The rule attempts to stop prohibited traffic before it reaches the service."
+  },
+  {
+    "id": "cyber-096",
+    "category": "Security operations",
+    "topic": "Splunk SPL basics",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which SPL command creates or transforms a field using an expression?",
+    "choices": [
+      "table",
+      "stats",
+      "rex",
+      "eval"
+    ],
+    "correctIndex": 3,
+    "explanation": "eval calculates field values."
+  },
+  {
+    "id": "cyber-097",
+    "category": "Security architecture",
+    "topic": "Secure protocols",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which protocol protects web traffic using TLS?",
+    "choices": [
+      "HTTPS",
+      "SSH",
+      "SFTP",
+      "LDAPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTPS is HTTP carried over a TLS-protected connection."
+  },
+  {
+    "id": "cyber-098",
+    "category": "Security architecture",
+    "topic": "Containers and virtualization",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which practice checks container images for known vulnerable packages before deployment?",
+    "choices": [
+      "Network policy",
+      "Image vulnerability scanning",
+      "Privileged container mode",
+      "VM escape"
+    ],
+    "correctIndex": 1,
+    "explanation": "Image scanners compare included components against vulnerability information."
+  },
+  {
+    "id": "cyber-099",
+    "category": "Digital forensics",
+    "topic": "Windows artifacts",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which artifact can preserve directory-navigation traces in the Windows registry?",
+    "choices": [
+      "Jump Lists",
+      "Master File Table",
+      "ShellBags",
+      "Prefetch"
+    ],
+    "correctIndex": 2,
+    "explanation": "ShellBags contain folder-view information useful for investigating directory interactions."
+  },
+  {
+    "id": "cyber-100",
+    "category": "Security architecture",
+    "topic": "Endpoint hardening",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which hardening activity reduces exposure by removing services the host does not require?",
+    "choices": [
+      "Secure Boot",
+      "TPM",
+      "Full-disk encryption",
+      "Disable unnecessary services"
+    ],
+    "correctIndex": 3,
+    "explanation": "Unused services expand the attack surface without providing needed business functionality."
+  },
+  {
+    "id": "cyber-101",
+    "category": "Security architecture",
+    "topic": "API security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which check ensures a user may access the specific object requested by an API?",
+    "choices": [
+      "Object-level authorization",
+      "Explicit allowed-field mapping",
+      "Scoped access tokens",
+      "Token validation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Authentication alone does not establish permission for every object."
+  },
+  {
+    "id": "cyber-102",
+    "category": "General security concepts",
+    "topic": "PKI",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "What is a periodically published list of revoked certificates?",
+    "choices": [
+      "Subject Alternative Name",
+      "Certificate revocation list",
+      "OCSP",
+      "Certificate signing request"
+    ],
+    "correctIndex": 1,
+    "explanation": "A CRL lists certificates revoked by the issuer before expiration."
+  },
+  {
+    "id": "cyber-103",
+    "category": "Security operations",
+    "topic": "Account lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Two analysts use the same login, preventing reliable attribution. Which account practice is the problem?",
+    "choices": [
+      "Service account",
+      "Access recertification",
+      "Shared accounts",
+      "Provisioning"
+    ],
+    "correctIndex": 2,
+    "explanation": "Shared logins weaken individual accountability."
+  },
+  {
+    "id": "cyber-104",
+    "category": "Incident response",
+    "topic": "Incident prioritization",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Two alerts have equal technical severity, but one affects a critical payment service. What context should drive higher response priority?",
+    "choices": [
+      "Operational and safety consequences",
+      "Incident scope",
+      "Ongoing exploitation",
+      "Business impact and asset criticality"
+    ],
+    "correctIndex": 3,
+    "explanation": "Response priority should reflect operational impact, not just a vendor score."
+  },
+  {
+    "id": "cyber-105",
+    "category": "Security program management",
+    "topic": "Assessment and metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which measure shows the proportion of in-scope critical assets sending expected security logs?",
+    "choices": [
+      "Logging coverage",
+      "Remediation SLA compliance",
+      "Detection precision",
+      "Mean time to detect"
+    ],
+    "correctIndex": 0,
+    "explanation": "Coverage measures whether required assets provide the intended telemetry."
+  },
+  {
+    "id": "cyber-106",
+    "category": "Security operations",
+    "topic": "Federated identity",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which framework enables delegated authorization using access tokens?",
+    "choices": [
+      "SAML",
+      "OAuth 2.0",
+      "Kerberos",
+      "RADIUS"
+    ],
+    "correctIndex": 1,
+    "explanation": "OAuth 2.0 grants delegated access and is not by itself an authentication protocol."
+  },
+  {
+    "id": "cyber-107",
+    "category": "Security architecture",
+    "topic": "Network boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A design splits workloads into distinct networks and controls traffic between them. Which technique is used?",
+    "choices": [
+      "Air gap",
+      "DMZ",
+      "Network segmentation",
+      "Microsegmentation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Segmentation restricts communication and limits attack spread."
+  },
+  {
+    "id": "cyber-108",
+    "category": "Phishing analysis",
+    "topic": "Email identities",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which field specifies where replies should be sent and can differ from the displayed sender?",
+    "choices": [
+      "Authentication-Results",
+      "Return-Path",
+      "From",
+      "Reply-To"
+    ],
+    "correctIndex": 3,
+    "explanation": "A mismatched Reply-To can redirect responses and merits contextual review."
+  },
+  {
+    "id": "cyber-109",
+    "category": "General security concepts",
+    "topic": "Control functions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A system automatically restores a damaged configuration from a known-good copy. What is its primary function?",
+    "choices": [
+      "Corrective control",
+      "Detective control",
+      "Preventive control",
+      "Compensating control"
+    ],
+    "correctIndex": 0,
+    "explanation": "Restoring a valid configuration corrects an identified problem."
+  },
+  {
+    "id": "cyber-110",
+    "category": "Security operations",
+    "topic": "Monitoring platforms",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which analytics approach models user and entity behavior to identify anomalies?",
+    "choices": [
+      "SOAR",
+      "UEBA",
+      "SIEM",
+      "EDR"
+    ],
+    "correctIndex": 1,
+    "explanation": "UEBA compares behavior against learned or defined patterns."
+  },
+  {
+    "id": "cyber-111",
+    "category": "Threat intelligence",
+    "topic": "Intelligence levels",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A report describes an impending campaign's likely targets and timing for incident-response preparation. Which level fits?",
+    "choices": [
+      "Technical intelligence",
+      "Tactical intelligence",
+      "Operational intelligence",
+      "Analysis into actionable intelligence"
+    ],
+    "correctIndex": 2,
+    "explanation": "Operational intelligence informs action against particular campaigns or operations."
+  },
+  {
+    "id": "cyber-112",
+    "category": "Incident response",
+    "topic": "PICERL lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which response phase aims to limit the spread or impact of an active incident?",
+    "choices": [
+      "Preparation",
+      "Recovery",
+      "Eradication",
+      "Containment"
+    ],
+    "correctIndex": 3,
+    "explanation": "Containment restricts damage while subsequent response actions are planned."
+  },
+  {
+    "id": "cyber-113",
+    "category": "Security program management",
+    "topic": "Assessment and metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which measure tracks the time from relevant compromise evidence to defender detection?",
+    "choices": [
+      "Mean time to detect",
+      "Remediation SLA compliance",
+      "Logging coverage",
+      "Detection precision"
+    ],
+    "correctIndex": 0,
+    "explanation": "MTTD should be calculated using a clearly stated start point and consistent event definitions."
+  },
+  {
+    "id": "cyber-114",
+    "category": "General security concepts",
+    "topic": "Control functions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A sensor alerts when someone opens a secured cabinet. What is its primary function?",
+    "choices": [
+      "Deterrent control",
+      "Detective control",
+      "Compensating control",
+      "Preventive control"
+    ],
+    "correctIndex": 1,
+    "explanation": "It identifies an event rather than preventing the cabinet from opening."
+  },
+  {
+    "id": "cyber-115",
+    "category": "Security operations",
+    "topic": "Authorization models",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A request is granted or denied by an ordered policy such as an IP-based firewall rule set. Which model best fits?",
+    "choices": [
+      "MAC",
+      "RBAC",
+      "Rule-based access control",
+      "ABAC"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rule-based controls apply predefined rules to requests."
+  },
+  {
+    "id": "cyber-116",
+    "category": "General security concepts",
+    "topic": "Sanitization and secrets",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which measure helps detect credentials accidentally included in repository commits?",
+    "choices": [
+      "Secrets management",
+      "Physical destruction",
+      "Cryptographic erasure",
+      "Secret scanning"
+    ],
+    "correctIndex": 3,
+    "explanation": "Secret scanners identify likely exposed tokens and keys; results still require handling."
+  },
+  {
+    "id": "cyber-117",
+    "category": "Threat intelligence",
+    "topic": "MITRE ATT&CK",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What should a defensive coverage review examine beyond whether a technique has any rule assigned?",
+    "choices": [
+      "Detection quality and relevant telemetry",
+      "Procedure",
+      "Tactic",
+      "Technique"
+    ],
+    "correctIndex": 0,
+    "explanation": "A mapped rule does not establish effective coverage without the right data and validated performance."
+  },
+  {
+    "id": "cyber-118",
+    "category": "Security program management",
+    "topic": "Authorized testing boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which document defines permitted targets, methods, timing, and emergency contacts for a security test?",
+    "choices": [
+      "Report through the agreed process without expanding testing",
+      "Rules of engagement",
+      "Safety and approved test constraints",
+      "Minimize harm and unnecessary data access"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rules of engagement establish boundaries and coordination for authorized testing."
+  },
+  {
+    "id": "cyber-119",
+    "category": "Threats and mitigations",
+    "topic": "Secure coding controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control keeps user-supplied values separate from SQL syntax?",
+    "choices": [
+      "Context-aware output encoding",
+      "Anti-CSRF token",
+      "Parameterized queries",
+      "Input validation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Parameterized queries bind data separately from the query structure."
+  },
+  {
+    "id": "cyber-120",
+    "category": "Threats and mitigations",
+    "topic": "Web attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Untrusted input alters the structure of a database query. Which vulnerability is being exploited?",
+    "choices": [
+      "SSRF",
+      "Path traversal",
+      "Stored XSS",
+      "SQL injection"
+    ],
+    "correctIndex": 3,
+    "explanation": "SQL injection occurs when input is interpreted as SQL syntax."
+  },
+  {
+    "id": "cyber-121",
+    "category": "Security architecture",
+    "topic": "Recovery sites",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which design keeps a standby system ready while only the primary serves normal requests?",
+    "choices": [
+      "Active-passive design",
+      "Warm site",
+      "Hot site",
+      "Active-active design"
+    ],
+    "correctIndex": 0,
+    "explanation": "A passive component takes over when the active component fails."
+  },
+  {
+    "id": "cyber-122",
+    "category": "Security operations",
+    "topic": "Monitoring platforms",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which technology detects suspicious behavior in network traffic or metadata?",
+    "choices": [
+      "EDR",
+      "NDR",
+      "SOAR",
+      "SIEM"
+    ],
+    "correctIndex": 1,
+    "explanation": "Network detection and response focuses on network activity."
+  },
+  {
+    "id": "cyber-123",
+    "category": "Threats and mitigations",
+    "topic": "Credential attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker authenticates using a stolen NTLM hash without knowing the plaintext password. Which technique is this?",
+    "choices": [
+      "Brute force",
+      "Credential stuffing",
+      "Pass-the-hash",
+      "Password spraying"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pass-the-hash abuses an NTLM hash as authentication material in supported flows."
+  },
+  {
+    "id": "cyber-124",
+    "category": "Security operations",
+    "topic": "Automation safety",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A repeated playbook run should not create duplicate tickets or repeated destructive changes. What property is desirable?",
+    "choices": [
+      "Human approval for high-impact action",
+      "Execution logging and error handling",
+      "Dry-run testing",
+      "Idempotency"
+    ],
+    "correctIndex": 3,
+    "explanation": "An idempotent action can be repeated without changing the result beyond its intended initial effect."
+  },
+  {
+    "id": "cyber-125",
+    "category": "Threats and mitigations",
+    "topic": "Software supply chain",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An application imports a library with a known security flaw. What is the most direct issue?",
+    "choices": [
+      "Vulnerable dependency",
+      "Software bill of materials",
+      "Typosquatting",
+      "Dependency confusion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dependencies can introduce exploitable defects into the consuming application."
+  },
+  {
+    "id": "cyber-126",
+    "category": "Phishing analysis",
+    "topic": "Attachment analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What should an analyst first do to identify an attachment by content rather than its filename?",
+    "choices": [
+      "Static analysis",
+      "Inspect file signatures",
+      "Check disclosure policy and authorization",
+      "Compute a cryptographic hash"
+    ],
+    "correctIndex": 1,
+    "explanation": "Magic bytes and structure provide stronger type evidence than an extension alone."
+  },
+  {
+    "id": "cyber-127",
+    "category": "General security concepts",
+    "topic": "Security objectives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker changes a bank account number in a payment file. Which objective was violated?",
+    "choices": [
+      "Accountability",
+      "Non-repudiation",
+      "Integrity",
+      "Availability"
+    ],
+    "correctIndex": 2,
+    "explanation": "Integrity protects data against unauthorized modification."
+  },
+  {
+    "id": "cyber-128",
+    "category": "Security architecture",
+    "topic": "Backup methods",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which backup protection prevents alteration or deletion for a configured retention period?",
+    "choices": [
+      "Incremental backup",
+      "Restore testing",
+      "Full backup",
+      "Immutable backup"
+    ],
+    "correctIndex": 3,
+    "explanation": "Immutability restricts changes during a defined retention period."
+  },
+  {
+    "id": "cyber-129",
+    "category": "General security concepts",
+    "topic": "Control categories",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A policy explicitly instructs staff to report suspicious messages. Which functional classification applies?",
+    "choices": [
+      "Directive control",
+      "Operational control",
+      "Managerial control",
+      "Physical control"
+    ],
+    "correctIndex": 0,
+    "explanation": "Directive controls tell people which actions they are expected to perform."
+  },
+  {
+    "id": "cyber-130",
+    "category": "Security operations",
+    "topic": "Automation safety",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An automated action fails partway through. What capability helps responders determine what happened?",
+    "choices": [
+      "Dry-run testing",
+      "Execution logging and error handling",
+      "Least-privilege automation identity",
+      "Idempotency"
+    ],
+    "correctIndex": 1,
+    "explanation": "Logs and explicit failure handling support diagnosis and safe recovery."
+  },
+  {
+    "id": "cyber-131",
+    "category": "Digital forensics",
+    "topic": "Timeline interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A copied file has a newer filesystem creation time than its internal content history suggests. What is a reasonable explanation to test?",
+    "choices": [
+      "Timestomping",
+      "Clock skew",
+      "Copy or extraction changed metadata",
+      "Normalize time zones"
+    ],
+    "correctIndex": 2,
+    "explanation": "Filesystem timestamps can reflect copying or extraction rather than original content creation."
+  },
+  {
+    "id": "cyber-132",
+    "category": "Incident response",
+    "topic": "Containment choices",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An unauthorized cloud access key is being used for API calls. Which measure directly blocks that credential?",
+    "choices": [
+      "Shutdown can destroy volatile evidence",
+      "Revoke active sessions and tokens",
+      "EDR network isolation",
+      "Disable the compromised access key"
+    ],
+    "correctIndex": 3,
+    "explanation": "Disabling the key prevents further authentication with it; related access still needs scoping."
+  },
+  {
+    "id": "cyber-133",
+    "category": "Security architecture",
+    "topic": "Security devices",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which solution checks device posture before granting network access?",
+    "choices": [
+      "NAC",
+      "WAF",
+      "Firewall",
+      "IPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "Network access control can evaluate identity and device compliance before admission."
+  },
+  {
+    "id": "cyber-134",
+    "category": "Security program management",
+    "topic": "Security awareness",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A company measures how quickly staff report simulated suspicious messages. What does this assess?",
+    "choices": [
+      "Supportive reporting culture",
+      "Reporting behavior",
+      "Report through the approved channel",
+      "Role-based training"
+    ],
+    "correctIndex": 1,
+    "explanation": "Reporting metrics measure a useful defensive behavior beyond click rates."
+  },
+  {
+    "id": "cyber-135",
+    "category": "Security program management",
+    "topic": "Governance documents",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which document establishes mandatory specific requirements such as an approved encryption setting?",
+    "choices": [
+      "Policy",
+      "Guideline",
+      "Standard",
+      "Exception record"
+    ],
+    "correctIndex": 2,
+    "explanation": "Standards specify mandatory requirements supporting policy."
+  },
+  {
+    "id": "cyber-136",
+    "category": "Threats and mitigations",
+    "topic": "Credential attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Previously leaked username-password pairs are tried against another service. Which attack is this?",
+    "choices": [
+      "Brute force",
+      "Password spraying",
+      "Pass-the-hash",
+      "Credential stuffing"
+    ],
+    "correctIndex": 3,
+    "explanation": "Stuffing exploits password reuse using stolen credential pairs."
+  },
+  {
+    "id": "cyber-137",
+    "category": "Security operations",
+    "topic": "Monitoring platforms",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which platform executes coordinated response workflows across security tools?",
+    "choices": [
+      "SOAR",
+      "NDR",
+      "UEBA",
+      "EDR"
+    ],
+    "correctIndex": 0,
+    "explanation": "SOAR automates and orchestrates response tasks using defined workflows."
+  },
+  {
+    "id": "cyber-138",
+    "category": "Security architecture",
+    "topic": "Modern workload protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which deployment approach replaces a server image rather than modifying a running host repeatedly?",
+    "choices": [
+      "Infrastructure as code",
+      "Immutable infrastructure",
+      "Workload identity federation",
+      "Artifact signature verification"
+    ],
+    "correctIndex": 1,
+    "explanation": "Immutable infrastructure reduces unmanaged variation by replacing instances."
+  },
+  {
+    "id": "cyber-139",
+    "category": "Security operations",
+    "topic": "Change and configuration",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A deployed server gradually differs from its approved settings without authorization. What is this called?",
+    "choices": [
+      "Change management",
+      "Emergency change procedure",
+      "Configuration drift",
+      "Rollback"
+    ],
+    "correctIndex": 2,
+    "explanation": "Drift is deviation from intended or approved configuration."
+  },
+  {
+    "id": "cyber-140",
+    "category": "Security operations",
+    "topic": "Splunk SPL basics",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which SPL command produces counts or other aggregations grouped by fields?",
+    "choices": [
+      "table",
+      "eval",
+      "rex",
+      "stats"
+    ],
+    "correctIndex": 3,
+    "explanation": "stats calculates aggregations such as count by user."
+  },
+  {
+    "id": "cyber-141",
+    "category": "Security operations",
+    "topic": "Splunk SPL basics",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which SPL command selects the fields displayed as output columns?",
+    "choices": [
+      "table",
+      "eval",
+      "rex",
+      "where"
+    ],
+    "correctIndex": 0,
+    "explanation": "table displays selected fields as a table."
+  },
+  {
+    "id": "cyber-142",
+    "category": "Security operations",
+    "topic": "Authentication factors",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A login requires a password and a security question, but no possession or biometric factor. How should this be classified?",
+    "choices": [
+      "Something you are",
+      "Multiple knowledge checks",
+      "Something you have",
+      "Something you know"
+    ],
+    "correctIndex": 1,
+    "explanation": "Two knowledge checks do not constitute two different authentication factor categories."
+  },
+  {
+    "id": "cyber-143",
+    "category": "Security architecture",
+    "topic": "Cloud safeguards",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control prevents an object store from being anonymously readable when public access is unnecessary?",
+    "choices": [
+      "Cloud audit logging",
+      "Key management service",
+      "Public-access restrictions",
+      "Cloud provider"
+    ],
+    "correctIndex": 2,
+    "explanation": "Explicit public-access restrictions reduce accidental anonymous exposure."
+  },
+  {
+    "id": "cyber-144",
+    "category": "Security program management",
+    "topic": "Security awareness",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Staff are taught not to approve login prompts they did not initiate. Which behavior is targeted?",
+    "choices": [
+      "Role-based training",
+      "Supportive reporting culture",
+      "Reporting behavior",
+      "Reject unsolicited MFA prompts"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rejecting and reporting unexpected prompts helps resist approval-based attacks."
+  },
+  {
+    "id": "cyber-145",
+    "category": "Security operations",
+    "topic": "Active Directory security",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which attack obtains crackable authentication material from accounts with Kerberos preauthentication disabled?",
+    "choices": [
+      "AS-REP roasting",
+      "Windows LAPS",
+      "DCSync",
+      "Kerberoasting"
+    ],
+    "correctIndex": 0,
+    "explanation": "AS-REP roasting exploits accounts configured not to require preauthentication."
+  },
+  {
+    "id": "cyber-146",
+    "category": "Security program management",
+    "topic": "Risk calculation",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which value expresses the expected number of events per year?",
+    "choices": [
+      "20,000 units SLE",
+      "Annualized rate of occurrence",
+      "Qualitative risk assessment",
+      "Exposure factor"
+    ],
+    "correctIndex": 1,
+    "explanation": "ARO is the estimated annual frequency of an event."
+  },
+  {
+    "id": "cyber-147",
+    "category": "Security architecture",
+    "topic": "Security devices",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control is specialized for filtering malicious HTTP requests to web applications?",
+    "choices": [
+      "IPS",
+      "NAC",
+      "WAF",
+      "IDS"
+    ],
+    "correctIndex": 2,
+    "explanation": "A web application firewall inspects application-layer web traffic."
+  },
+  {
+    "id": "cyber-148",
+    "category": "Security operations",
+    "topic": "Asset and exposure management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A device is retired. Which action is necessary before disposal to protect stored data?",
+    "choices": [
+      "Shadow IT",
+      "Asset inventory",
+      "Unowned asset",
+      "Approved media sanitization"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sanitization must match media type, sensitivity, and applicable policy."
+  },
+  {
+    "id": "cyber-149",
+    "category": "Security architecture",
+    "topic": "Endpoint hardening",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which hardware component can protect keys and support measured-boot capabilities?",
+    "choices": [
+      "TPM",
+      "Full-disk encryption",
+      "Secure Boot",
+      "Application allowlisting"
+    ],
+    "correctIndex": 0,
+    "explanation": "A trusted platform module provides hardware-backed security functions."
+  },
+  {
+    "id": "cyber-150",
+    "category": "Security program management",
+    "topic": "Data roles and classification",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which label should be assigned to data approved for unrestricted external release?",
+    "choices": [
+      "Data custodian",
+      "Public classification",
+      "Data controller",
+      "Data owner"
+    ],
+    "correctIndex": 1,
+    "explanation": "Public data is authorized for open disclosure, unlike internal or restricted information."
+  },
+  {
+    "id": "cyber-151",
+    "category": "Threats and mitigations",
+    "topic": "Web attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A supplied path containing ../ allows access outside an intended directory. Which attack is this?",
+    "choices": [
+      "CSRF",
+      "Stored XSS",
+      "Path traversal",
+      "SQL injection"
+    ],
+    "correctIndex": 2,
+    "explanation": "Path traversal escapes an intended filesystem location through manipulated paths."
+  },
+  {
+    "id": "cyber-152",
+    "category": "Security program management",
+    "topic": "Privacy principles",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Records are deleted after the justified retention period expires. Which principle is applied?",
+    "choices": [
+      "Data protection impact assessment",
+      "Data minimization",
+      "Legal hold",
+      "Storage limitation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Storage limitation avoids keeping personal data longer than necessary."
+  },
+  {
+    "id": "cyber-153",
+    "category": "Security program management",
+    "topic": "Business continuity",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which exercise actually transfers service to a recovery environment under an approved test plan?",
+    "choices": [
+      "Failover test",
+      "Tabletop exercise",
+      "Disaster recovery plan",
+      "Business impact analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Failover testing validates technical takeover and operational readiness."
+  },
+  {
+    "id": "cyber-154",
+    "category": "Digital forensics",
+    "topic": "Network analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which network-analysis platform produces structured logs such as conn.log and dns.log?",
+    "choices": [
+      "ip.addr == 192.0.2.10",
+      "Zeek",
+      "Follow TCP Stream",
+      "tcp.port == 443"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zeek turns observed network traffic into structured protocol and connection logs."
+  },
+  {
+    "id": "cyber-155",
+    "category": "Threats and mitigations",
+    "topic": "Malware behavior",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A component hides malicious activity by subverting operating-system visibility. Which type best fits?",
+    "choices": [
+      "Ransomware",
+      "Spyware",
+      "Rootkit",
+      "Trojan"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rootkits manipulate system behavior to conceal unauthorized activity."
+  },
+  {
+    "id": "cyber-156",
+    "category": "Digital forensics",
+    "topic": "Network analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Wireshark feature reconstructs conversation data for a selected TCP flow?",
+    "choices": [
+      "ip.addr == 192.0.2.10",
+      "Zeek",
+      "dns",
+      "Follow TCP Stream"
+    ],
+    "correctIndex": 3,
+    "explanation": "Stream following reconstructs captured stream content, not automatically encrypted plaintext."
+  },
+  {
+    "id": "cyber-157",
+    "category": "Security operations",
+    "topic": "Change and configuration",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A failed deployment returns a service to its previous known-good version. What action is this?",
+    "choices": [
+      "Rollback",
+      "Change management",
+      "Configuration drift",
+      "Secure configuration baseline"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rollback reverses a change to restore a prior state."
+  },
+  {
+    "id": "cyber-158",
+    "category": "Security operations",
+    "topic": "Vulnerability management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which activity discovers known weaknesses through automated inspection?",
+    "choices": [
+      "Authenticated scanning",
+      "Vulnerability scanning",
+      "CISA Known Exploited Vulnerabilities catalog",
+      "CVSS"
+    ],
+    "correctIndex": 1,
+    "explanation": "Scanning identifies potential weaknesses and requires interpretation."
+  },
+  {
+    "id": "cyber-159",
+    "category": "Security operations",
+    "topic": "Email-to-endpoint correlation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An email arrived at 10:00 and a related process launched at 10:02. Which prerequisite supports meaningful comparison?",
+    "choices": [
+      "Parent-child process tree",
+      "Attachment SHA-256",
+      "Consistent timestamp interpretation",
+      "Process-linked network telemetry"
+    ],
+    "correctIndex": 2,
+    "explanation": "Time zones and clock skew must be understood before correlating events."
+  },
+  {
+    "id": "cyber-160",
+    "category": "Threat intelligence",
+    "topic": "MITRE ATT&CK",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "In ATT&CK, what represents how an adversary achieves an objective?",
+    "choices": [
+      "Detection quality and relevant telemetry",
+      "Procedure",
+      "Tactic",
+      "Technique"
+    ],
+    "correctIndex": 3,
+    "explanation": "A technique describes a method used to achieve a tactic."
+  },
+  {
+    "id": "cyber-161",
+    "category": "General security concepts",
+    "topic": "Data protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which technique displays only the last four digits of a stored account number to support staff?",
+    "choices": [
+      "Data masking",
+      "Encryption",
+      "Tokenization",
+      "Steganography"
+    ],
+    "correctIndex": 0,
+    "explanation": "Masking limits what users see without necessarily changing the underlying stored value."
+  },
+  {
+    "id": "cyber-162",
+    "category": "Security operations",
+    "topic": "Security testing",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which exercise has defenders and attackers collaborate to improve detection and response?",
+    "choices": [
+      "SAST",
+      "Purple-team exercise",
+      "Software composition analysis",
+      "DAST"
+    ],
+    "correctIndex": 1,
+    "explanation": "Purple teaming emphasizes collaboration and iterative defensive improvement."
+  },
+  {
+    "id": "cyber-163",
+    "category": "Security operations",
+    "topic": "Log engineering",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An IP address is supplemented with asset owner and reputation information. Which process is this?",
+    "choices": [
+      "Correlation",
+      "Normalization",
+      "Enrichment",
+      "Time synchronization"
+    ],
+    "correctIndex": 2,
+    "explanation": "Enrichment adds context to existing events."
+  },
+  {
+    "id": "cyber-164",
+    "category": "Security architecture",
+    "topic": "Cloud models",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An organization integrates its own data center with a public cloud. Which deployment model is this?",
+    "choices": [
+      "SaaS",
+      "IaaS",
+      "Multicloud",
+      "Hybrid cloud"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hybrid cloud combines private or on-premises infrastructure with public cloud services."
+  },
+  {
+    "id": "cyber-165",
+    "category": "Security program management",
+    "topic": "Authorized testing boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Before scanning a third party's public servers, what must an assessment team obtain?",
+    "choices": [
+      "Explicit authorization and defined scope",
+      "Rules of engagement",
+      "Safety and approved test constraints",
+      "Minimize harm and unnecessary data access"
+    ],
+    "correctIndex": 0,
+    "explanation": "Public reachability does not imply permission to test."
+  },
+  {
+    "id": "cyber-166",
+    "category": "Security operations",
+    "topic": "Sysmon events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Sysmon event ID records file creation?",
+    "choices": [
+      "Sysmon 1",
+      "Sysmon 11",
+      "Sysmon 22",
+      "Sysmon 10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sysmon Event 11 captures file-creation activity."
+  },
+  {
+    "id": "cyber-167",
+    "category": "Threats and mitigations",
+    "topic": "Credential attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "One common password is tried against hundreds of accounts. Which attack pattern is this?",
+    "choices": [
+      "Pass-the-hash",
+      "Brute force",
+      "Password spraying",
+      "MFA fatigue"
+    ],
+    "correctIndex": 2,
+    "explanation": "Spraying distributes a small number of guesses across many accounts."
+  },
+  {
+    "id": "cyber-168",
+    "category": "Threats and mitigations",
+    "topic": "Secure coding controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control checks that supplied data conforms to allowed formats and ranges?",
+    "choices": [
+      "Anti-CSRF token",
+      "Context-aware output encoding",
+      "Destination allowlisting",
+      "Input validation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Validation rejects values outside expected constraints but does not replace other controls."
+  },
+  {
+    "id": "cyber-169",
+    "category": "Security operations",
+    "topic": "Persistence investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An attacker arranges execution at a specific time using the operating system's scheduler. Which artifact should be examined?",
+    "choices": [
+      "Scheduled task",
+      "Cron entry",
+      "authorized_keys",
+      "Registry Run key"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scheduled tasks can provide recurring or triggered execution."
+  },
+  {
+    "id": "cyber-170",
+    "category": "Phishing analysis",
+    "topic": "URL interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "In https://example.com@attacker.test/login, which host receives the request?",
+    "choices": [
+      "Defang the URL",
+      "attacker.test host",
+      "attacker.test",
+      "Resolve redirects in an isolated analysis environment"
+    ],
+    "correctIndex": 1,
+    "explanation": "Text before @ is user information; the destination host follows it."
+  },
+  {
+    "id": "cyber-171",
+    "category": "Security operations",
+    "topic": "Monitoring platforms",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which technology monitors endpoint activity and supports investigation and containment?",
+    "choices": [
+      "SOAR",
+      "SIEM",
+      "EDR",
+      "NDR"
+    ],
+    "correctIndex": 2,
+    "explanation": "EDR provides endpoint telemetry and response capabilities."
+  },
+  {
+    "id": "cyber-172",
+    "category": "General security concepts",
+    "topic": "Security objectives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Individual accounts and recorded actions let investigators associate activity with a person. Which property is supported?",
+    "choices": [
+      "Confidentiality",
+      "Non-repudiation",
+      "Availability",
+      "Accountability"
+    ],
+    "correctIndex": 3,
+    "explanation": "Accountability depends on attributable identities and records of actions."
+  },
+  {
+    "id": "cyber-173",
+    "category": "Threats and mitigations",
+    "topic": "Secure coding controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control restricts outbound server requests to explicitly approved destinations?",
+    "choices": [
+      "Destination allowlisting",
+      "Parameterized queries",
+      "Input validation",
+      "Anti-CSRF token"
+    ],
+    "correctIndex": 0,
+    "explanation": "Allowlisting destinations can reduce SSRF exposure when applied with robust address validation."
+  },
+  {
+    "id": "cyber-174",
+    "category": "Digital forensics",
+    "topic": "Encrypted traffic visibility",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What is a limitation of capturing at only one network sensor?",
+    "choices": [
+      "The server private key alone always decrypts captures",
+      "Traffic outside the sensor's path may be missed",
+      "TLS session key log",
+      "Connection metadata rather than application plaintext"
+    ],
+    "correctIndex": 1,
+    "explanation": "Capture visibility depends on routing, placement, and packet loss."
+  },
+  {
+    "id": "cyber-175",
+    "category": "Phishing analysis",
+    "topic": "Email authentication",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which mechanism checks whether a sending IP is authorized for the envelope-sender domain?",
+    "choices": [
+      "MTA-STS",
+      "DMARC",
+      "SPF",
+      "DKIM"
+    ],
+    "correctIndex": 2,
+    "explanation": "SPF evaluates sending infrastructure against the domain's policy."
+  },
+  {
+    "id": "cyber-176",
+    "category": "Phishing analysis",
+    "topic": "URL interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which URL property provides transport encryption but does not establish that the site is honest?",
+    "choices": [
+      "attacker.test",
+      "Defang the URL",
+      "attacker.test host",
+      "HTTPS scheme"
+    ],
+    "correctIndex": 3,
+    "explanation": "Attackers can obtain valid certificates for domains they control."
+  },
+  {
+    "id": "cyber-177",
+    "category": "Security program management",
+    "topic": "Business continuity",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which plan describes how business functions continue during major disruption?",
+    "choices": [
+      "Business continuity plan",
+      "Failover test",
+      "Tabletop exercise",
+      "Business impact analysis"
+    ],
+    "correctIndex": 0,
+    "explanation": "A BCP addresses continuity of business operations."
+  },
+  {
+    "id": "cyber-178",
+    "category": "Digital forensics",
+    "topic": "Forensic tools",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which tool provides modular data transformations such as decoding Base64?",
+    "choices": [
+      "FTK Imager",
+      "CyberChef",
+      "Autopsy",
+      "Volatility"
+    ],
+    "correctIndex": 1,
+    "explanation": "CyberChef supports recipes of decoding and transformation operations."
+  },
+  {
+    "id": "cyber-179",
+    "category": "General security concepts",
+    "topic": "PKI",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "What protocol can query the revocation status of an individual certificate?",
+    "choices": [
+      "Certificate revocation list",
+      "Certificate authority",
+      "OCSP",
+      "Certificate signing request"
+    ],
+    "correctIndex": 2,
+    "explanation": "OCSP provides certificate status responses from a responder."
+  },
+  {
+    "id": "cyber-180",
+    "category": "Security program management",
+    "topic": "AI-related security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Sensitive customer data is pasted into an unapproved public AI service. What primary issue should be assessed?",
+    "choices": [
+      "Explicit approval and narrowly scoped tool permissions",
+      "Data poisoning",
+      "Indirect prompt injection",
+      "Unauthorized data disclosure"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sharing data with a third party can violate confidentiality and handling requirements."
+  },
+  {
+    "id": "cyber-181",
+    "category": "Threats and mitigations",
+    "topic": "Vulnerability conditions",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A service can no longer receive vendor security updates because support has ended. Which lifecycle risk is present?",
+    "choices": [
+      "End-of-life software",
+      "Unpatched vulnerability",
+      "Security misconfiguration",
+      "Default credentials"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unsupported software can retain vulnerabilities without vendor remediation."
+  },
+  {
+    "id": "cyber-182",
+    "category": "Security operations",
+    "topic": "Active Directory security",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which forged Kerberos ticket involves compromise of the krbtgt account's key material?",
+    "choices": [
+      "Kerberoasting",
+      "Golden ticket",
+      "DCSync",
+      "AS-REP roasting"
+    ],
+    "correctIndex": 1,
+    "explanation": "Golden tickets rely on the key used to sign ticket-granting tickets."
+  },
+  {
+    "id": "cyber-183",
+    "category": "Security operations",
+    "topic": "Active Directory security",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which attack obtains service tickets and attempts offline cracking of a service account's password?",
+    "choices": [
+      "DCSync",
+      "Golden ticket",
+      "Kerberoasting",
+      "Windows LAPS"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kerberoasting targets crackable material in service tickets and depends on account and encryption characteristics."
+  },
+  {
+    "id": "cyber-184",
+    "category": "Security operations",
+    "topic": "Linux investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which command prints a file's SHA-256 digest?",
+    "choices": [
+      "grep",
+      "journalctl",
+      "ps aux",
+      "sha256sum"
+    ],
+    "correctIndex": 3,
+    "explanation": "sha256sum computes a SHA-256 digest for comparison or integrity checks."
+  },
+  {
+    "id": "cyber-185",
+    "category": "General security concepts",
+    "topic": "Cryptographic primitives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which primitive uses a related public and private key pair?",
+    "choices": [
+      "Asymmetric cryptography",
+      "HMAC",
+      "Symmetric encryption",
+      "Cryptographic hashing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Asymmetric systems use mathematically related public and private keys."
+  },
+  {
+    "id": "cyber-186",
+    "category": "Incident response",
+    "topic": "Response governance",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A team needs a repeatable approved sequence for triaging suspicious email. What should it use?",
+    "choices": [
+      "Escalate through the incident process",
+      "Phishing response playbook",
+      "Incident report",
+      "Lessons learned"
+    ],
+    "correctIndex": 1,
+    "explanation": "A playbook guides consistent handling while allowing authorized judgment."
+  },
+  {
+    "id": "cyber-187",
+    "category": "General security concepts",
+    "topic": "PKI",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "What signs and issues a certificate binding an identity to a public key?",
+    "choices": [
+      "Certificate revocation list",
+      "OCSP",
+      "Certificate authority",
+      "Certificate signing request"
+    ],
+    "correctIndex": 2,
+    "explanation": "A CA signs certificates that bind identities to public keys."
+  },
+  {
+    "id": "cyber-188",
+    "category": "Security architecture",
+    "topic": "Cloud models",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An organization uses services from two different public cloud providers. Which strategy is this?",
+    "choices": [
+      "IaaS",
+      "Hybrid cloud",
+      "PaaS",
+      "Multicloud"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multicloud means using multiple cloud providers."
+  },
+  {
+    "id": "cyber-189",
+    "category": "Security architecture",
+    "topic": "Physical security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control records visual evidence of activity around an entrance?",
+    "choices": [
+      "CCTV",
+      "Tailgating",
+      "Access control vestibule",
+      "UPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cameras support monitoring and investigation but do not alone prevent entry."
+  },
+  {
+    "id": "cyber-190",
+    "category": "Security operations",
+    "topic": "DNS and egress investigations",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A suspected malicious domain is redirected to controlled infrastructure for observation or disruption. What technique is this?",
+    "choices": [
+      "DNS tunneling",
+      "DNS sinkholing",
+      "Fast flux",
+      "Data exfiltration"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sinkholing redirects selected domain resolution to a controlled destination."
+  },
+  {
+    "id": "cyber-191",
+    "category": "General security concepts",
+    "topic": "Trust and privileges",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An administrator receives elevated rights for a short approved maintenance window. Which approach is illustrated?",
+    "choices": [
+      "Zero trust",
+      "Separation of duties",
+      "Just-in-time access",
+      "Defense in depth"
+    ],
+    "correctIndex": 2,
+    "explanation": "Time-limited elevation reduces persistent privileged exposure."
+  },
+  {
+    "id": "cyber-192",
+    "category": "Digital forensics",
+    "topic": "Network analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Wireshark display filter shows packets involving 192.0.2.10 as source or destination?",
+    "choices": [
+      "Zeek",
+      "tcp.port == 443",
+      "dns",
+      "ip.addr == 192.0.2.10"
+    ],
+    "correctIndex": 3,
+    "explanation": "ip.addr matches either IPv4 endpoint in a packet."
+  },
+  {
+    "id": "cyber-193",
+    "category": "Incident response",
+    "topic": "Containment choices",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A cloud user's session token is confirmed stolen. Which measure addresses its continued use?",
+    "choices": [
+      "Revoke active sessions and tokens",
+      "Disable the compromised access key",
+      "Block the destination at an appropriate control",
+      "Shutdown can destroy volatile evidence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Token revocation targets existing authenticated sessions, not just future passwords."
+  },
+  {
+    "id": "cyber-194",
+    "category": "Threat intelligence",
+    "topic": "MITRE ATT&CK",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "In ATT&CK, what represents the adversary's high-level objective, such as Persistence?",
+    "choices": [
+      "Detection quality and relevant telemetry",
+      "Tactic",
+      "Sub-technique",
+      "Procedure"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tactic describes why an adversary performs an action."
+  },
+  {
+    "id": "cyber-195",
+    "category": "Security operations",
+    "topic": "Authorization models",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Access depends on user department, device compliance, resource labels, and time of day. Which model is used?",
+    "choices": [
+      "Rule-based access control",
+      "MAC",
+      "ABAC",
+      "DAC"
+    ],
+    "correctIndex": 2,
+    "explanation": "Attribute-based access control evaluates attributes of subjects, resources, and context."
+  },
+  {
+    "id": "cyber-196",
+    "category": "General security concepts",
+    "topic": "Sanitization and secrets",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which method physically renders storage media unusable through an approved destruction process?",
+    "choices": [
+      "Cryptographic erasure",
+      "Secrets management",
+      "Revoke and rotate the exposed secret",
+      "Physical destruction"
+    ],
+    "correctIndex": 3,
+    "explanation": "Destruction prevents reuse and must be appropriate to the media and data sensitivity."
+  },
+  {
+    "id": "cyber-197",
+    "category": "General security concepts",
+    "topic": "Control categories",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An organization establishes a security governance framework and assigns oversight responsibilities. Which category applies?",
+    "choices": [
+      "Managerial control",
+      "Operational control",
+      "Physical control",
+      "Directive control"
+    ],
+    "correctIndex": 0,
+    "explanation": "Managerial controls guide risk management and security oversight."
+  },
+  {
+    "id": "cyber-198",
+    "category": "Security operations",
+    "topic": "Authentication factors",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A login requires a password and a separately possessed security token. What is this combination?",
+    "choices": [
+      "Something you have",
+      "Multifactor authentication",
+      "Something you are",
+      "Something you know"
+    ],
+    "correctIndex": 1,
+    "explanation": "MFA combines independent factor categories rather than two secrets of the same type."
+  },
+  {
+    "id": "cyber-199",
+    "category": "Security program management",
+    "topic": "Governance documents",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which document states high-level management intent and required security outcomes?",
+    "choices": [
+      "Exception record",
+      "Guideline",
+      "Policy",
+      "Standard"
+    ],
+    "correctIndex": 2,
+    "explanation": "Policies define organizational expectations and authority."
+  },
+  {
+    "id": "cyber-200",
+    "category": "Threats and mitigations",
+    "topic": "Software supply chain",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A public package with the same name as a private package is selected by a resolver. Which attack fits?",
+    "choices": [
+      "Software bill of materials",
+      "Compromised build process",
+      "Vulnerable dependency",
+      "Dependency confusion"
+    ],
+    "correctIndex": 3,
+    "explanation": "Dependency confusion exploits ambiguous public and private package resolution."
+  },
+  {
+    "id": "cyber-201",
+    "category": "Security program management",
+    "topic": "Business continuity",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which analysis identifies critical business processes and the effects of their disruption?",
+    "choices": [
+      "Business impact analysis",
+      "Tabletop exercise",
+      "Business continuity plan",
+      "Disaster recovery plan"
+    ],
+    "correctIndex": 0,
+    "explanation": "A BIA informs recovery priorities and acceptable disruption limits."
+  },
+  {
+    "id": "cyber-202",
+    "category": "Threats and mitigations",
+    "topic": "Network attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker captures an authenticated message and later resends it unchanged to repeat an action. Which attack is this?",
+    "choices": [
+      "DNS cache poisoning",
+      "Replay attack",
+      "Distributed denial of service",
+      "Evil twin"
+    ],
+    "correctIndex": 1,
+    "explanation": "A replay attack reuses captured messages when freshness controls are insufficient."
+  },
+  {
+    "id": "cyber-203",
+    "category": "Security operations",
+    "topic": "Linux investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which command displays systemd journal records?",
+    "choices": [
+      "sha256sum",
+      "ps aux",
+      "journalctl",
+      "grep"
+    ],
+    "correctIndex": 2,
+    "explanation": "journalctl queries the systemd journal."
+  },
+  {
+    "id": "cyber-204",
+    "category": "Security operations",
+    "topic": "Privileged access",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which access mechanism is reserved for emergencies and requires strong monitoring and review?",
+    "choices": [
+      "Privileged session recording",
+      "Credential rotation",
+      "Credential vaulting",
+      "Break-glass account"
+    ],
+    "correctIndex": 3,
+    "explanation": "Emergency accounts must remain controlled, monitored, and tested."
+  },
+  {
+    "id": "cyber-205",
+    "category": "Digital forensics",
+    "topic": "Windows artifacts",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Windows artifact can provide evidence about application execution and loaded files, subject to system configuration?",
+    "choices": [
+      "Prefetch",
+      "ShellBags",
+      "Master File Table",
+      "USN journal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prefetch can record execution-related information, but presence and interpretation vary by system."
+  },
+  {
+    "id": "cyber-206",
+    "category": "Security architecture",
+    "topic": "Security devices",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which device primarily allows or denies network traffic based on configured policy?",
+    "choices": [
+      "IPS",
+      "Firewall",
+      "NAC",
+      "IDS"
+    ],
+    "correctIndex": 1,
+    "explanation": "Firewalls enforce network traffic policy."
+  },
+  {
+    "id": "cyber-207",
+    "category": "General security concepts",
+    "topic": "Sanitization and secrets",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A secret was committed to a public repository. What is needed even after deleting the visible file?",
+    "choices": [
+      "Cryptographic erasure",
+      "Secret scanning",
+      "Revoke and rotate the exposed secret",
+      "Secrets management"
+    ],
+    "correctIndex": 2,
+    "explanation": "History, clones, and caches may retain the secret after deletion."
+  },
+  {
+    "id": "cyber-208",
+    "category": "Security operations",
+    "topic": "Malware triage interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A scanner returns zero detections for a newly received file. Which conclusion is justified?",
+    "choices": [
+      "The sample may require conditions absent from the sandbox",
+      "Encoding alone does not establish maliciousness",
+      "A valid signature does not guarantee benign behavior",
+      "No detections is not proof of safety"
+    ],
+    "correctIndex": 3,
+    "explanation": "Scanners can miss new, targeted, or evasive threats."
+  },
+  {
+    "id": "cyber-209",
+    "category": "Security program management",
+    "topic": "Governance documents",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which record captures an approved deviation from a requirement and its conditions?",
+    "choices": [
+      "Exception record",
+      "Procedure",
+      "Standard",
+      "Policy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Exceptions should include approval, scope, compensating measures, and expiration or review."
+  },
+  {
+    "id": "cyber-210",
+    "category": "Security architecture",
+    "topic": "Recovery sites",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which recovery location has some equipment ready but still requires significant activation or data restoration?",
+    "choices": [
+      "Active-passive design",
+      "Warm site",
+      "Active-active design",
+      "Cold site"
+    ],
+    "correctIndex": 1,
+    "explanation": "A warm site is partially prepared and generally needs additional recovery work."
+  },
+  {
+    "id": "cyber-211",
+    "category": "Phishing analysis",
+    "topic": "Email authentication",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which mechanism verifies a domain's cryptographic signature over selected email content?",
+    "choices": [
+      "SPF",
+      "STARTTLS",
+      "DKIM",
+      "MTA-STS"
+    ],
+    "correctIndex": 2,
+    "explanation": "DKIM validates a signature associated with a signing domain."
+  },
+  {
+    "id": "cyber-212",
+    "category": "Security architecture",
+    "topic": "Resilience metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which metric defines the maximum acceptable data loss measured in time?",
+    "choices": [
+      "MTTR",
+      "Maximum tolerable downtime",
+      "MTBF",
+      "RPO"
+    ],
+    "correctIndex": 3,
+    "explanation": "Recovery point objective describes how far back recovered data may need to go."
+  },
+  {
+    "id": "cyber-213",
+    "category": "Security architecture",
+    "topic": "Backup methods",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which backup copies changes since the last full backup?",
+    "choices": [
+      "Differential backup",
+      "Full backup",
+      "Incremental backup",
+      "Restore testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "A differential accumulates changes since the last full backup."
+  },
+  {
+    "id": "cyber-214",
+    "category": "Threat intelligence",
+    "topic": "Intelligence handling",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which platform supports sharing indicators and event context among trusted communities?",
+    "choices": [
+      "TLP:RED",
+      "MISP",
+      "STIX",
+      "TAXII"
+    ],
+    "correctIndex": 1,
+    "explanation": "MISP supports structured threat-information sharing and collaboration."
+  },
+  {
+    "id": "cyber-215",
+    "category": "Security program management",
+    "topic": "Risk treatment",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Some exposure remains after controls are implemented. What is this called?",
+    "choices": [
+      "Risk acceptance",
+      "Risk avoidance",
+      "Residual risk",
+      "Risk mitigation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Residual risk remains after treatment and needs evaluation."
+  },
+  {
+    "id": "cyber-216",
+    "category": "Incident response",
+    "topic": "Ransomware response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What should be checked before restoring a clean system to the production network?",
+    "choices": [
+      "Protect backups from attacker access",
+      "Payment does not guarantee recovery or non-disclosure",
+      "Backup integrity and successful restoration",
+      "Root cause addressed and attacker access removed"
+    ],
+    "correctIndex": 3,
+    "explanation": "Restoring without closing the intrusion path can lead to reinfection."
+  },
+  {
+    "id": "cyber-217",
+    "category": "Security program management",
+    "topic": "Privacy principles",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A company pauses ordinary deletion for records relevant to anticipated litigation. What process applies?",
+    "choices": [
+      "Legal hold",
+      "Data protection impact assessment",
+      "Storage limitation",
+      "Purpose limitation"
+    ],
+    "correctIndex": 0,
+    "explanation": "A legal hold preserves relevant information despite normal deletion schedules."
+  },
+  {
+    "id": "cyber-218",
+    "category": "General security concepts",
+    "topic": "Data protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which process replaces a payment card number with a reference value mapped in a protected vault?",
+    "choices": [
+      "Steganography",
+      "Tokenization",
+      "Encryption",
+      "Data masking"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tokenization substitutes a reference token for sensitive data."
+  },
+  {
+    "id": "cyber-219",
+    "category": "General security concepts",
+    "topic": "Data protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which process aims to remove personal identifiers so individuals cannot reasonably be reidentified?",
+    "choices": [
+      "Tokenization",
+      "Steganography",
+      "Anonymization",
+      "Encryption"
+    ],
+    "correctIndex": 2,
+    "explanation": "Anonymization aims to prevent identification; the risk must be assessed rather than assumed."
+  },
+  {
+    "id": "cyber-220",
+    "category": "Security architecture",
+    "topic": "Endpoint hardening",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control permits only explicitly authorized programs to execute?",
+    "choices": [
+      "Full-disk encryption",
+      "TPM",
+      "Disable unnecessary services",
+      "Application allowlisting"
+    ],
+    "correctIndex": 3,
+    "explanation": "Allowlisting limits execution to approved applications."
+  },
+  {
+    "id": "cyber-221",
+    "category": "Security operations",
+    "topic": "Sysmon events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Sysmon event ID records process creation?",
+    "choices": [
+      "Sysmon 1",
+      "Sysmon 22",
+      "Sysmon 11",
+      "Sysmon 10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sysmon Event 1 provides process-creation details."
+  },
+  {
+    "id": "cyber-222",
+    "category": "Incident response",
+    "topic": "Incident prioritization",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A response action might shut down a safety-critical process. What must be considered before execution?",
+    "choices": [
+      "Business impact and asset criticality",
+      "Operational and safety consequences",
+      "Incident scope",
+      "Confidence in the finding"
+    ],
+    "correctIndex": 1,
+    "explanation": "Containment decisions must consider potential harm from the action itself."
+  },
+  {
+    "id": "cyber-223",
+    "category": "Digital forensics",
+    "topic": "Timeline interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Several hosts have clocks drifting by different amounts. What should a timeline explicitly account for?",
+    "choices": [
+      "Timestomping",
+      "Correlate independent evidence sources",
+      "Clock skew",
+      "Normalize time zones"
+    ],
+    "correctIndex": 2,
+    "explanation": "Clock differences can make event ordering appear incorrect."
+  },
+  {
+    "id": "cyber-224",
+    "category": "Digital forensics",
+    "topic": "Timeline interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A file's displayed timestamp differs between two tools because their time-zone settings differ. What should be done first?",
+    "choices": [
+      "Timestomping",
+      "Correlate independent evidence sources",
+      "Copy or extraction changed metadata",
+      "Normalize time zones"
+    ],
+    "correctIndex": 3,
+    "explanation": "Use a consistent time basis while retaining original timestamps and conversion details."
+  },
+  {
+    "id": "cyber-225",
+    "category": "Security operations",
+    "topic": "Vulnerability management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which resource highlights vulnerabilities known to have been exploited in the wild?",
+    "choices": [
+      "CISA Known Exploited Vulnerabilities catalog",
+      "CVSS",
+      "Remediation verification",
+      "Vulnerability scanning"
+    ],
+    "correctIndex": 0,
+    "explanation": "The KEV catalog provides evidence of known exploitation relevant to prioritization."
+  },
+  {
+    "id": "cyber-226",
+    "category": "Security program management",
+    "topic": "Security awareness",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Training provides different scenarios for finance and IT administrators. What approach is this?",
+    "choices": [
+      "Supportive reporting culture",
+      "Role-based training",
+      "Reporting behavior",
+      "Report through the approved channel"
+    ],
+    "correctIndex": 1,
+    "explanation": "Role-based training matches risks to job responsibilities."
+  },
+  {
+    "id": "cyber-227",
+    "category": "Security program management",
+    "topic": "Assessment and metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which measure shows how many remediation tasks met their approved deadlines?",
+    "choices": [
+      "Mean time to respond",
+      "Detection precision",
+      "Remediation SLA compliance",
+      "Logging coverage"
+    ],
+    "correctIndex": 2,
+    "explanation": "Deadline compliance helps track whether remediation commitments are being met."
+  },
+  {
+    "id": "cyber-228",
+    "category": "Security operations",
+    "topic": "Active Directory security",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which safeguard gives each managed Windows machine a distinct, rotated local administrator password?",
+    "choices": [
+      "Kerberoasting",
+      "Golden ticket",
+      "DCSync",
+      "Windows LAPS"
+    ],
+    "correctIndex": 3,
+    "explanation": "LAPS reduces risk from reused local administrator credentials."
+  },
+  {
+    "id": "cyber-229",
+    "category": "Digital forensics",
+    "topic": "Network analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Wireshark display filter shows DNS protocol traffic?",
+    "choices": [
+      "dns",
+      "ip.addr == 192.0.2.10",
+      "Zeek",
+      "tcp.port == 443"
+    ],
+    "correctIndex": 0,
+    "explanation": "The dns display filter selects packets decoded as DNS."
+  },
+  {
+    "id": "cyber-230",
+    "category": "Security architecture",
+    "topic": "Cloud safeguards",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which cloud service category helps manage encryption keys and their lifecycle?",
+    "choices": [
+      "Public-access restrictions",
+      "Key management service",
+      "Cloud provider",
+      "Customer"
+    ],
+    "correctIndex": 1,
+    "explanation": "A KMS supports key creation, access policy, rotation, and related management functions."
+  },
+  {
+    "id": "cyber-231",
+    "category": "Security program management",
+    "topic": "AI-related security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An AI-generated security recommendation is accepted without checking whether the cited configuration exists. What control is missing?",
+    "choices": [
+      "Data poisoning",
+      "Indirect prompt injection",
+      "Human verification against authoritative evidence",
+      "Explicit approval and narrowly scoped tool permissions"
+    ],
+    "correctIndex": 2,
+    "explanation": "Generated output can be inaccurate and should be validated before consequential use."
+  },
+  {
+    "id": "cyber-232",
+    "category": "Security operations",
+    "topic": "Privileged access",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which feature captures administrator activity for later investigation?",
+    "choices": [
+      "Break-glass account",
+      "Privileged access management",
+      "Credential vaulting",
+      "Privileged session recording"
+    ],
+    "correctIndex": 3,
+    "explanation": "Session recording provides evidence of actions performed during privileged access."
+  },
+  {
+    "id": "cyber-233",
+    "category": "Digital forensics",
+    "topic": "Encrypted traffic visibility",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What can a passive observer normally read from HTTPS traffic without session keys?",
+    "choices": [
+      "Connection metadata rather than application plaintext",
+      "Traffic outside the sensor's path may be missed",
+      "TLS session key log",
+      "The server private key alone always decrypts captures"
+    ],
+    "correctIndex": 0,
+    "explanation": "TLS protects application data; visible metadata depends on protocol and deployment details."
+  },
+  {
+    "id": "cyber-234",
+    "category": "Security program management",
+    "topic": "Data roles and classification",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Who normally decides a data set's classification and permitted business uses?",
+    "choices": [
+      "Data processor",
+      "Data owner",
+      "Data custodian",
+      "Public classification"
+    ],
+    "correctIndex": 1,
+    "explanation": "The owner is accountable for decisions about the data's protection and use."
+  },
+  {
+    "id": "cyber-235",
+    "category": "Threats and mitigations",
+    "topic": "Social engineering",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker claims to be an auditor to persuade staff to disclose records. Which broader technique is illustrated?",
+    "choices": [
+      "Vishing",
+      "Spear phishing",
+      "Pretexting",
+      "Smishing"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pretexting uses a fabricated identity or situation to obtain cooperation."
+  },
+  {
+    "id": "cyber-236",
+    "category": "Threats and mitigations",
+    "topic": "Credential attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Thousands of passwords are attempted against one account. Which attack pattern is this?",
+    "choices": [
+      "Pass-the-hash",
+      "MFA fatigue",
+      "Credential stuffing",
+      "Brute force"
+    ],
+    "correctIndex": 3,
+    "explanation": "A brute-force password attack tries many candidate passwords against a target."
+  },
+  {
+    "id": "cyber-237",
+    "category": "Phishing analysis",
+    "topic": "Email identities",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which header commonly records the envelope return address used for bounce handling?",
+    "choices": [
+      "Return-Path",
+      "Authentication-Results",
+      "From",
+      "Reply-To"
+    ],
+    "correctIndex": 0,
+    "explanation": "Return-Path reflects the envelope sender as recorded by delivery infrastructure."
+  },
+  {
+    "id": "cyber-238",
+    "category": "Security operations",
+    "topic": "Account lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A scheduled application uses a dedicated nonhuman identity with limited permissions. Which identity type fits?",
+    "choices": [
+      "Access recertification",
+      "Service account",
+      "Shared accounts",
+      "Provisioning"
+    ],
+    "correctIndex": 1,
+    "explanation": "Service accounts represent workloads and should have narrowly scoped rights."
+  },
+  {
+    "id": "cyber-239",
+    "category": "General security concepts",
+    "topic": "Cryptographic design",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which algorithm is a cryptographic hash function producing a 256-bit digest?",
+    "choices": [
+      "Diffie-Hellman key exchange",
+      "AES-GCM",
+      "SHA-256",
+      "AES"
+    ],
+    "correctIndex": 2,
+    "explanation": "SHA-256 produces a 256-bit hash and is not an encryption algorithm."
+  },
+  {
+    "id": "cyber-240",
+    "category": "Digital forensics",
+    "topic": "Forensic tools",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which tool provides a graphical platform for examining disk evidence and filesystem artifacts?",
+    "choices": [
+      "KAPE",
+      "Volatility",
+      "CyberChef",
+      "Autopsy"
+    ],
+    "correctIndex": 3,
+    "explanation": "Autopsy supports digital-forensics workflows over disk and file evidence."
+  },
+  {
+    "id": "cyber-241",
+    "category": "Threats and mitigations",
+    "topic": "Malware behavior",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Malware spreads automatically between vulnerable hosts without user interaction. Which type best fits?",
+    "choices": [
+      "Worm",
+      "Spyware",
+      "Rootkit",
+      "Ransomware"
+    ],
+    "correctIndex": 0,
+    "explanation": "Worms self-propagate across systems or networks."
+  },
+  {
+    "id": "cyber-242",
+    "category": "General security concepts",
+    "topic": "Security objectives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An employee reads confidential payroll data without permission. Which security objective was violated?",
+    "choices": [
+      "Availability",
+      "Confidentiality",
+      "Accountability",
+      "Integrity"
+    ],
+    "correctIndex": 1,
+    "explanation": "Confidentiality restricts information disclosure to authorized parties."
+  },
+  {
+    "id": "cyber-243",
+    "category": "Security program management",
+    "topic": "Risk treatment",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A business purchases insurance for some financial consequences of an incident. Which treatment is this?",
+    "choices": [
+      "Risk acceptance",
+      "Risk avoidance",
+      "Risk transfer",
+      "Residual risk"
+    ],
+    "correctIndex": 2,
+    "explanation": "Transfer shifts specified consequences but does not eliminate the underlying risk."
+  },
+  {
+    "id": "cyber-244",
+    "category": "Security program management",
+    "topic": "Governance documents",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which document offers recommended practices that are not necessarily mandatory?",
+    "choices": [
+      "Standard",
+      "Procedure",
+      "Policy",
+      "Guideline"
+    ],
+    "correctIndex": 3,
+    "explanation": "Guidelines provide advice rather than compulsory requirements."
+  },
+  {
+    "id": "cyber-245",
+    "category": "Incident response",
+    "topic": "Incident prioritization",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An alert includes strong corroborating evidence rather than an unverified reputation hit. What factor improves?",
+    "choices": [
+      "Confidence in the finding",
+      "Operational and safety consequences",
+      "Incident scope",
+      "Business impact and asset criticality"
+    ],
+    "correctIndex": 0,
+    "explanation": "Confidence reflects the strength and reliability of supporting evidence."
+  },
+  {
+    "id": "cyber-246",
+    "category": "Phishing analysis",
+    "topic": "URL interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which reporting practice makes an indicator less likely to be clicked accidentally?",
+    "choices": [
+      "attacker.test host",
+      "Defang the URL",
+      "Resolve redirects in an isolated analysis environment",
+      "attacker.test"
+    ],
+    "correctIndex": 1,
+    "explanation": "Defanging alters presentation, such as hxxps and [.] notation, without treating the destination as safe."
+  },
+  {
+    "id": "cyber-247",
+    "category": "Threats and mitigations",
+    "topic": "Software supply chain",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A build pipeline signs a release containing code inserted by an attacker. Where should investigators focus?",
+    "choices": [
+      "Dependency confusion",
+      "Vulnerable dependency",
+      "Compromised build process",
+      "Typosquatting"
+    ],
+    "correctIndex": 2,
+    "explanation": "Compromising the build process can produce malicious releases that appear legitimate."
+  },
+  {
+    "id": "cyber-248",
+    "category": "Security operations",
+    "topic": "Asset and exposure management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A personal cloud application is used for company data without IT approval. What is this called?",
+    "choices": [
+      "Asset inventory",
+      "External attack surface discovery",
+      "Unowned asset",
+      "Shadow IT"
+    ],
+    "correctIndex": 3,
+    "explanation": "Shadow IT is technology used outside approved oversight."
+  },
+  {
+    "id": "cyber-249",
+    "category": "Threat intelligence",
+    "topic": "Intelligence handling",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which standard structures cyber threat information such as indicators and relationships?",
+    "choices": [
+      "STIX",
+      "MISP",
+      "TAXII",
+      "TLP:RED"
+    ],
+    "correctIndex": 0,
+    "explanation": "STIX provides a structured representation for threat intelligence."
+  },
+  {
+    "id": "cyber-250",
+    "category": "Security architecture",
+    "topic": "Cloud models",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A provider manages the runtime while a customer deploys application code. Which service model is most likely?",
+    "choices": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "Hybrid cloud"
+    ],
+    "correctIndex": 1,
+    "explanation": "PaaS supplies a managed platform for customer applications."
+  },
+  {
+    "id": "cyber-251",
+    "category": "Digital forensics",
+    "topic": "Windows artifacts",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which artifact can record filesystem changes such as file creation or renaming on NTFS volumes?",
+    "choices": [
+      "ShellBags",
+      "Prefetch",
+      "USN journal",
+      "Jump Lists"
+    ],
+    "correctIndex": 2,
+    "explanation": "The USN change journal tracks filesystem change records, subject to retention and rollover."
+  },
+  {
+    "id": "cyber-252",
+    "category": "Security operations",
+    "topic": "Security testing",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which test looks for exploitable weaknesses through authorized attack simulation?",
+    "choices": [
+      "Purple-team exercise",
+      "DAST",
+      "Software composition analysis",
+      "Penetration testing"
+    ],
+    "correctIndex": 3,
+    "explanation": "A penetration test attempts controlled exploitation within an approved scope."
+  },
+  {
+    "id": "cyber-253",
+    "category": "Phishing analysis",
+    "topic": "Attachment analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What should precede uploading a sensitive attachment to a public scanning service?",
+    "choices": [
+      "Check disclosure policy and authorization",
+      "Use an approved isolated sandbox",
+      "Inspect file signatures",
+      "Compute a cryptographic hash"
+    ],
+    "correctIndex": 0,
+    "explanation": "Public submissions can expose confidential files or indicators to third parties."
+  },
+  {
+    "id": "cyber-254",
+    "category": "Security program management",
+    "topic": "Third-party assurance",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A provider supplies an independent report evaluating controls over a stated period. What assurance artifact fits?",
+    "choices": [
+      "Fourth-party risk",
+      "SOC 2 Type II report",
+      "Service-level agreement",
+      "Vendor offboarding"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Type II report addresses control operation over a period within a defined scope."
+  },
+  {
+    "id": "cyber-255",
+    "category": "Phishing analysis",
+    "topic": "Email identities",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which header is added by mail servers to describe message transit hops?",
+    "choices": [
+      "Return-Path",
+      "From",
+      "Received",
+      "Reply-To"
+    ],
+    "correctIndex": 2,
+    "explanation": "Received headers record transit, but trust depends on where they were added."
+  },
+  {
+    "id": "cyber-256",
+    "category": "Security program management",
+    "topic": "AI-related security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An attacker changes training examples to influence a model's future behavior. Which threat is this?",
+    "choices": [
+      "Human verification against authoritative evidence",
+      "Explicit approval and narrowly scoped tool permissions",
+      "Indirect prompt injection",
+      "Data poisoning"
+    ],
+    "correctIndex": 3,
+    "explanation": "Poisoning manipulates training or other learning inputs to affect model behavior."
+  },
+  {
+    "id": "cyber-257",
+    "category": "Security operations",
+    "topic": "Privileged access",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which practice stores administrator credentials in a controlled repository rather than a shared spreadsheet?",
+    "choices": [
+      "Credential vaulting",
+      "Privileged session recording",
+      "Break-glass account",
+      "Privileged access management"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vaults protect secrets and can audit retrieval or automate rotation."
+  },
+  {
+    "id": "cyber-258",
+    "category": "Security operations",
+    "topic": "Splunk SPL basics",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which SPL command extracts fields using a regular expression?",
+    "choices": [
+      "stats",
+      "rex",
+      "where",
+      "table"
+    ],
+    "correctIndex": 1,
+    "explanation": "rex applies a regular expression for field extraction."
+  },
+  {
+    "id": "cyber-259",
+    "category": "Security operations",
+    "topic": "Email-to-endpoint correlation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Investigators need to match a quarantined attachment to copies on endpoints. Which value is most useful for exact matching?",
+    "choices": [
+      "Consistent timestamp interpretation",
+      "Process-linked network telemetry",
+      "Attachment SHA-256",
+      "User-associated click or proxy telemetry"
+    ],
+    "correctIndex": 2,
+    "explanation": "An exact hash can link byte-identical samples across systems."
+  },
+  {
+    "id": "cyber-260",
+    "category": "Security architecture",
+    "topic": "Data-loss controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control limits access to a confidential document after it is distributed through a supported platform?",
+    "choices": [
+      "Cloud security posture management",
+      "USB device control",
+      "Application and destination restrictions",
+      "Information rights management"
+    ],
+    "correctIndex": 3,
+    "explanation": "IRM can enforce document-level rights within supported software and identity systems."
+  },
+  {
+    "id": "cyber-261",
+    "category": "Security operations",
+    "topic": "Email-to-endpoint correlation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An office application launches a script interpreter immediately after a suspicious attachment is opened. Which evidence is most useful next?",
+    "choices": [
+      "Parent-child process tree",
+      "Attachment SHA-256",
+      "Consistent timestamp interpretation",
+      "Process-linked network telemetry"
+    ],
+    "correctIndex": 0,
+    "explanation": "Process ancestry connects the document application to subsequent execution."
+  },
+  {
+    "id": "cyber-262",
+    "category": "Threats and mitigations",
+    "topic": "Social engineering",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A fraudulent email urges a user to enter credentials on a fake login page. Which attack is illustrated?",
+    "choices": [
+      "Smishing",
+      "Phishing",
+      "Pretexting",
+      "Vishing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phishing uses deceptive messages to induce unsafe actions or disclosure."
+  },
+  {
+    "id": "cyber-263",
+    "category": "Phishing analysis",
+    "topic": "Phishing response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A confirmed malicious link is still reachable from managed browsers. Which action reduces access to that destination?",
+    "choices": [
+      "Search and quarantine matching messages",
+      "Isolate the affected endpoint",
+      "Apply an approved URL or domain block",
+      "Reset credentials and revoke sessions"
+    ],
+    "correctIndex": 2,
+    "explanation": "Destination blocking can reduce access but should account for scope and collateral effects."
+  },
+  {
+    "id": "cyber-264",
+    "category": "Security operations",
+    "topic": "Log engineering",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Log sources synchronize clocks to a trusted source. Which practice is this?",
+    "choices": [
+      "Retention management",
+      "Correlation",
+      "Normalization",
+      "Time synchronization"
+    ],
+    "correctIndex": 3,
+    "explanation": "Consistent timestamps improve sequence reconstruction across systems."
+  },
+  {
+    "id": "cyber-265",
+    "category": "Phishing analysis",
+    "topic": "Attachment analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What technique examines embedded strings and structure without executing the attachment?",
+    "choices": [
+      "Static analysis",
+      "Use an approved isolated sandbox",
+      "Check disclosure policy and authorization",
+      "Inspect file signatures"
+    ],
+    "correctIndex": 0,
+    "explanation": "Static analysis inspects content without intentionally running the sample."
+  },
+  {
+    "id": "cyber-266",
+    "category": "Digital forensics",
+    "topic": "Forensic tools",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which tool is commonly used to analyze memory images through plugins?",
+    "choices": [
+      "FTK Imager",
+      "Volatility",
+      "Autopsy",
+      "CyberChef"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volatility supports memory-forensics analysis for compatible images and profiles or symbols."
+  },
+  {
+    "id": "cyber-267",
+    "category": "Security program management",
+    "topic": "Risk calculation",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An asset is valued at 100,000 units and one incident is expected to destroy 20 percent of its value. What is the single loss expectancy?",
+    "choices": [
+      "Qualitative risk assessment",
+      "20,000 units ALE",
+      "20,000 units SLE",
+      "Annualized rate of occurrence"
+    ],
+    "correctIndex": 2,
+    "explanation": "SLE equals asset value multiplied by exposure factor: 100,000 times 0.20."
+  },
+  {
+    "id": "cyber-268",
+    "category": "Threat intelligence",
+    "topic": "Indicator categories",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An investigation finds a remote network address used by the attacker. What type of indicator is this?",
+    "choices": [
+      "Domain indicator",
+      "File hash indicator",
+      "URL indicator",
+      "IP address indicator"
+    ],
+    "correctIndex": 3,
+    "explanation": "IP indicators require time and context because addresses may be shared or reassigned."
+  },
+  {
+    "id": "cyber-269",
+    "category": "Security program management",
+    "topic": "Assessment and metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which measure uses the fraction of alerts that correspond to genuine target activity?",
+    "choices": [
+      "Detection precision",
+      "Logging coverage",
+      "Mean time to detect",
+      "Mean time to respond"
+    ],
+    "correctIndex": 0,
+    "explanation": "Precision equals true positives divided by true positives plus false positives."
+  },
+  {
+    "id": "cyber-270",
+    "category": "Security operations",
+    "topic": "Malware triage interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A file hash has a known malicious match. What additional step improves the investigation?",
+    "choices": [
+      "A valid signature does not guarantee benign behavior",
+      "Assess execution and affected-host context",
+      "Encoding alone does not establish maliciousness",
+      "The sample may require conditions absent from the sandbox"
+    ],
+    "correctIndex": 1,
+    "explanation": "A match identifies a sample, but impact depends on presence, execution, and related activity."
+  },
+  {
+    "id": "cyber-271",
+    "category": "Phishing analysis",
+    "topic": "Business email compromise",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A finance employee receives a payment request from an executive's real account. Which possibility must remain in scope?",
+    "choices": [
+      "Unauthorized forwarding rule",
+      "Call a previously verified supplier contact",
+      "Compromised legitimate mailbox",
+      "Social engineering can succeed without malware"
+    ],
+    "correctIndex": 2,
+    "explanation": "A genuine sender address does not establish that the account owner sent the request."
+  },
+  {
+    "id": "cyber-272",
+    "category": "Security operations",
+    "topic": "Automation safety",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A new playbook is tested on sample events without applying production changes. What method is being used?",
+    "choices": [
+      "Least-privilege automation identity",
+      "Idempotency",
+      "Execution logging and error handling",
+      "Dry-run testing"
+    ],
+    "correctIndex": 3,
+    "explanation": "Dry runs validate logic before side effects are enabled."
+  },
+  {
+    "id": "cyber-273",
+    "category": "Security architecture",
+    "topic": "Network boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A design enforces fine-grained communication rules between individual workloads. Which technique is used?",
+    "choices": [
+      "Microsegmentation",
+      "Air gap",
+      "Jump host",
+      "Network segmentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Microsegmentation applies granular controls to workload-to-workload traffic."
+  },
+  {
+    "id": "cyber-274",
+    "category": "Security program management",
+    "topic": "Risk treatment",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A business deploys a control to reduce the likelihood of compromise. Which treatment is this?",
+    "choices": [
+      "Risk acceptance",
+      "Risk mitigation",
+      "Risk avoidance",
+      "Residual risk"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mitigation reduces likelihood or impact."
+  },
+  {
+    "id": "cyber-275",
+    "category": "Security architecture",
+    "topic": "Modern workload protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which practice verifies the provenance and integrity of an image before deployment?",
+    "choices": [
+      "Immutable infrastructure",
+      "Workload identity federation",
+      "Artifact signature verification",
+      "Infrastructure as code"
+    ],
+    "correctIndex": 2,
+    "explanation": "Signature verification supports origin and integrity checks, but does not itself prove safety."
+  },
+  {
+    "id": "cyber-276",
+    "category": "General security concepts",
+    "topic": "Cryptographic design",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which algorithm is a widely used symmetric block cipher?",
+    "choices": [
+      "Diffie-Hellman key exchange",
+      "AES-GCM",
+      "Argon2id",
+      "AES"
+    ],
+    "correctIndex": 3,
+    "explanation": "AES is a symmetric block cipher used for data encryption."
+  },
+  {
+    "id": "cyber-277",
+    "category": "Phishing analysis",
+    "topic": "Business email compromise",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Mailbox logs show an unauthorized rule forwarding finance messages externally. What should be investigated first?",
+    "choices": [
+      "Unauthorized forwarding rule",
+      "Call a previously verified supplier contact",
+      "Revoke the application's consent and tokens",
+      "Social engineering can succeed without malware"
+    ],
+    "correctIndex": 0,
+    "explanation": "Forwarding rules can expose business information and support fraud."
+  },
+  {
+    "id": "cyber-278",
+    "category": "Security architecture",
+    "topic": "Resilience metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which business-analysis value describes the longest tolerable disruption before unacceptable harm?",
+    "choices": [
+      "MTBF",
+      "Maximum tolerable downtime",
+      "MTTR",
+      "RTO"
+    ],
+    "correctIndex": 1,
+    "explanation": "Maximum tolerable downtime represents a business limit, not simply a technical restoration target."
+  },
+  {
+    "id": "cyber-279",
+    "category": "General security concepts",
+    "topic": "Sanitization and secrets",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which action destroys access to properly encrypted data by securely eliminating the required keys?",
+    "choices": [
+      "Secret scanning",
+      "Physical destruction",
+      "Cryptographic erasure",
+      "Secrets management"
+    ],
+    "correctIndex": 2,
+    "explanation": "Crypto erasure depends on effective encryption and elimination of all usable key copies."
+  },
+  {
+    "id": "cyber-280",
+    "category": "Threat intelligence",
+    "topic": "Intelligence levels",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A report explains an actor's preferred intrusion techniques to detection engineers. Which level fits?",
+    "choices": [
+      "Strategic intelligence",
+      "Analysis into actionable intelligence",
+      "Technical intelligence",
+      "Tactical intelligence"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tactical intelligence describes adversary methods useful for defensive decisions."
+  },
+  {
+    "id": "cyber-281",
+    "category": "General security concepts",
+    "topic": "Cryptographic primitives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which primitive uses the same secret key to encrypt and decrypt data?",
+    "choices": [
+      "Symmetric encryption",
+      "Digital signature",
+      "Asymmetric cryptography",
+      "HMAC"
+    ],
+    "correctIndex": 0,
+    "explanation": "Symmetric encryption uses a shared secret key."
+  },
+  {
+    "id": "cyber-282",
+    "category": "Phishing analysis",
+    "topic": "Business email compromise",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A supplier requests a sudden bank-account change. What is the best verification action before payment?",
+    "choices": [
+      "Revoke the application's consent and tokens",
+      "Call a previously verified supplier contact",
+      "Compromised legitimate mailbox",
+      "Unauthorized forwarding rule"
+    ],
+    "correctIndex": 1,
+    "explanation": "Use an independently trusted contact method rather than details in the suspicious request."
+  },
+  {
+    "id": "cyber-283",
+    "category": "Security program management",
+    "topic": "Authorized testing boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A bug report includes steps, impact, and a minimal safe demonstration rather than bulk copied customer records. What principle is applied?",
+    "choices": [
+      "Report through the agreed process without expanding testing",
+      "Safety and approved test constraints",
+      "Minimize harm and unnecessary data access",
+      "Rules of engagement"
+    ],
+    "correctIndex": 2,
+    "explanation": "Responsible testing demonstrates the issue without collecting or exposing more data than necessary."
+  },
+  {
+    "id": "cyber-284",
+    "category": "Security operations",
+    "topic": "Asset and exposure management",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A sensitive server has no assigned owner and nobody tracks its updates. What governance gap is present?",
+    "choices": [
+      "External attack surface discovery",
+      "Asset inventory",
+      "Shadow IT",
+      "Unowned asset"
+    ],
+    "correctIndex": 3,
+    "explanation": "Missing ownership undermines accountability for maintenance and protection."
+  },
+  {
+    "id": "cyber-285",
+    "category": "General security concepts",
+    "topic": "PKI",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "What certificate field normally lists the DNS names a server certificate covers?",
+    "choices": [
+      "Subject Alternative Name",
+      "OCSP",
+      "Certificate signing request",
+      "Certificate authority"
+    ],
+    "correctIndex": 0,
+    "explanation": "Modern hostname validation uses the certificate's SAN entries."
+  },
+  {
+    "id": "cyber-286",
+    "category": "Security operations",
+    "topic": "Email-to-endpoint correlation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Investigators want to know which recipient opened a malicious link. Which evidence is stronger than the recipient list alone?",
+    "choices": [
+      "Parent-child process tree",
+      "User-associated click or proxy telemetry",
+      "Consistent timestamp interpretation",
+      "Process-linked network telemetry"
+    ],
+    "correctIndex": 1,
+    "explanation": "Delivery proves receipt, not interaction; activity telemetry supports click attribution."
+  },
+  {
+    "id": "cyber-287",
+    "category": "Security operations",
+    "topic": "Detection outcomes",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A malware alert is triggered by a benign approved utility. Which outcome is this?",
+    "choices": [
+      "True positive",
+      "True negative",
+      "False positive",
+      "Alert fatigue"
+    ],
+    "correctIndex": 2,
+    "explanation": "A false positive flags benign activity as the targeted malicious condition."
+  },
+  {
+    "id": "cyber-288",
+    "category": "Phishing analysis",
+    "topic": "Attachment analysis",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What is a safer way to observe a suspicious attachment's runtime behavior?",
+    "choices": [
+      "Static analysis",
+      "Check disclosure policy and authorization",
+      "Inspect file signatures",
+      "Use an approved isolated sandbox"
+    ],
+    "correctIndex": 3,
+    "explanation": "Isolation reduces exposure, but configuration and handling still matter."
+  },
+  {
+    "id": "cyber-289",
+    "category": "Incident response",
+    "topic": "PICERL lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which response phase removes malware and addresses the intrusion's cause?",
+    "choices": [
+      "Eradication",
+      "Recovery",
+      "Identification",
+      "Containment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Eradication removes attacker presence and remediates contributing causes."
+  },
+  {
+    "id": "cyber-290",
+    "category": "Security architecture",
+    "topic": "Wireless protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which protection helps prevent forged deauthentication management frames?",
+    "choices": [
+      "EAP-TLS",
+      "Protected Management Frames",
+      "WPS",
+      "WPA3-Personal SAE"
+    ],
+    "correctIndex": 1,
+    "explanation": "PMF protects selected management frames when supported and negotiated."
+  },
+  {
+    "id": "cyber-291",
+    "category": "Digital forensics",
+    "topic": "Encrypted traffic visibility",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "What should an analyst avoid concluding merely because a connection uses TCP port 443?",
+    "choices": [
+      "The server private key alone always decrypts captures",
+      "Connection metadata rather than application plaintext",
+      "That the traffic is necessarily benign HTTPS",
+      "Traffic outside the sensor's path may be missed"
+    ],
+    "correctIndex": 2,
+    "explanation": "Port numbers are conventions, not proof of protocol or trustworthiness."
+  },
+  {
+    "id": "cyber-292",
+    "category": "Security operations",
+    "topic": "Log sources",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which source is most useful for seeing successful and failed user sign-ins?",
+    "choices": [
+      "Firewall logs",
+      "Endpoint process telemetry",
+      "Proxy logs",
+      "Authentication logs"
+    ],
+    "correctIndex": 3,
+    "explanation": "Authentication logs document login attempts and related context."
+  },
+  {
+    "id": "cyber-293",
+    "category": "Security architecture",
+    "topic": "Containers and virtualization",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which container setting grants extensive host capabilities and should normally be avoided?",
+    "choices": [
+      "Privileged container mode",
+      "Hypervisor",
+      "Network policy",
+      "Image vulnerability scanning"
+    ],
+    "correctIndex": 0,
+    "explanation": "Privileged containers have capabilities that substantially weaken isolation."
+  },
+  {
+    "id": "cyber-294",
+    "category": "Security operations",
+    "topic": "Detection and hunting",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An analyst starts with the hypothesis that stolen accounts are being used outside normal hours. Which activity is this?",
+    "choices": [
+      "YARA",
+      "Threat hunting",
+      "Sigma",
+      "Adversary emulation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Threat hunting proactively tests hypotheses about adversary activity."
+  },
+  {
+    "id": "cyber-295",
+    "category": "Security operations",
+    "topic": "Federated identity",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which protocol is commonly used for centralized network-access AAA and often uses UDP?",
+    "choices": [
+      "SAML",
+      "Kerberos",
+      "RADIUS",
+      "OpenID Connect"
+    ],
+    "correctIndex": 2,
+    "explanation": "RADIUS commonly provides authentication and accounting for network access."
+  },
+  {
+    "id": "cyber-296",
+    "category": "Threats and mitigations",
+    "topic": "Software supply chain",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "What inventory helps identify which products include an affected library?",
+    "choices": [
+      "Compromised build process",
+      "Vulnerable dependency",
+      "Dependency confusion",
+      "Software bill of materials"
+    ],
+    "correctIndex": 3,
+    "explanation": "An SBOM records software components and their relationships."
+  },
+  {
+    "id": "cyber-297",
+    "category": "Security operations",
+    "topic": "Sysmon events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Sysmon event ID records DNS queries on supported systems?",
+    "choices": [
+      "Sysmon 22",
+      "Sysmon 10",
+      "Sysmon 11",
+      "Sysmon 3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sysmon Event 22 captures DNS-query activity."
+  },
+  {
+    "id": "cyber-298",
+    "category": "Threats and mitigations",
+    "topic": "Social engineering",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A highly tailored email targets one engineer using details of their current project. Which attack is illustrated?",
+    "choices": [
+      "Pretexting",
+      "Spear phishing",
+      "Smishing",
+      "Vishing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Spear phishing is targeted rather than broadly distributed."
+  },
+  {
+    "id": "cyber-299",
+    "category": "Security program management",
+    "topic": "Risk calculation",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A workshop ranks likelihood and impact as low, medium, or high without assigning monetary losses. Which approach is this?",
+    "choices": [
+      "Exposure factor",
+      "Annualized rate of occurrence",
+      "Qualitative risk assessment",
+      "20,000 units ALE"
+    ],
+    "correctIndex": 2,
+    "explanation": "Qualitative assessments use descriptive scales instead of monetary calculations."
+  },
+  {
+    "id": "cyber-300",
+    "category": "Incident response",
+    "topic": "PICERL lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which response phase establishes playbooks, contacts, tooling, and exercises before an incident?",
+    "choices": [
+      "Recovery",
+      "Containment",
+      "Identification",
+      "Preparation"
+    ],
+    "correctIndex": 3,
+    "explanation": "Preparation builds the capabilities needed to respond effectively."
+  },
+  {
+    "id": "cyber-301",
+    "category": "Security program management",
+    "topic": "Data roles and classification",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which privacy role handles personal data on behalf of a controller?",
+    "choices": [
+      "Data processor",
+      "Data owner",
+      "Data custodian",
+      "Data controller"
+    ],
+    "correctIndex": 0,
+    "explanation": "A processor acts on the controller's behalf under defined obligations."
+  },
+  {
+    "id": "cyber-302",
+    "category": "Security architecture",
+    "topic": "Network boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Administrators enter a hardened intermediary before accessing production servers. What is it called?",
+    "choices": [
+      "Network segmentation",
+      "Jump host",
+      "DMZ",
+      "Air gap"
+    ],
+    "correctIndex": 1,
+    "explanation": "A jump host provides a controlled administrative access path."
+  },
+  {
+    "id": "cyber-303",
+    "category": "Threats and mitigations",
+    "topic": "Network attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A resolver receives a forged DNS answer and stores the incorrect mapping. Which attack is this?",
+    "choices": [
+      "Evil twin",
+      "Distributed denial of service",
+      "DNS cache poisoning",
+      "ARP poisoning"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cache poisoning inserts false DNS information into a resolver's cache."
+  },
+  {
+    "id": "cyber-304",
+    "category": "Security operations",
+    "topic": "Change and configuration",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A documented set of secure settings is used when deploying new servers. What is it?",
+    "choices": [
+      "Configuration drift",
+      "Rollback",
+      "Change management",
+      "Secure configuration baseline"
+    ],
+    "correctIndex": 3,
+    "explanation": "A baseline provides a consistent approved starting configuration."
+  },
+  {
+    "id": "cyber-305",
+    "category": "Phishing analysis",
+    "topic": "Email authentication",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which mail-security policy lets a domain request enforced TLS delivery using an HTTPS-hosted policy?",
+    "choices": [
+      "MTA-STS",
+      "SPF",
+      "DKIM",
+      "STARTTLS"
+    ],
+    "correctIndex": 0,
+    "explanation": "MTA-STS helps protect SMTP transport against downgrade and interception when supported."
+  },
+  {
+    "id": "cyber-306",
+    "category": "Threats and mitigations",
+    "topic": "Social engineering",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A caller impersonates the help desk and asks for an MFA code. Which attack is illustrated?",
+    "choices": [
+      "Pretexting",
+      "Vishing",
+      "Spear phishing",
+      "Phishing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vishing uses voice communication for phishing or deception."
+  },
+  {
+    "id": "cyber-307",
+    "category": "Phishing analysis",
+    "topic": "Email authentication",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which SMTP extension attempts to secure transport between participating mail servers but does not authenticate message authorship?",
+    "choices": [
+      "DKIM",
+      "MTA-STS",
+      "STARTTLS",
+      "DMARC"
+    ],
+    "correctIndex": 2,
+    "explanation": "STARTTLS upgrades an SMTP connection to TLS; it is not sender-identity verification."
+  },
+  {
+    "id": "cyber-308",
+    "category": "Security operations",
+    "topic": "Account lifecycle",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A departing employee's active sessions and access must be removed. Which process applies?",
+    "choices": [
+      "Provisioning",
+      "Shared accounts",
+      "Access recertification",
+      "Deprovisioning"
+    ],
+    "correctIndex": 3,
+    "explanation": "Deprovisioning revokes access when it is no longer justified."
+  },
+  {
+    "id": "cyber-309",
+    "category": "Security program management",
+    "topic": "Third-party assurance",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A contract defines uptime commitments and service-response targets. What document is this?",
+    "choices": [
+      "Service-level agreement",
+      "Fourth-party risk",
+      "SOC 2 Type II report",
+      "Vendor due diligence"
+    ],
+    "correctIndex": 0,
+    "explanation": "An SLA specifies agreed service performance commitments."
+  },
+  {
+    "id": "cyber-310",
+    "category": "Digital forensics",
+    "topic": "Windows artifacts",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which NTFS structure stores records and metadata for files and directories?",
+    "choices": [
+      "USN journal",
+      "Master File Table",
+      "ShellBags",
+      "Jump Lists"
+    ],
+    "correctIndex": 1,
+    "explanation": "The MFT describes NTFS filesystem objects."
+  },
+  {
+    "id": "cyber-311",
+    "category": "Security operations",
+    "topic": "Privileged access",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which practice changes privileged credentials on a defined schedule or after exposure?",
+    "choices": [
+      "Break-glass account",
+      "Privileged session recording",
+      "Credential rotation",
+      "Privileged access management"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rotation limits the useful lifetime of exposed credentials."
+  },
+  {
+    "id": "cyber-312",
+    "category": "Digital forensics",
+    "topic": "Acquisition types",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An examiner records relevant packets passing an interface. Which acquisition type is this?",
+    "choices": [
+      "Physical disk image",
+      "Live response collection",
+      "Logical acquisition",
+      "Packet capture"
+    ],
+    "correctIndex": 3,
+    "explanation": "Packet capture records observed traffic subject to visibility and capture limitations."
+  },
+  {
+    "id": "cyber-313",
+    "category": "General security concepts",
+    "topic": "PKI",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "What is submitted to a CA to request a certificate and includes the applicant's public key?",
+    "choices": [
+      "Certificate signing request",
+      "Subject Alternative Name",
+      "Certificate revocation list",
+      "Certificate authority"
+    ],
+    "correctIndex": 0,
+    "explanation": "A CSR supplies the public key and requested identity information, not the private key."
+  },
+  {
+    "id": "cyber-314",
+    "category": "Security architecture",
+    "topic": "Wireless protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which enterprise method uses client certificates for authentication?",
+    "choices": [
+      "Protected Management Frames",
+      "EAP-TLS",
+      "Isolated guest network",
+      "WPA3-Personal SAE"
+    ],
+    "correctIndex": 1,
+    "explanation": "EAP-TLS uses certificates for mutual authentication."
+  },
+  {
+    "id": "cyber-315",
+    "category": "Threat intelligence",
+    "topic": "Intelligence handling",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which protocol supports exchanging threat intelligence over defined APIs?",
+    "choices": [
+      "STIX",
+      "TLP:CLEAR",
+      "TAXII",
+      "MISP"
+    ],
+    "correctIndex": 2,
+    "explanation": "TAXII supports transport and sharing of threat intelligence."
+  },
+  {
+    "id": "cyber-316",
+    "category": "Security operations",
+    "topic": "Security testing",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which software test inspects source or compiled code without running the application?",
+    "choices": [
+      "Purple-team exercise",
+      "Software composition analysis",
+      "Penetration testing",
+      "SAST"
+    ],
+    "correctIndex": 3,
+    "explanation": "Static application security testing analyzes code without executing the application."
+  },
+  {
+    "id": "cyber-317",
+    "category": "Phishing analysis",
+    "topic": "URL interpretation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which link-analysis step determines where a shortened URL ultimately leads without assuming the visible short link is safe?",
+    "choices": [
+      "Resolve redirects in an isolated analysis environment",
+      "HTTPS scheme",
+      "attacker.test",
+      "attacker.test host"
+    ],
+    "correctIndex": 0,
+    "explanation": "Redirect chains can conceal the final destination; analysis must account for environment and privacy risks."
+  },
+  {
+    "id": "cyber-318",
+    "category": "Security operations",
+    "topic": "Detection and hunting",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An authorized team reproduces selected adversary techniques to test visibility and response. Which activity fits?",
+    "choices": [
+      "YARA",
+      "Adversary emulation",
+      "Sigma",
+      "Suricata"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adversary emulation evaluates defenses against realistic behaviors under authorization."
+  },
+  {
+    "id": "cyber-319",
+    "category": "Incident response",
+    "topic": "Containment choices",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A team wants to power off a host before collecting RAM. Which tradeoff should it recognize?",
+    "choices": [
+      "Revoke active sessions and tokens",
+      "Disable the compromised access key",
+      "Shutdown can destroy volatile evidence",
+      "EDR network isolation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Emergency protection may take priority, but loss of volatile evidence should be considered and documented."
+  },
+  {
+    "id": "cyber-320",
+    "category": "Security operations",
+    "topic": "Detection outcomes",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Benign activity occurs and the system correctly does not alert. Which outcome is this?",
+    "choices": [
+      "Alert fatigue",
+      "False positive",
+      "False negative",
+      "True negative"
+    ],
+    "correctIndex": 3,
+    "explanation": "A true negative correctly leaves benign activity unflagged."
+  },
+  {
+    "id": "cyber-321",
+    "category": "Security architecture",
+    "topic": "Wireless protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which access-point feature should be disabled when its PIN-based enrollment creates unnecessary attack exposure?",
+    "choices": [
+      "WPS",
+      "Isolated guest network",
+      "WPA3-Personal SAE",
+      "Protected Management Frames"
+    ],
+    "correctIndex": 0,
+    "explanation": "WPS can introduce enrollment weaknesses, especially in PIN-based implementations."
+  },
+  {
+    "id": "cyber-322",
+    "category": "Security architecture",
+    "topic": "Modern workload protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which protection checks workloads during execution for unexpected behavior?",
+    "choices": [
+      "Immutable infrastructure",
+      "Runtime security monitoring",
+      "Infrastructure as code",
+      "Workload identity federation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Runtime monitoring detects behavior that build-time checks may not reveal."
+  },
+  {
+    "id": "cyber-323",
+    "category": "Security architecture",
+    "topic": "API security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which design reduces risk from accepting a user-provided object with fields the user must not change?",
+    "choices": [
+      "Scoped access tokens",
+      "Object-level authorization",
+      "Explicit allowed-field mapping",
+      "Token validation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Allowlisting writable fields helps prevent mass-assignment vulnerabilities."
+  },
+  {
+    "id": "cyber-324",
+    "category": "Digital forensics",
+    "topic": "Encrypted traffic visibility",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which legacy assumption fails for modern TLS sessions using forward secrecy?",
+    "choices": [
+      "That the traffic is necessarily benign HTTPS",
+      "TLS session key log",
+      "Connection metadata rather than application plaintext",
+      "The server private key alone always decrypts captures"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ephemeral key exchange prevents retrospective decryption using only the server's long-term private key."
+  },
+  {
+    "id": "cyber-325",
+    "category": "Phishing analysis",
+    "topic": "Business email compromise",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A suspicious OAuth application has been granted permission to read mail. Which response directly removes that access?",
+    "choices": [
+      "Revoke the application's consent and tokens",
+      "Social engineering can succeed without malware",
+      "Unauthorized forwarding rule",
+      "Call a previously verified supplier contact"
+    ],
+    "correctIndex": 0,
+    "explanation": "Application permissions and tokens can persist independently of a password change."
+  },
+  {
+    "id": "cyber-326",
+    "category": "Security program management",
+    "topic": "Authorized testing boundaries",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A tester discovers a potentially serious issue on an out-of-scope system. What is the appropriate next action?",
+    "choices": [
+      "Minimize harm and unnecessary data access",
+      "Report through the agreed process without expanding testing",
+      "Rules of engagement",
+      "Safety and approved test constraints"
+    ],
+    "correctIndex": 1,
+    "explanation": "Unexpected findings do not authorize unilateral scope expansion."
+  },
+  {
+    "id": "cyber-327",
+    "category": "Security architecture",
+    "topic": "Physical security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which unauthorized-entry behavior involves following an authorized person through a secured door without approval?",
+    "choices": [
+      "Bollards",
+      "Access control vestibule",
+      "Tailgating",
+      "CCTV"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tailgating bypasses individual access checks by following another person."
+  },
+  {
+    "id": "cyber-328",
+    "category": "Security operations",
+    "topic": "Federated identity",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which identity layer adds authentication on top of OAuth 2.0?",
+    "choices": [
+      "OAuth 2.0",
+      "RADIUS",
+      "SAML",
+      "OpenID Connect"
+    ],
+    "correctIndex": 3,
+    "explanation": "OIDC supplies authentication information, including ID tokens."
+  },
+  {
+    "id": "cyber-329",
+    "category": "General security concepts",
+    "topic": "Cryptographic design",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which algorithm is specifically designed for password hashing with configurable memory cost?",
+    "choices": [
+      "Argon2id",
+      "Diffie-Hellman key exchange",
+      "AES",
+      "SHA-256"
+    ],
+    "correctIndex": 0,
+    "explanation": "Argon2id is a password-hashing algorithm with adjustable computational and memory costs."
+  },
+  {
+    "id": "cyber-330",
+    "category": "Security architecture",
+    "topic": "Modern workload protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which practice treats infrastructure configuration as versioned code for review and repeatable deployment?",
+    "choices": [
+      "Workload identity federation",
+      "Infrastructure as code",
+      "Artifact signature verification",
+      "Runtime security monitoring"
+    ],
+    "correctIndex": 1,
+    "explanation": "IaC enables reproducibility and review but still needs secure templates and state protection."
+  },
+  {
+    "id": "cyber-331",
+    "category": "Security operations",
+    "topic": "Sysmon events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Sysmon event ID records network connections when collection is enabled?",
+    "choices": [
+      "Sysmon 22",
+      "Sysmon 1",
+      "Sysmon 3",
+      "Sysmon 10"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sysmon Event 3 records network connection telemetry when configured."
+  },
+  {
+    "id": "cyber-332",
+    "category": "Security architecture",
+    "topic": "Resilience metrics",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which metric defines the maximum targeted time to restore a service after disruption?",
+    "choices": [
+      "MTBF",
+      "RPO",
+      "MTTR",
+      "RTO"
+    ],
+    "correctIndex": 3,
+    "explanation": "Recovery time objective sets the target restoration time."
+  },
+  {
+    "id": "cyber-333",
+    "category": "Security program management",
+    "topic": "Security awareness",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An employee reports an accidental mistake and is thanked rather than shamed. What culture does this support?",
+    "choices": [
+      "Supportive reporting culture",
+      "Report through the approved channel",
+      "Role-based training",
+      "Reject unsolicited MFA prompts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Supportive handling encourages early disclosure and reduces hidden incidents."
+  },
+  {
+    "id": "cyber-334",
+    "category": "General security concepts",
+    "topic": "Security objectives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A signed transaction provides evidence that its signer authorized it. Which property does this primarily support?",
+    "choices": [
+      "Integrity",
+      "Non-repudiation",
+      "Confidentiality",
+      "Availability"
+    ],
+    "correctIndex": 1,
+    "explanation": "Digital signatures can support evidence of origin, subject to key security and process controls."
+  },
+  {
+    "id": "cyber-335",
+    "category": "Security program management",
+    "topic": "AI-related security",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An AI tool can send emails or change systems. Which safeguard best reduces unauthorized side effects?",
+    "choices": [
+      "Indirect prompt injection",
+      "Human verification against authoritative evidence",
+      "Explicit approval and narrowly scoped tool permissions",
+      "Data poisoning"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tool access should be limited and consequential actions should require appropriate authorization."
+  },
+  {
+    "id": "cyber-336",
+    "category": "Threat intelligence",
+    "topic": "Intelligence levels",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A board report discusses how geopolitical developments affect the company's long-term exposure. Which intelligence level fits?",
+    "choices": [
+      "Operational intelligence",
+      "Analysis into actionable intelligence",
+      "Technical intelligence",
+      "Strategic intelligence"
+    ],
+    "correctIndex": 3,
+    "explanation": "Strategic intelligence supports high-level planning and business decisions."
+  },
+  {
+    "id": "cyber-337",
+    "category": "Digital forensics",
+    "topic": "Evidence principles",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which evidence should generally be considered early because powering off can destroy it?",
+    "choices": [
+      "Volatile memory",
+      "Chain of custody",
+      "Analyze a verified working copy",
+      "Write blocker"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM and other volatile state may disappear when power is removed."
+  },
+  {
+    "id": "cyber-338",
+    "category": "Security program management",
+    "topic": "Privacy principles",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "An application collects only information necessary for its stated function. Which principle is applied?",
+    "choices": [
+      "Data protection impact assessment",
+      "Data minimization",
+      "Purpose limitation",
+      "Legal hold"
+    ],
+    "correctIndex": 1,
+    "explanation": "Minimization limits collection to what is necessary."
+  },
+  {
+    "id": "cyber-339",
+    "category": "Security architecture",
+    "topic": "Cloud safeguards",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Who is normally responsible for selecting appropriate customer IAM permissions in a cloud account?",
+    "choices": [
+      "Public-access restrictions",
+      "Cloud provider",
+      "Customer",
+      "Key management service"
+    ],
+    "correctIndex": 2,
+    "explanation": "Customers must configure their own identities and access according to the service model."
+  },
+  {
+    "id": "cyber-340",
+    "category": "General security concepts",
+    "topic": "Trust and privileges",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A server is protected by access controls, segmentation, monitoring, and backups. Which strategy is illustrated?",
+    "choices": [
+      "Just-in-time access",
+      "Least privilege",
+      "Zero trust",
+      "Defense in depth"
+    ],
+    "correctIndex": 3,
+    "explanation": "Multiple complementary safeguards reduce dependence on a single control."
+  },
+  {
+    "id": "cyber-341",
+    "category": "General security concepts",
+    "topic": "Cryptographic primitives",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which primitive produces a fixed-size digest without providing a decryption operation?",
+    "choices": [
+      "Cryptographic hashing",
+      "Asymmetric cryptography",
+      "Digital signature",
+      "Symmetric encryption"
+    ],
+    "correctIndex": 0,
+    "explanation": "A cryptographic hash is designed as a one-way digest function."
+  },
+  {
+    "id": "cyber-342",
+    "category": "Security operations",
+    "topic": "Windows security events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which Windows Security event ID indicates that the Security audit log was cleared?",
+    "choices": [
+      "4688",
+      "1102",
+      "4624",
+      "4720"
+    ],
+    "correctIndex": 1,
+    "explanation": "Event 1102 records clearing of the Windows Security log."
+  },
+  {
+    "id": "cyber-343",
+    "category": "Security program management",
+    "topic": "Risk calculation",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which value expresses the fraction of asset value lost in one event?",
+    "choices": [
+      "Annualized rate of occurrence",
+      "Qualitative risk assessment",
+      "Exposure factor",
+      "20,000 units SLE"
+    ],
+    "correctIndex": 2,
+    "explanation": "Exposure factor expresses estimated loss as a proportion of asset value."
+  },
+  {
+    "id": "cyber-344",
+    "category": "Security program management",
+    "topic": "Third-party assurance",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Before hiring a cloud provider, a team reviews its security controls and incident history. What activity is this?",
+    "choices": [
+      "Fourth-party risk",
+      "Vendor offboarding",
+      "SOC 2 Type II report",
+      "Vendor due diligence"
+    ],
+    "correctIndex": 3,
+    "explanation": "Due diligence evaluates a supplier before engagement."
+  },
+  {
+    "id": "cyber-345",
+    "category": "Digital forensics",
+    "topic": "Evidence principles",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which device prevents write commands from reaching a source drive during acquisition?",
+    "choices": [
+      "Write blocker",
+      "Hash verification",
+      "Chain of custody",
+      "Volatile memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "A validated write blocker helps protect source media against modification."
+  },
+  {
+    "id": "cyber-346",
+    "category": "Security operations",
+    "topic": "Persistence investigation",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A Linux host executes a suspicious script every hour through a traditional scheduler. Which artifact should be examined?",
+    "choices": [
+      "Registry Run key",
+      "Cron entry",
+      "Scheduled task",
+      "Windows service"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cron entries schedule recurring commands."
+  },
+  {
+    "id": "cyber-347",
+    "category": "Digital forensics",
+    "topic": "Acquisition types",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "An examiner copies every addressable sector, including unallocated space. Which acquisition type is this?",
+    "choices": [
+      "Packet capture",
+      "Logical acquisition",
+      "Physical disk image",
+      "Memory acquisition"
+    ],
+    "correctIndex": 2,
+    "explanation": "A physical image captures sectors beyond just visible files."
+  },
+  {
+    "id": "cyber-348",
+    "category": "Security operations",
+    "topic": "Log engineering",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Raw vendor events are converted to common field names and types. Which process is this?",
+    "choices": [
+      "Retention management",
+      "Correlation",
+      "Enrichment",
+      "Normalization"
+    ],
+    "correctIndex": 3,
+    "explanation": "Normalization enables consistent queries across heterogeneous data sources."
+  },
+  {
+    "id": "cyber-349",
+    "category": "Incident response",
+    "topic": "Response governance",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "After recovery, the team reviews what worked and updates procedures. Which activity is this?",
+    "choices": [
+      "Lessons learned",
+      "Incident report",
+      "Escalate through the incident process",
+      "Phishing response playbook"
+    ],
+    "correctIndex": 0,
+    "explanation": "Post-incident review turns experience into improvements."
+  },
+  {
+    "id": "cyber-350",
+    "category": "Security architecture",
+    "topic": "Containers and virtualization",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which event occurs when code inside a virtual machine gains unauthorized access to its host?",
+    "choices": [
+      "Privileged container mode",
+      "VM escape",
+      "Image vulnerability scanning",
+      "Network policy"
+    ],
+    "correctIndex": 1,
+    "explanation": "A VM escape crosses the intended guest-host isolation boundary."
+  },
+  {
+    "id": "cyber-351",
+    "category": "Phishing analysis",
+    "topic": "Email authentication",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which mechanism evaluates identifier alignment and publishes handling policy for failures?",
+    "choices": [
+      "MTA-STS",
+      "DKIM",
+      "DMARC",
+      "STARTTLS"
+    ],
+    "correctIndex": 2,
+    "explanation": "DMARC uses alignment with the visible From domain and SPF or DKIM results."
+  },
+  {
+    "id": "cyber-352",
+    "category": "Security operations",
+    "topic": "Windows security events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "In the Windows Security log, which event ID commonly records a failed logon?",
+    "choices": [
+      "4720",
+      "4624",
+      "1102",
+      "4625"
+    ],
+    "correctIndex": 3,
+    "explanation": "Event 4625 records failed logon attempts."
+  },
+  {
+    "id": "cyber-353",
+    "category": "Security program management",
+    "topic": "Third-party assurance",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "A supplier relationship ends and credentials, connections, and retained data must be addressed. What process applies?",
+    "choices": [
+      "Vendor offboarding",
+      "SOC 2 Type II report",
+      "Fourth-party risk",
+      "Vendor due diligence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Offboarding removes access and handles data and contractual closure obligations."
+  },
+  {
+    "id": "cyber-354",
+    "category": "Security operations",
+    "topic": "Authorization models",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A file owner chooses which other users can access the file. Which model is used?",
+    "choices": [
+      "Rule-based access control",
+      "DAC",
+      "ABAC",
+      "RBAC"
+    ],
+    "correctIndex": 1,
+    "explanation": "Discretionary access control permits owners to decide access within system constraints."
+  },
+  {
+    "id": "cyber-355",
+    "category": "Security architecture",
+    "topic": "Backup methods",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which backup copies changes since the most recent backup of any type?",
+    "choices": [
+      "Differential backup",
+      "Restore testing",
+      "Incremental backup",
+      "Full backup"
+    ],
+    "correctIndex": 2,
+    "explanation": "An incremental captures changes since the last backup in the chain."
+  },
+  {
+    "id": "cyber-356",
+    "category": "Phishing analysis",
+    "topic": "Phishing response",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "A user entered their password into a confirmed fake login page. Which response addresses the immediate credential exposure?",
+    "choices": [
+      "Search and quarantine matching messages",
+      "Isolate the affected endpoint",
+      "Scope the campaign using delivery and activity logs",
+      "Reset credentials and revoke sessions"
+    ],
+    "correctIndex": 3,
+    "explanation": "Password changes alone may leave stolen sessions usable; session revocation should be considered."
+  },
+  {
+    "id": "cyber-357",
+    "category": "Security operations",
+    "topic": "Windows security events",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "In the Windows Security log, which event ID commonly records a successful logon?",
+    "choices": [
+      "4624",
+      "1102",
+      "4688",
+      "4720"
+    ],
+    "correctIndex": 0,
+    "explanation": "Event 4624 records successful logons when auditing is configured."
+  },
+  {
+    "id": "cyber-358",
+    "category": "Security operations",
+    "topic": "Log sources",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which source is most useful for seeing web requests routed through a corporate intermediary?",
+    "choices": [
+      "Endpoint process telemetry",
+      "Proxy logs",
+      "DNS logs",
+      "Authentication logs"
+    ],
+    "correctIndex": 1,
+    "explanation": "Proxy logs provide web destination and request information where logging is enabled."
+  },
+  {
+    "id": "cyber-359",
+    "category": "Security architecture",
+    "topic": "Backup methods",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which backup copies all data in the selected scope each time?",
+    "choices": [
+      "Differential backup",
+      "Incremental backup",
+      "Full backup",
+      "Restore testing"
+    ],
+    "correctIndex": 2,
+    "explanation": "A full backup captures the complete selected data set."
+  },
+  {
+    "id": "cyber-360",
+    "category": "Security program management",
+    "topic": "Business continuity",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which plan focuses on restoring technology after a disruptive event?",
+    "choices": [
+      "Failover test",
+      "Business continuity plan",
+      "Tabletop exercise",
+      "Disaster recovery plan"
+    ],
+    "correctIndex": 3,
+    "explanation": "A DRP describes recovery of systems and technology services."
+  },
+  {
+    "id": "cyber-361",
+    "category": "Security architecture",
+    "topic": "Wireless protection",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which design keeps visitor devices separate from business systems?",
+    "choices": [
+      "Isolated guest network",
+      "WPS",
+      "Protected Management Frames",
+      "EAP-TLS"
+    ],
+    "correctIndex": 0,
+    "explanation": "Guest isolation limits visitors' access to trusted internal resources."
+  },
+  {
+    "id": "cyber-362",
+    "category": "Threats and mitigations",
+    "topic": "Network attacks",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Forged ARP messages make a workstation associate the gateway's IP with an attacker's MAC address. Which attack is this?",
+    "choices": [
+      "DNS cache poisoning",
+      "ARP poisoning",
+      "Evil twin",
+      "Distributed denial of service"
+    ],
+    "correctIndex": 1,
+    "explanation": "ARP poisoning manipulates local address-resolution mappings."
+  },
+  {
+    "id": "cyber-363",
+    "category": "Threats and mitigations",
+    "topic": "Secure coding controls",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which control requires an unpredictable value tied to a user's session for a sensitive form submission?",
+    "choices": [
+      "Parameterized queries",
+      "Input validation",
+      "Anti-CSRF token",
+      "Destination allowlisting"
+    ],
+    "correctIndex": 2,
+    "explanation": "A validated CSRF token helps distinguish intended submissions from forged requests."
+  },
+  {
+    "id": "cyber-364",
+    "category": "Security architecture",
+    "topic": "Containers and virtualization",
+    "tracks": [
+      "Security+ topics"
+    ],
+    "question": "Which component creates and manages virtual machines on a host?",
+    "choices": [
+      "Image vulnerability scanning",
+      "Privileged container mode",
+      "VM escape",
+      "Hypervisor"
+    ],
+    "correctIndex": 3,
+    "explanation": "The hypervisor controls virtual machine execution and resource allocation."
+  },
+  {
+    "id": "cyber-365",
+    "category": "Threat intelligence",
+    "topic": "Intelligence handling",
+    "tracks": [
+      "Security+ topics",
+      "BTL1 topics"
+    ],
+    "question": "Which TLP label permits unrestricted sharing subject to applicable rules such as copyright?",
+    "choices": [
+      "TLP:CLEAR",
+      "MISP",
+      "TLP:RED",
+      "TAXII"
+    ],
+    "correctIndex": 0,
+    "explanation": "TLP:CLEAR imposes no TLP sharing restriction; other obligations can still apply."
+  }
+]
