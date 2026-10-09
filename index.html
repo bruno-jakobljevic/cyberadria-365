@@ -1,42 +1,375 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>365 Cybersecurity Questions</title>
-<style>
-:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101623;color:#e5edf8}body{max-width:850px;margin:auto;padding:24px}h1{font-size:1.8rem}button,select{font:inherit;padding:12px;border:1px solid #526078;border-radius:8px;background:#192439;color:inherit}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,select:focus-visible{outline:3px solid #8acbff;outline-offset:3px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.card{background:#192033;padding:22px;border-radius:14px}.muted{color:#b3c2d9}#choices{display:grid;gap:10px;margin:20px 0}#choices button{text-align:left}.correct{background:#164635!important;border-color:#65d9a2!important}.wrong{background:#572b34!important;border-color:#ff99a7!important}#explanation{line-height:1.6}#next{margin-top:18px}footer{font-size:.85rem;line-height:1.6;margin-top:24px}label{display:flex;gap:8px;align-items:center}
-</style></head><body>
-<h1>365 Cybersecurity Questions</h1>
-<p class="muted">Original practice questions covering Security+ and BTL1-related topics. Not official exam material.</p>
-<div class="toolbar"><label>Mode <select id="mode"><option value="practice">Practice</option><option value="daily">Daily question</option></select></label><label>Category <select id="category"><option value="all">All categories</option></select></label></div>
-<p id="score" aria-live="polite"></p>
-<main class="card"><p id="meta" class="muted"></p><h2 id="question">Loading questions…</h2><div id="choices"></div><p id="explanation" role="status" aria-live="polite"></p><button id="next" hidden>Next question</button></main>
-<footer>BTL1's exam is practical; this quiz reinforces concepts, not hands-on exam readiness. Answers are stored client-side, so this is a learning game, not a cheat-resistant assessment. No external libraries or analytics.</footer>
-<script>
-'use strict';
-let bank=[],queue=[],current=null,answered=false,results={};
-const $=id=>document.getElementById(id);
-try{results=JSON.parse(localStorage.getItem('cyber365-results-v1')||'{}');if(!results||Array.isArray(results)||typeof results!=='object')results={};}catch{results={};}
-function save(){try{localStorage.setItem('cyber365-results-v1',JSON.stringify(results));}catch{}}
-function updateScore(){const values=Object.values(results);$('score').textContent=`Unique questions answered: ${values.length} / 365 · Correct on first attempt: ${values.filter(v=>v===true).length}`;}
-function shuffled(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function resetQueue(){queue=shuffled(bank.filter(q=>$('category').value==='all'||q.category===$('category').value));}
-function show(){
- const daily=$('mode').value==='daily';$('category').disabled=daily;
- if(daily){const d=new Date();const localDay=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000);current=bank[((localDay%bank.length)+bank.length)%bank.length];}
- else{if(!queue.length)resetQueue();current=queue.pop();}
- if(!current)return;
- answered=false;$('meta').textContent=`${current.id} · ${current.category} · ${current.topic}`;
- $('question').textContent=current.question;$('choices').replaceChildren();$('explanation').textContent='';$('next').hidden=true;
- current.choices.forEach((choice,index)=>{const button=document.createElement('button');button.textContent=`${String.fromCharCode(65+index)}. ${choice}`;button.onclick=()=>answer(index);$('choices').append(button);});updateScore();
-}
-function answer(index){
- if(answered)return;answered=true;const correct=index===current.correctIndex;
- const buttons=[...$('choices').children];buttons.forEach((b,i)=>{b.disabled=true;if(i===current.correctIndex)b.classList.add('correct');else if(i===index)b.classList.add('wrong');});
- $('explanation').textContent=`${correct?'Correct.':'Not quite.'} Correct answer: ${current.choices[current.correctIndex]}. ${current.explanation}`;
- if(!Object.prototype.hasOwnProperty.call(results,current.id)){results[current.id]=correct;save();}updateScore();$('next').hidden=$('mode').value==='daily';
-}
-$('next').onclick=show;$('category').onchange=()=>{resetQueue();show();};$('mode').onchange=()=>{resetQueue();show();};
-fetch('./questions.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
- if(!Array.isArray(data)||data.length!==365)throw new Error('Invalid question bank');bank=data;
- [...new Set(bank.map(q=>q.category))].sort().forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;$('category').append(o);});resetQueue();show();
-}).catch(error=>{$('question').textContent='Could not load the question bank.';$('explanation').textContent=`${error.message}. Serve this folder over HTTP or deploy it to GitHub Pages; opening the HTML as a local file may prevent JSON loading.`;});
-</script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <title>365 Cybersecurity Questions</title>
+
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, sans-serif;
+        background: #101623;
+        color: #e5edf8;
+      }
+
+      body {
+        max-width: 850px;
+        margin: auto;
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      button,
+      select {
+        font: inherit;
+        padding: 12px;
+        border: 1px solid #526078;
+        border-radius: 8px;
+        background: #192439;
+        color: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      button:disabled {
+        cursor: default;
+      }
+
+      button:focus-visible,
+      select:focus-visible {
+        outline: 3px solid #8acbff;
+        outline-offset: 3px;
+      }
+
+      label {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .toolbar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        background: #192033;
+        padding: 22px;
+        border-radius: 14px;
+      }
+
+      .muted {
+        color: #b3c2d9;
+      }
+
+      #choices {
+        display: grid;
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      #choices button {
+        text-align: left;
+      }
+
+      .correct {
+        background: #164635 !important;
+        border-color: #65d9a2 !important;
+      }
+
+      .wrong {
+        background: #572b34 !important;
+        border-color: #ff99a7 !important;
+      }
+
+      #explanation {
+        line-height: 1.6;
+      }
+
+      #next {
+        margin-top: 18px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>365 Cybersecurity Questions</h1>
+
+    <p class="muted">
+      Original practice questions covering Security+ and BTL1-related
+      topics. Not official exam material.
+    </p>
+
+    <div class="toolbar">
+      <label>
+        Mode
+        <select id="mode">
+          <option value="practice">Practice</option>
+          <option value="daily">Daily question</option>
+        </select>
+      </label>
+
+      <label>
+        Category
+        <select id="category">
+          <option value="all">All categories</option>
+        </select>
+      </label>
+    </div>
+
+    <p id="score" aria-live="polite"></p>
+
+    <main class="card">
+      <p id="meta" class="muted"></p>
+
+      <h2 id="question">Loading questions…</h2>
+
+      <div id="choices"></div>
+
+      <p
+        id="explanation"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+      <button id="next" hidden>Next question</button>
+    </main>
+
+    <script>
+      'use strict';
+
+      let bank = [];
+      let queue = [];
+      let current = null;
+      let answered = false;
+      let results = {};
+
+      const $ = (id) => document.getElementById(id);
+
+      // Load saved progress.
+      try {
+        results = JSON.parse(
+          localStorage.getItem('cyber365-results-v1') || '{}'
+        );
+
+        if (
+          !results ||
+          Array.isArray(results) ||
+          typeof results !== 'object'
+        ) {
+          results = {};
+        }
+      } catch {
+        results = {};
+      }
+
+      function save() {
+        try {
+          localStorage.setItem(
+            'cyber365-results-v1',
+            JSON.stringify(results)
+          );
+        } catch {
+          // Continue playing if browser storage is unavailable.
+        }
+      }
+
+      function updateScore() {
+        const values = Object.values(results);
+        const correctCount = values.filter(
+          (value) => value === true
+        ).length;
+
+        $('score').textContent =
+          `Unique questions answered: ${values.length} / 365 · ` +
+          `Correct on first attempt: ${correctCount}`;
+      }
+
+      function shuffled(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+
+        return array;
+      }
+
+      function resetQueue() {
+        const selectedCategory = $('category').value;
+
+        const filteredQuestions = bank.filter(
+          (question) =>
+            selectedCategory === 'all' ||
+            question.category === selectedCategory
+        );
+
+        queue = shuffled(filteredQuestions);
+      }
+
+      function show() {
+        const daily = $('mode').value === 'daily';
+
+        $('category').disabled = daily;
+
+        if (daily) {
+          const date = new Date();
+
+          const localDay = Math.floor(
+            Date.UTC(
+              date.getFullYear(),
+              date.getMonth(),
+              date.getDate()
+            ) / 86400000
+          );
+
+          const dailyIndex =
+            ((localDay % bank.length) + bank.length) % bank.length;
+
+          current = bank[dailyIndex];
+        } else {
+          if (!queue.length) {
+            resetQueue();
+          }
+
+          current = queue.pop();
+        }
+
+        if (!current) {
+          return;
+        }
+
+        answered = false;
+
+        $('meta').textContent =
+          `${current.id} · ${current.category} · ${current.topic}`;
+
+        $('question').textContent = current.question;
+        $('choices').replaceChildren();
+        $('explanation').textContent = '';
+        $('next').hidden = true;
+
+        current.choices.forEach((choice, index) => {
+          const button = document.createElement('button');
+          const letter = String.fromCharCode(65 + index);
+
+          button.textContent = `${letter}. ${choice}`;
+          button.onclick = () => answer(index);
+
+          $('choices').append(button);
+        });
+
+        updateScore();
+      }
+
+      function answer(index) {
+        if (answered) {
+          return;
+        }
+
+        answered = true;
+
+        const correct = index === current.correctIndex;
+        const buttons = [...$('choices').children];
+
+        buttons.forEach((button, buttonIndex) => {
+          button.disabled = true;
+
+          if (buttonIndex === current.correctIndex) {
+            button.classList.add('correct');
+          } else if (buttonIndex === index) {
+            button.classList.add('wrong');
+          }
+        });
+
+        $('explanation').textContent =
+          `Correct answer: ${current.choices[current.correctIndex]}`;
+
+        // Only the first attempt for each question counts.
+        if (
+          !Object.prototype.hasOwnProperty.call(results, current.id)
+        ) {
+          results[current.id] = correct;
+          save();
+        }
+
+        updateScore();
+
+        $('next').hidden = $('mode').value === 'daily';
+      }
+
+      // Button and selector events.
+      $('next').onclick = show;
+
+      $('category').onchange = () => {
+        resetQueue();
+        show();
+      };
+
+      $('mode').onchange = () => {
+        resetQueue();
+        show();
+      };
+
+      // Load the question bank.
+      fetch('./questions.json')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          return response.json();
+        })
+        .then((data) => {
+          if (!Array.isArray(data) || data.length !== 365) {
+            throw new Error('Invalid question bank');
+          }
+
+          bank = data;
+
+          const categories = [
+            ...new Set(bank.map((question) => question.category))
+          ].sort();
+
+          categories.forEach((category) => {
+            const option = document.createElement('option');
+
+            option.value = category;
+            option.textContent = category;
+
+            $('category').append(option);
+          });
+
+          resetQueue();
+          show();
+        })
+        .catch((error) => {
+          $('question').textContent =
+            'Could not load the question bank.';
+
+          $('explanation').textContent =
+            `${error.message}. ` +
+            'Serve this folder over HTTP or deploy it to GitHub Pages; ' +
+            'opening the HTML as a local file may prevent JSON loading.';
+        });
+    </script>
+  </body>
+</html>
