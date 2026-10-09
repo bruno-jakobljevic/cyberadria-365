@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b1118">
     <meta name="description" content="One cybersecurity question every day. Learn the reasoning behind the answer.">
-    <title>CyberAdria — Daily Cybersecurity Question</title>
+    <title>CyberAdria</title>
 
     <style>
       :root {
@@ -309,7 +309,6 @@
 
         <div id="feedback" role="status" aria-live="polite" aria-atomic="true">
           <section id="explanation-panel" class="explanation-panel" hidden>
-            <h3 class="explanation-heading">Why this is correct</h3>
             <p id="explanation"></p>
           </section>
         </div>
@@ -388,7 +387,7 @@
         const questionNumber = currentQuestion.id.replace(/^cyber-/i, '');
 
         getElement('question-number').textContent =
-          `Question-${questionNumber}`;
+          `Question-${questionNumber} · ${currentQuestion.category} · ${currentQuestion.topic}`;
 
         getElement('date').dateTime = displayedDate;
         getElement('date').textContent = today.toLocaleDateString('en-GB', {
