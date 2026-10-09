@@ -2,374 +2,537 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    >
-
-    <title>365 Cybersecurity Questions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1118">
+    <meta name="description" content="One cybersecurity question every day. Learn the reasoning behind the answer.">
+    <title>CyberAdria — Daily Cybersecurity Question</title>
 
     <style>
       :root {
         color-scheme: dark;
-        font-family: system-ui, sans-serif;
-        background: #101623;
-        color: #e5edf8;
+        font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+        background: #0b1118;
+        color: #edf3fa;
+        --muted: #a1b1c5;
+        --accent: #75e5ce;
+        --border: #2b394b;
+      }
+
+      * {
+        box-sizing: border-box;
       }
 
       body {
-        max-width: 850px;
-        margin: auto;
-        padding: 24px;
+        min-height: 100vh;
+        margin: 0;
+        padding: 48px 20px 28px;
+        background:
+          radial-gradient(ellipse at 10% 0%, #15303680, transparent 55%),
+          radial-gradient(ellipse at 95% 30%, #192b4780, transparent 55%),
+          #0b1118;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.05rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid #75e5ce50;
+        border-radius: 12px;
+        background: #75e5ce0d;
+        color: var(--accent);
+      }
+
+      .hero {
+        margin: 42px 0 26px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--accent);
+        font-size: 0.75rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
       }
 
       h1 {
-        font-size: 1.8rem;
+        margin: 0;
+        font-size: clamp(1.8rem, 5vw, 2.7rem);
+        line-height: 1.2;
+        letter-spacing: -0.055em;
       }
 
-      button,
-      select {
-        font: inherit;
-        padding: 12px;
-        border: 1px solid #526078;
-        border-radius: 8px;
-        background: #192439;
-        color: inherit;
-      }
-
-      button {
-        cursor: pointer;
-      }
-
-      button:disabled {
-        cursor: default;
-      }
-
-      button:focus-visible,
-      select:focus-visible {
-        outline: 3px solid #8acbff;
-        outline-offset: 3px;
-      }
-
-      label {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-      }
-
-      .toolbar {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
+      .intro {
+        max-width: 650px;
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.8;
       }
 
       .card {
-        background: #192033;
-        padding: 22px;
-        border-radius: 14px;
+        padding: 30px;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: #111b28;
+        box-shadow: 0 22px 70px #00000035;
       }
 
-      .muted {
-        color: #b3c2d9;
+      .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      #question-number {
+        color: var(--accent);
+        font-size: 0.82rem;
+      }
+
+      #date {
+        color: var(--muted);
+        font-size: 0.75rem;
+      }
+
+      h2 {
+        margin: 26px 0;
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        font-weight: 600;
+        line-height: 1.7;
+        letter-spacing: -0.025em;
+        overflow-wrap: anywhere;
       }
 
       #choices {
         display: grid;
-        gap: 10px;
-        margin: 20px 0;
+        gap: 12px;
       }
 
-      #choices button {
+      .choice {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 16px;
+        border: 1px solid #334359;
+        border-radius: 12px;
+        background: #162232;
+        color: inherit;
+        font: inherit;
+        font-size: 0.85rem;
+        line-height: 1.6;
         text-align: left;
+        cursor: pointer;
+        transition: background 150ms, border-color 150ms, transform 150ms;
       }
 
-      .correct {
-        background: #164635 !important;
-        border-color: #65d9a2 !important;
+      .choice:not(:disabled):hover {
+        transform: translateY(-1px);
+        border-color: var(--accent);
+        background: #1b3040;
       }
 
-      .wrong {
-        background: #572b34 !important;
-        border-color: #ff99a7 !important;
+      .choice:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 4px;
+      }
+
+      .choice:disabled {
+        cursor: default;
+      }
+
+      .choice-letter {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #46566a;
+        border-radius: 8px;
+        color: #bac9da;
+        font-size: 0.8rem;
+      }
+
+      .choice-text {
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .choice-status {
+        flex-shrink: 0;
+        font-size: 1.1rem;
+      }
+
+      .choice.correct {
+        border-color: #75e5ce;
+        background: #133b35;
+        color: #e0fff5;
+      }
+
+      .choice.correct .choice-letter {
+        border-color: #75e5ce;
+        color: #a0ffe5;
+      }
+
+      .choice.wrong {
+        border-color: #e78f9d;
+        background: #3c2632;
+        color: #ffe6ed;
+      }
+
+      .choice.wrong .choice-letter {
+        border-color: #e78f9d;
+        color: #ffc0cd;
+      }
+
+      .choice.neutral {
+        color: #adbbcc;
+        background: #131e2c;
+      }
+
+      .explanation-panel {
+        margin-top: 24px;
+        padding: 20px;
+        border: 1px solid #75e5ce40;
+        border-left: 3px solid var(--accent);
+        border-radius: 10px;
+        background: #75e5ce08;
+      }
+
+      .explanation-heading {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 600;
       }
 
       #explanation {
-        line-height: 1.6;
+        margin: 0;
+        font-size: 0.85rem;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
       }
 
-      #next {
-        margin-top: 18px;
+      .daily-note {
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 0.75rem;
+        line-height: 1.8;
+        text-align: center;
       }
 
       footer {
-        font-size: 0.85rem;
-        line-height: 1.6;
-        margin-top: 24px;
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 0.68rem;
+        line-height: 1.8;
+        text-align: center;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      @media (max-width: 540px) {
+        body {
+          padding: 24px 14px;
+        }
+
+        .hero {
+          margin-top: 30px;
+        }
+
+        .card {
+          padding: 20px 16px;
+        }
+
+        .choice {
+          padding: 13px;
+          gap: 12px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .choice {
+          transition: none;
+        }
       }
     </style>
   </head>
 
   <body>
-    <h1>365 Cybersecurity Questions</h1>
+    <div class="page">
+      <header>
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">&gt;_</span>
+          <span>CyberAdria</span>
+        </div>
 
-    <p class="muted">
-      Original practice questions covering Security+ and BTL1-related
-      topics. Not official exam material.
-    </p>
+        <div class="hero">
+          <p class="eyebrow">Daily cybersecurity challenge</p>
+          <h1>One question.<br>A sharper security mindset.</h1>
+          <p class="intro">
+            Pick your answer, then learn the reasoning behind it.
+            Come back tomorrow for a new challenge.
+          </p>
+        </div>
+      </header>
 
-    <div class="toolbar">
-      <label>
-        Mode
-        <select id="mode">
-          <option value="practice">Practice</option>
-          <option value="daily">Daily question</option>
-        </select>
-      </label>
+      <main class="card" aria-labelledby="question">
+        <div class="card-top">
+          <span id="question-number">Today's question</span>
+          <time id="date"></time>
+        </div>
 
-      <label>
-        Category
-        <select id="category">
-          <option value="all">All categories</option>
-        </select>
-      </label>
+        <h2 id="question">Loading today's question…</h2>
+        <div id="choices" role="group" aria-labelledby="question"></div>
+
+        <div id="feedback" role="status" aria-live="polite" aria-atomic="true">
+          <section id="explanation-panel" class="explanation-panel" hidden>
+            <h3 class="explanation-heading">Why this is correct</h3>
+            <p id="explanation"></p>
+          </section>
+        </div>
+
+        <p id="daily-note" class="daily-note">
+          A new question every day, at midnight in your local time zone.
+        </p>
+      </main>
+
+      <footer>
+        Original practice material inspired by Security+ and BTL1 topics.<br>
+        Not affiliated with or endorsed by the certification providers.
+      </footer>
     </div>
-
-    <p id="score" aria-live="polite"></p>
-
-    <main class="card">
-      <p id="meta" class="muted"></p>
-
-      <h2 id="question">Loading questions…</h2>
-
-      <div id="choices"></div>
-
-      <p
-        id="explanation"
-        role="status"
-        aria-live="polite"
-      ></p>
-
-      <button id="next" hidden>Next question</button>
-    </main>
 
     <script>
       'use strict';
 
+      const getElement = (id) => document.getElementById(id);
+
       let bank = [];
-      let queue = [];
-      let current = null;
+      let currentQuestion = null;
       let answered = false;
-      let results = {};
+      let displayedDate = '';
 
-      const $ = (id) => document.getElementById(id);
+      function localDateKey(date) {
+        return [
+          date.getFullYear(),
+          String(date.getMonth() + 1).padStart(2, '0'),
+          String(date.getDate()).padStart(2, '0')
+        ].join('-');
+      }
 
-      // Load saved progress.
-      try {
-        results = JSON.parse(
-          localStorage.getItem('cyber365-results-v1') || '{}'
+      function getDailyIndex(date) {
+        const dayNumber = Math.floor(
+          Date.UTC(
+            date.getFullYear(),
+            date.getMonth(),
+            date.getDate()
+          ) / 86400000
         );
 
-        if (
-          !results ||
-          Array.isArray(results) ||
-          typeof results !== 'object'
-        ) {
-          results = {};
-        }
-      } catch {
-        results = {};
+        return ((dayNumber % bank.length) + bank.length) % bank.length;
       }
 
-      function save() {
-        try {
-          localStorage.setItem(
-            'cyber365-results-v1',
-            JSON.stringify(results)
-          );
-        } catch {
-          // Continue playing if browser storage is unavailable.
-        }
-      }
+      function shortExplanation(text) {
+        const cleanedText = text.trim();
 
-      function updateScore() {
-        const values = Object.values(results);
-        const correctCount = values.filter(
-          (value) => value === true
-        ).length;
+        if (typeof Intl.Segmenter === 'function') {
+          const segmenter = new Intl.Segmenter('en', {
+            granularity: 'sentence'
+          });
 
-        $('score').textContent =
-          `Unique questions answered: ${values.length} / 365 · ` +
-          `Correct on first attempt: ${correctCount}`;
-      }
-
-      function shuffled(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-
-          [array[i], array[j]] = [array[j], array[i]];
+          return Array.from(segmenter.segment(cleanedText))
+            .slice(0, 3)
+            .map((part) => part.segment)
+            .join('')
+            .trim();
         }
 
-        return array;
+        const sentences = cleanedText.match(/[^.!?]+(?:[.!?]+|$)/g);
+
+        return sentences
+          ? sentences.slice(0, 3).join('').trim()
+          : cleanedText;
       }
 
-      function resetQueue() {
-        const selectedCategory = $('category').value;
+      function showDailyQuestion() {
+        const today = new Date();
 
-        const filteredQuestions = bank.filter(
-          (question) =>
-            selectedCategory === 'all' ||
-            question.category === selectedCategory
-        );
-
-        queue = shuffled(filteredQuestions);
-      }
-
-      function show() {
-        const daily = $('mode').value === 'daily';
-
-        $('category').disabled = daily;
-
-        if (daily) {
-          const date = new Date();
-
-          const localDay = Math.floor(
-            Date.UTC(
-              date.getFullYear(),
-              date.getMonth(),
-              date.getDate()
-            ) / 86400000
-          );
-
-          const dailyIndex =
-            ((localDay % bank.length) + bank.length) % bank.length;
-
-          current = bank[dailyIndex];
-        } else {
-          if (!queue.length) {
-            resetQueue();
-          }
-
-          current = queue.pop();
-        }
-
-        if (!current) {
-          return;
-        }
-
+        displayedDate = localDateKey(today);
+        currentQuestion = bank[getDailyIndex(today)];
         answered = false;
 
-        $('meta').textContent =
-          `${current.id} · ${current.category} · ${current.topic}`;
+        // Preserve JSON IDs; change only their visible label.
+        const questionNumber = currentQuestion.id.replace(/^cyber-/i, '');
 
-        $('question').textContent = current.question;
-        $('choices').replaceChildren();
-        $('explanation').textContent = '';
-        $('next').hidden = true;
+        getElement('question-number').textContent =
+          `Question-${questionNumber}`;
 
-        current.choices.forEach((choice, index) => {
-          const button = document.createElement('button');
-          const letter = String.fromCharCode(65 + index);
-
-          button.textContent = `${letter}. ${choice}`;
-          button.onclick = () => answer(index);
-
-          $('choices').append(button);
+        getElement('date').dateTime = displayedDate;
+        getElement('date').textContent = today.toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'short',
+          year: 'numeric'
         });
 
-        updateScore();
+        getElement('question').textContent = currentQuestion.question;
+        getElement('choices').replaceChildren();
+        getElement('explanation').textContent = '';
+        getElement('explanation-panel').hidden = true;
+
+        currentQuestion.choices.forEach((choice, index) => {
+          const button = document.createElement('button');
+          const letter = document.createElement('span');
+          const text = document.createElement('span');
+          const status = document.createElement('span');
+
+          button.type = 'button';
+          button.className = 'choice';
+
+          letter.className = 'choice-letter';
+          letter.textContent = String.fromCharCode(65 + index);
+          letter.setAttribute('aria-hidden', 'true');
+
+          text.className = 'choice-text';
+          text.textContent = choice;
+
+          status.className = 'choice-status';
+          status.setAttribute('aria-hidden', 'true');
+
+          button.append(letter, text, status);
+          button.addEventListener('click', () => answerQuestion(index));
+
+          getElement('choices').append(button);
+        });
       }
 
-      function answer(index) {
-        if (answered) {
+      function answerQuestion(selectedIndex) {
+        if (answered || !currentQuestion) {
           return;
         }
 
         answered = true;
 
-        const correct = index === current.correctIndex;
-        const buttons = [...$('choices').children];
+        const correctIndex = currentQuestion.correctIndex;
+        const buttons = Array.from(getElement('choices').children);
 
-        buttons.forEach((button, buttonIndex) => {
+        buttons.forEach((button, index) => {
           button.disabled = true;
 
-          if (buttonIndex === current.correctIndex) {
+          const status = button.querySelector('.choice-status');
+          const choice = currentQuestion.choices[index];
+
+          if (index === correctIndex) {
             button.classList.add('correct');
-          } else if (buttonIndex === index) {
+            status.textContent = '✓';
+            button.setAttribute('aria-label', `${choice}. Correct answer.`);
+          } else if (index === selectedIndex) {
             button.classList.add('wrong');
+            status.textContent = '×';
+            button.setAttribute('aria-label', `${choice}. Your selection, incorrect.`);
+          } else {
+            button.classList.add('neutral');
           }
         });
 
-        $('explanation').textContent =
-          `Correct answer: ${current.choices[current.correctIndex]}`;
+        const explanation = shortExplanation(currentQuestion.explanation);
+        const selectedCorrectly = selectedIndex === correctIndex;
 
-        // Only the first attempt for each question counts.
-        if (
-          !Object.prototype.hasOwnProperty.call(results, current.id)
-        ) {
-          results[current.id] = correct;
-          save();
-        }
+        getElement('explanation').textContent = explanation;
+        getElement('explanation-panel').hidden = false;
 
-        updateScore();
-
-        $('next').hidden = $('mode').value === 'daily';
+        // Announce the result without adding visible verdict text.
+        getElement('feedback').setAttribute(
+          'aria-label',
+          selectedCorrectly
+            ? 'Your selected answer is correct.'
+            : 'Your selected answer is incorrect. The correct choice is marked with a check.'
+        );
       }
 
-      // Button and selector events.
-      $('next').onclick = show;
+      function validateBank(data) {
+        if (!Array.isArray(data) || data.length !== 365) {
+          throw new Error('Expected a bank of 365 questions.');
+        }
 
-      $('category').onchange = () => {
-        resetQueue();
-        show();
-      };
+        const valid = data.every((question) =>
+          question &&
+          typeof question.id === 'string' &&
+          typeof question.question === 'string' &&
+          Array.isArray(question.choices) &&
+          question.choices.length === 4 &&
+          question.choices.every((choice) => typeof choice === 'string') &&
+          Number.isInteger(question.correctIndex) &&
+          question.correctIndex >= 0 &&
+          question.correctIndex < 4 &&
+          typeof question.explanation === 'string' &&
+          question.explanation.trim().length > 0
+        );
 
-      $('mode').onchange = () => {
-        resetQueue();
-        show();
-      };
+        if (!valid) {
+          throw new Error('Some questions have missing or invalid fields.');
+        }
+      }
 
-      // Load the question bank.
-      fetch('./questions.json')
-        .then((response) => {
+      async function loadQuestions() {
+        try {
+          const response = await fetch('./questions.json');
+
           if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+            throw new Error(`Question bank request failed: HTTP ${response.status}.`);
           }
 
-          return response.json();
-        })
-        .then((data) => {
-          if (!Array.isArray(data) || data.length !== 365) {
-            throw new Error('Invalid question bank');
-          }
+          const data = await response.json();
 
+          validateBank(data);
           bank = data;
+          showDailyQuestion();
 
-          const categories = [
-            ...new Set(bank.map((question) => question.category))
-          ].sort();
+          // Refresh the challenge when an open tab crosses local midnight.
+          setInterval(() => {
+            if (localDateKey(new Date()) !== displayedDate) {
+              showDailyQuestion();
+            }
+          }, 30000);
 
-          categories.forEach((category) => {
-            const option = document.createElement('option');
-
-            option.value = category;
-            option.textContent = category;
-
-            $('category').append(option);
+          document.addEventListener('visibilitychange', () => {
+            if (
+              !document.hidden &&
+              localDateKey(new Date()) !== displayedDate
+            ) {
+              showDailyQuestion();
+            }
           });
+        } catch (error) {
+          getElement('question').textContent = 'Could not load today’s question.';
+          getElement('daily-note').textContent =
+            `${error.message} Keep questions.json beside index.html and serve the site over HTTP.`;
+        }
+      }
 
-          resetQueue();
-          show();
-        })
-        .catch((error) => {
-          $('question').textContent =
-            'Could not load the question bank.';
-
-          $('explanation').textContent =
-            `${error.message}. ` +
-            'Serve this folder over HTTP or deploy it to GitHub Pages; ' +
-            'opening the HTML as a local file may prevent JSON loading.';
-        });
+      loadQuestions();
     </script>
   </body>
 </html>
