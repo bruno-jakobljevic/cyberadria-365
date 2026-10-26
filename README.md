@@ -1,14 +1,18 @@
 # CyberAdria
 
-A daily cybersecurity challenge with 365 original questions inspired by Security+ and BTL1 topics.
+A daily cybersecurity challenge with 365 original questions inspired by Security+ and BTL1 topics, plus links to external “dle”-like games.
 
 ## Features
-- One daily question, changing at local midnight
+- One daily cybersecurity question, changing at local midnight
 - Four answer choices with correct/incorrect visual feedback
 - An explanation of at most three sentences after answering
+- Links to external “dle”-like games
 - Monospace typography and a responsive dark interface
-- No practice mode, category selector, score counters, or progress storage
+- No practice mode, category selector, score counters, or progress storage for the cybersecurity challenge
 - No backend, external fonts, or libraries
+
+## Games
+The website includes links to external “dle”-like games.
 
 ## Update an existing installation
 Replace `index.html` and `README.md` with the files in this update.
@@ -34,10 +38,9 @@ Answers are not saved. Refreshing lets you retry the same daily question. Differ
 Edit the existing `questions.json` to change questions and explanations. Keep explanations to three sentences or fewer; the page also limits the displayed explanation to its first three detected sentences. Edit the CSS in `index.html` to change the appearance.
 
 ## Feedback and corrections
-Found an error or have a suggestion? Email [jakobljevic@protonmail.com](mailto:jakobljevic@protonmail.com). For question corrections, include the displayed question number and a brief description of the issue.
+Found an error, a broken game link, or have a suggestion? Email [jakobljevic@protonmail.com](mailto:jakobljevic@protonmail.com).
+
+For question corrections, include the displayed question number and a brief description of the issue.
 
 ## Disclaimer
-Unofficial, AI-authored practice material, not actual exam questions or certification-provider-endorsed training. Review accuracy before relying on it. Answers are visible in the JSON, so this is a learning game rather than a secure assessment.
-
-## License
-MIT — see the existing `LICENSE.txt`.
+Unofficial, AI-authored cybersecurity practice material, not actual exam questions or certification-provider-endorsed training.
