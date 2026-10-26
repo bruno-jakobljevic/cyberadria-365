@@ -33,7 +33,7 @@
       }
       .hero { margin: 42px 0 26px; }
       h1 { margin: 0; font-size: clamp(1.65rem, 5vw, 2.65rem); line-height: 1.2; letter-spacing: -.055em; }
-      .intro { margin: 16px 0 0; color: var(--muted); font-size: .88rem; line-height: 1.8; }
+      .intro { margin: 16px 0 0; color: var(--accent); font-size: .88rem; line-height: 1.8; }
       .card { padding: 30px; border: 1px solid var(--border); border-radius: 20px; background: #111b28; box-shadow: 0 22px 70px #00000035; }
       .card-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
       #question-number { color: var(--accent); font-size: .8rem; line-height: 1.6; }
@@ -62,7 +62,9 @@
       #load-error { color: #ffc0cd; font-size: .8rem; line-height: 1.8; }
       .games { margin-top: 46px; }
       .games .section-heading {
-        margin-bottom: 0;
+        font-size: clamp(1.65rem, 5vw, 2.65rem);
+        line-height: 1.2;
+        letter-spacing: -0.055em;
       }
       .games-intro {
         margin: 16px 0 24px;
@@ -76,7 +78,7 @@
       }
       .game[href="https://poople.io/"] .game-icon,
       .game[href="https://poople.io/"] .game-icon img {
-        border-radius: 10px;
+        border-radius: 6px;
       }
       .game:hover { border-color: #75e5ce80; background: #162534; transform: translateY(-2px); }
       .game-icon { position: relative; display: grid; place-items: center; flex: 0 0 48px; width: 48px; height: 48px; overflow: hidden; border-radius: 50%; background: #213846; color: var(--accent); font-size: 1.2rem; }
@@ -85,7 +87,7 @@
       .game h3 { margin: 2px 0 8px; font-size: .95rem; }
       .game p {
         margin: 0;
-        color: var(--accent);
+        color: var(--muted);
         font-size: .76rem;
         line-height: 1.8;
       }
@@ -116,8 +118,8 @@
           <span>CyberAdria</span>
         </div>
         <div class="hero">
-          <h1>Daily cybersecurity challenge</h1>
-          <p class="intro">Come back tomorrow for a new challenge.</p>
+          <h1>Daily cyber fix/h1>
+          <p class="intro">One question. Stay sharp.</p>
         </div>
       </header>
       <main>
@@ -136,8 +138,8 @@
           <noscript><p>Please enable JavaScript to load the daily cybersecurity question.</p></noscript>
         </section>
         <section class="games" aria-labelledby="games-heading">
-          <h2 id="games-heading" class="section-heading">Daily '-dle' games</h2>
-          <p class="intro games-intro">Stay curious. Give your brain a daily challenge.</p>
+          <h2 id="games-heading" class="section-heading">Daily '-dle' fix</h2>
+          <p class="intro games-intro">Train your brain. On company time.</p>
           <div class="game-grid">
             <a class="game" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
