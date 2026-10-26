@@ -33,6 +33,9 @@ Answers are not saved. Refreshing lets you retry the same daily question. Differ
 ## Customize
 Edit the existing `questions.json` to change questions and explanations. Keep explanations to three sentences or fewer; the page also limits the displayed explanation to its first three detected sentences. Edit the CSS in `index.html` to change the appearance.
 
+## Feedback and corrections
+Found an error or have a suggestion? Email [jakobljevic@protonmail.com](mailto:jakobljevic@protonmail.com). For question corrections, include the displayed question number and a brief description of the issue.
+
 ## Disclaimer
 Unofficial, AI-authored practice material, not actual exam questions or certification-provider-endorsed training. Review accuracy before relying on it. Answers are visible in the JSON, so this is a learning game rather than a secure assessment.
 
