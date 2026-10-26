@@ -4,49 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b1118">
-    <meta name="description" content="Your daily cybersecurity challenge, plus a handpicked collection of word games, geography puzzles and trivia.">
-    <title>CyberAdria | Your daily challenge</title>
+    <meta name="description" content="A daily cybersecurity challenge and links to daily '-dle' games.">
+    <title>CyberAdria</title>
     <style>
       :root {
         color-scheme: dark;
-        font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+        font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
         background: #0b1118;
         color: #edf3fa;
         --muted: #a1b1c5;
         --accent: #75e5ce;
         --border: #2b394b;
       }
-
       * { box-sizing: border-box; }
-
       body {
         min-height: 100vh;
         margin: 0;
         padding: 44px 20px 28px;
-        background:
-          radial-gradient(ellipse at 10% 0%, #15303680, transparent 55%),
-          radial-gradient(ellipse at 95% 30%, #192b4780, transparent 55%),
-          #0b1118;
+        background: radial-gradient(ellipse at 10% 0%, #15303680, transparent 55%),
+                    radial-gradient(ellipse at 95% 30%, #192b4780, transparent 55%), #0b1118;
       }
-
-      .page { width: 100%; max-width: 960px; margin: 0 auto; }
-      .brand { display: flex; align-items: center; gap: 12px; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.03em; }
-      .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #75e5ce50; border-radius: 12px; background: #75e5ce0d; color: var(--accent); }
-      .hero { margin: 44px 0 26px; }
-      .section-kicker { margin: 0 0 12px; color: var(--accent); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; }
-      h1 { margin: 0; color: var(--accent); font-size: clamp(1.65rem, 5vw, 2.6rem); line-height: 1.25; letter-spacing: -0.055em; }
-      .intro { margin: 14px 0 0; color: var(--muted); font-size: 0.88rem; line-height: 1.8; }
+      .page { max-width: 900px; margin: auto; }
+      .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+      .brand-mark {
+        display: grid; place-items: center; width: 42px; height: 42px;
+        border: 1px solid #75e5ce50; border-radius: 12px;
+        background: #75e5ce0d; color: var(--accent);
+      }
+      .hero { margin: 42px 0 26px; }
+      h1 { margin: 0; font-size: clamp(1.65rem, 5vw, 2.65rem); line-height: 1.2; letter-spacing: -.055em; }
+      .intro { margin: 16px 0 0; color: var(--muted); font-size: .88rem; line-height: 1.8; }
       .card { padding: 30px; border: 1px solid var(--border); border-radius: 20px; background: #111b28; box-shadow: 0 22px 70px #00000035; }
-      .card-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
-      #question-number { color: var(--accent); font-size: 0.8rem; line-height: 1.7; overflow-wrap: anywhere; }
-      #date { color: var(--muted); font-size: 0.75rem; }
-      #question { margin: 26px 0; font-size: clamp(1rem, 3vw, 1.2rem); font-weight: 600; line-height: 1.7; letter-spacing: -0.025em; overflow-wrap: anywhere; }
+      .card-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+      #question-number { color: var(--accent); font-size: .8rem; line-height: 1.6; }
+      #date { color: var(--muted); font-size: .75rem; }
+      #question { margin: 26px 0; font-size: clamp(1rem, 3vw, 1.2rem); font-weight: 600; line-height: 1.7; overflow-wrap: anywhere; }
       #choices { display: grid; gap: 12px; }
-      .choice { display: flex; align-items: center; gap: 16px; width: 100%; padding: 16px; border: 1px solid #334359; border-radius: 12px; background: #162232; color: inherit; font: inherit; font-size: 0.85rem; line-height: 1.6; text-align: left; cursor: pointer; transition: background 150ms, border-color 150ms, transform 150ms; }
+      .choice {
+        display: flex; align-items: center; gap: 16px; width: 100%; padding: 16px;
+        border: 1px solid #334359; border-radius: 12px; background: #162232;
+        color: inherit; font: inherit; font-size: .85rem; line-height: 1.6;
+        text-align: left; cursor: pointer; transition: background 150ms, border-color 150ms, transform 150ms;
+      }
       .choice:not(:disabled):hover { transform: translateY(-1px); border-color: var(--accent); background: #1b3040; }
-      :is(.choice, .game-card):focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
-      .choice:disabled { cursor: default; }
-      .choice-letter { display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 32px; border: 1px solid #46566a; border-radius: 8px; color: #bac9da; font-size: 0.8rem; }
+      a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+      .choice:disabled { cursor: default; opacity: 1; }
+      .choice-letter { display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 32px; border: 1px solid #46566a; border-radius: 8px; color: #bac9da; }
       .choice-text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
       .choice-status { flex-shrink: 0; font-size: 1.1rem; }
       .choice.correct { border-color: #75e5ce; background: #133b35; color: #e0fff5; }
@@ -55,44 +58,38 @@
       .choice.wrong .choice-letter { border-color: #e78f9d; color: #ffc0cd; }
       .choice.neutral { color: #adbbcc; background: #131e2c; }
       .explanation-panel { margin-top: 24px; padding: 20px; border: 1px solid #75e5ce40; border-left: 3px solid var(--accent); border-radius: 10px; background: #75e5ce08; }
-      #explanation { margin: 0; font-size: 0.85rem; line-height: 1.8; overflow-wrap: anywhere; }
-      .load-error { margin: 20px 0 0; color: #ffc0cd; font-size: 0.8rem; line-height: 1.8; overflow-wrap: anywhere; }
-      .more-games { margin-top: 52px; }
-      .section-heading { margin: 0; font-size: clamp(1.2rem, 4vw, 1.6rem); line-height: 1.4; letter-spacing: -0.04em; }
-      .section-intro { max-width: 650px; margin: 12px 0 24px; color: var(--muted); font-size: 0.82rem; line-height: 1.8; }
-      .games-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-      .game-card { display: flex; flex-direction: column; min-width: 0; padding: 23px; border: 1px solid var(--border); border-radius: 16px; background: linear-gradient(145deg, #152132, #101925); color: inherit; text-decoration: none; transition: transform 180ms, border-color 180ms, background 180ms; }
-      .game-card:hover { transform: translateY(-3px); border-color: #75e5ce80; background: linear-gradient(145deg, #1a2d3b, #111e29); }
-      .game-top { display: flex; align-items: center; gap: 12px; }
-      .game-icon { position: relative; display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border: 1px solid #ffffff18; border-radius: 12px; background: #0b141f; overflow: hidden; }
-      .icon-fallback { font-weight: 700; color: var(--accent); font-size: 1.2rem; }
-      .game-icon img { position: absolute; inset: 8px; object-fit: contain; opacity: 0; }
-      .game-icon.has-icon img { opacity: 1; }
-      .game-icon.has-icon .icon-fallback { visibility: hidden; }
-      .game-category { color: var(--muted); font-size: 0.66rem; line-height: 1.6; }
-      .external-arrow { margin-left: auto; align-self: flex-start; color: #7d93ab; font-size: 1.1rem; }
-      .game-card h3 { margin: 20px 0 9px; font-size: 1rem; letter-spacing: -0.035em; }
-      .game-card p { margin: 0 0 22px; color: var(--muted); font-size: 0.78rem; line-height: 1.85; }
-      .play-link { margin-top: auto; color: var(--accent); font-size: 0.73rem; }
-      .play-link span { display: inline-block; margin-left: 5px; }
-      footer { margin-top: 38px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.66rem; line-height: 1.9; text-align: center; }
-      footer p { margin: 0 0 8px; }
+      #explanation { margin: 0; font-size: .85rem; line-height: 1.8; overflow-wrap: anywhere; }
+      #load-error { color: #ffc0cd; font-size: .8rem; line-height: 1.8; }
+      .games { margin-top: 46px; }
+      .section-heading { margin: 0 0 20px; font-size: clamp(1.15rem, 3vw, 1.5rem); letter-spacing: -.045em; }
+      .game-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .game {
+        display: flex; align-items: flex-start; gap: 16px; padding: 22px;
+        border: 1px solid var(--border); border-radius: 16px; background: #111b28cc;
+        color: inherit; text-decoration: none; transition: transform 150ms, border-color 150ms, background 150ms;
+      }
+      .game:hover { border-color: #75e5ce80; background: #162534; transform: translateY(-2px); }
+      .game-icon { position: relative; display: grid; place-items: center; flex: 0 0 48px; width: 48px; height: 48px; overflow: hidden; border-radius: 50%; background: #213846; color: var(--accent); font-size: 1.2rem; }
+      .game-icon img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+      .game-copy { min-width: 0; }
+      .game h3 { margin: 2px 0 8px; font-size: .95rem; }
+      .game p { margin: 0; color: var(--muted); font-size: .76rem; line-height: 1.8; }
+      footer { margin: 34px auto 0; max-width: 760px; color: var(--muted); font-size: .68rem; line-height: 1.9; text-align: center; }
+      footer p { margin: 10px 0; }
+      footer a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
       .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
       [hidden] { display: none !important; }
-
-      @media (max-width: 540px) {
+      @media (max-width: 600px) {
         body { padding: 24px 14px; }
-        .hero { margin-top: 32px; }
+        .hero { margin-top: 30px; }
         .card { padding: 20px 16px; }
         .choice { padding: 13px; gap: 12px; }
-        .games-grid { grid-template-columns: 1fr; gap: 12px; }
-        .more-games { margin-top: 38px; }
-        .game-card { padding: 20px; }
+        .game-grid { grid-template-columns: 1fr; }
+        .game { padding: 18px; }
       }
-
       @media (prefers-reduced-motion: reduce) {
-        .choice, .game-card { transition: none; }
-        .choice:not(:disabled):hover, .game-card:hover { transform: none; }
+        .choice, .game { transition: none; }
+        .game:hover, .choice:not(:disabled):hover { transform: none; }
       }
     </style>
   </head>
@@ -108,7 +105,6 @@
           <p class="intro">Come back tomorrow for a new challenge.</p>
         </div>
       </header>
-
       <main>
         <section class="card" aria-labelledby="question">
           <div class="card-top">
@@ -117,135 +113,123 @@
           </div>
           <h2 id="question">Loading today's question…</h2>
           <div id="choices" role="group" aria-labelledby="question"></div>
-          <div id="feedback" role="status" aria-live="polite" aria-atomic="true">
-            <span id="result-announcement" class="sr-only"></span>
-            <section id="explanation-panel" class="explanation-panel" aria-label="Answer explanation" hidden>
-              <p id="explanation"></p>
-            </section>
+          <div id="explanation-panel" class="explanation-panel" hidden>
+            <p id="explanation"></p>
           </div>
-          <p id="load-error" class="load-error" role="alert" hidden></p>
-          <noscript><p class="load-error">Enable JavaScript to play the cybersecurity challenge. The game links below still work without it.</p></noscript>
+          <div id="feedback" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+          <p id="load-error" role="alert" hidden></p>
+          <noscript><p>Please enable JavaScript to load the daily cybersecurity question.</p></noscript>
         </section>
-
-        <section class="more-games" aria-labelledby="games-heading">
-          <p class="section-kicker">Keep your curiosity switched on</p>
-          <h2 id="games-heading" class="section-heading">More for your daily reset</h2>
-          <p class="section-intro">A few favourites for a quick mental warm-up: words, world maps, unexpected trivia and a little educated guessing. Each game opens in a new tab.</p>
-          <div class="games-grid">
-          <a class="game-card" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener noreferrer" aria-label="Wordle — opens in a new tab">
-            <div class="game-top">
+        <section class="games" aria-labelledby="games-heading">
+          <h2 id="games-heading" class="section-heading">Daily '-dle' games</h2>
+          <div class="game-grid">
+            <a class="game" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">W</span>
-                <img src="./assets/icons/wordle.png" data-icon-domain="www.nytimes.com" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>W</span>
+                <img data-local="./assets/icons/wordle.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=nytimes.com&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Words</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Wordle</h3>
-            <p>Find the five-letter word in six guesses, using coloured letter clues.</p>
-            <span class="play-link">Play Wordle <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://www.merriam-webster.com/games/quordle/#/" target="_blank" rel="noopener noreferrer" aria-label="Quordle — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Wordle<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Guess the five-letter word in six attempts.</p>
+              </div>
+            </a>
+            <a class="game" href="https://www.merriam-webster.com/games/quordle/#/" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">Q</span>
-                <img src="./assets/icons/quordle.png" data-icon-domain="www.merriam-webster.com" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>Q</span>
+                <img data-local="./assets/icons/quordle.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=merriam-webster.com&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Words</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Quordle</h3>
-            <p>Four words, nine guesses. Each guess works across all four boards.</p>
-            <span class="play-link">Play Quordle <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://globle-game.com/" target="_blank" rel="noopener noreferrer" aria-label="Globle — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Quordle<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Solve four words at once with nine shared guesses.</p>
+              </div>
+            </a>
+            <a class="game" href="https://globle-game.com/" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">G</span>
-                <img src="./assets/icons/globle.png" data-icon-domain="globle-game.com" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>G</span>
+                <img data-local="./assets/icons/globle.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=globle-game.com&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Geography</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Globle</h3>
-            <p>Find the mystery country on a globe. Warmer colours mean you are getting closer.</p>
-            <span class="play-link">Play Globle <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://worldle.teuteuf.fr/" target="_blank" rel="noopener noreferrer" aria-label="Worldle — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Globle<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Find the mystery country using warmer-or-colder colour clues.</p>
+              </div>
+            </a>
+            <a class="game" href="https://worldle.teuteuf.fr/" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">W</span>
-                <img src="./assets/icons/worldle.png" data-icon-domain="worldle.teuteuf.fr" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>W</span>
+                <img data-local="./assets/icons/worldle.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=worldle.teuteuf.fr&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Geography</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Worldle</h3>
-            <p>Recognise a country or territory by its outline, with distance and direction clues.</p>
-            <span class="play-link">Play Worldle <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://poople.io/" target="_blank" rel="noopener noreferrer" aria-label="Poople — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Worldle<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Identify a country or territory from its silhouette, with distance and direction clues.</p>
+              </div>
+            </a>
+            <a class="game" href="https://poople.io/" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">P</span>
-                <img src="./assets/icons/poople.png" data-icon-domain="poople.io" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>P</span>
+                <img data-local="./assets/icons/poople.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=poople.io&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Word ladders</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Poople</h3>
-            <p>Turn the daily starting word into POOP, changing just one letter at a time.</p>
-            <span class="play-link">Play Poople <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://krillion.io/" target="_blank" rel="noopener noreferrer" aria-label="Krillion — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Poople<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Change one letter at a time to reach POOP in as few steps as possible.</p>
+              </div>
+            </a>
+            <a class="game" href="https://krillion.io/" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">K</span>
-                <img src="./assets/icons/krillion.png" data-icon-domain="krillion.io" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>K</span>
+                <img data-local="./assets/icons/krillion.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=krillion.io&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Trivia</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Krillion</h3>
-            <p>Seven daily prompts. Find less obvious correct answers to dive deeper.</p>
-            <span class="play-link">Play Krillion <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://costcodle.com/" target="_blank" rel="noopener noreferrer" aria-label="Costcodle — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Krillion<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Answer seven daily prompts. Rarer valid answers take your dive deeper.</p>
+              </div>
+            </a>
+            <a class="game" href="https://costcodle.com/" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">C</span>
-                <img src="./assets/icons/costcodle.png" data-icon-domain="costcodle.com" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>C</span>
+                <img data-local="./assets/icons/costcodle.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=costcodle.com&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Price guessing</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Costcodle</h3>
-            <p>Guess the Costco product price in six tries. Get within 5% to win.</p>
-            <span class="play-link">Play Costcodle <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="game-card" href="https://magnitudle.com/size-it-up" target="_blank" rel="noopener noreferrer" aria-label="Magnitudle — opens in a new tab">
-            <div class="game-top">
+              <div class="game-copy">
+                <h3>Costcodle<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Guess a Costco item’s price in six tries. Get within 5% to win.</p>
+              </div>
+            </a>
+            <a class="game" href="https://magnitudle.com/size-it-up" target="_blank" rel="noopener noreferrer">
               <span class="game-icon" aria-hidden="true">
-                <span class="icon-fallback">M</span>
-                <img src="./assets/icons/magnitudle.png" data-icon-domain="magnitudle.com" alt="" width="32" height="32" loading="lazy" referrerpolicy="no-referrer">
+                <span>M</span>
+                <img data-local="./assets/icons/magnitudle.png"
+                     data-remote="https://www.google.com/s2/favicons?domain=magnitudle.com&amp;sz=128"
+                     width="48" height="48" alt="" referrerpolicy="no-referrer">
               </span>
-              <span class="game-category">Size estimation</span>
-              <span class="external-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>Magnitudle</h3>
-            <p>Play Size It Up: resize five objects against familiar references and test your sense of scale.</p>
-            <span class="play-link">Play Size It Up <span aria-hidden="true">→</span></span>
-          </a>
+              <div class="game-copy">
+                <h3>Magnitudle<span class="sr-only"> (opens in a new tab)</span></h3>
+                <p>Resize objects beside a reference to estimate their real-world size.</p>
+              </div>
+            </a>
           </div>
         </section>
       </main>
-
       <footer>
-        <p>CyberAdria is an independent project, not affiliated with or endorsed by any of the linked games, their creators or their publishers. Game names and logos belong to their respective owners.</p>
-        <p>Original cybersecurity practice material inspired by Security+ and BTL1 topics.<br>Not affiliated with or endorsed by the certification providers.</p>
+        <p>Original, unofficial cybersecurity practice material inspired by Security+ and BTL1 topics.<br>
+          Not affiliated with or endorsed by the certification providers.</p>
+        <p>CyberAdria is not affiliated with or endorsed by any of the linked games or their owners.<br>
+          Game names and logos belong to their respective owners. Linked games open on external websites.</p>
+        <p>Corrections or suggestions? <a href="mailto:jakobljevic@protonmail.com">jakobljevic@protonmail.com</a></p>
       </footer>
     </div>
-
     <script>
       'use strict';
 
@@ -254,6 +238,20 @@
       let currentQuestion = null;
       let answered = false;
       let displayedDate = '';
+
+      // Prefer your locally saved PNG; try an online favicon only if absent.
+      document.querySelectorAll('.game-icon img').forEach((image) => {
+        let triedRemote = false;
+        image.addEventListener('error', () => {
+          if (!triedRemote) {
+            triedRemote = true;
+            image.src = image.dataset.remote;
+          } else {
+            image.hidden = true;
+          }
+        });
+        image.src = image.dataset.local;
+      });
 
       function localDateKey(date) {
         return [
@@ -272,7 +270,6 @@
 
       function shortExplanation(text) {
         const cleanedText = text.trim();
-
         if (typeof Intl.Segmenter === 'function') {
           const segmenter = new Intl.Segmenter('en', { granularity: 'sentence' });
           return Array.from(segmenter.segment(cleanedText))
@@ -281,7 +278,6 @@
             .join('')
             .trim();
         }
-
         const sentences = cleanedText.match(/[^.!?]+(?:[.!?]+|$)/g);
         return sentences ? sentences.slice(0, 3).join('').trim() : cleanedText;
       }
@@ -298,26 +294,21 @@
           currentQuestion.category,
           currentQuestion.topic
         ].filter(Boolean).join(' · ');
-
         getElement('date').dateTime = displayedDate;
         getElement('date').textContent = today.toLocaleDateString('en-GB', {
-          day: 'numeric',
-          month: 'short',
-          year: 'numeric'
+          day: 'numeric', month: 'short', year: 'numeric'
         });
-
         getElement('question').textContent = currentQuestion.question;
         getElement('choices').replaceChildren();
         getElement('explanation').textContent = '';
-        getElement('result-announcement').textContent = '';
         getElement('explanation-panel').hidden = true;
+        getElement('feedback').textContent = '';
 
         currentQuestion.choices.forEach((choice, index) => {
           const button = document.createElement('button');
           const letter = document.createElement('span');
           const text = document.createElement('span');
           const status = document.createElement('span');
-
           button.type = 'button';
           button.className = 'choice';
           letter.className = 'choice-letter';
@@ -327,35 +318,25 @@
           text.textContent = choice;
           status.className = 'choice-status';
           status.setAttribute('aria-hidden', 'true');
-
           button.append(letter, text, status);
           button.addEventListener('click', () => answerQuestion(index));
           getElement('choices').append(button);
         });
       }
 
-      function refreshIfDateChanged() {
-        if (bank.length && localDateKey(new Date()) !== displayedDate) {
-          showDailyQuestion();
-          return true;
-        }
-        return false;
-      }
-
       function answerQuestion(selectedIndex) {
-        if (refreshIfDateChanged() || answered || !currentQuestion) {
+        // Do not let a stale tab submit yesterday's question.
+        if (localDateKey(new Date()) !== displayedDate) {
+          showDailyQuestion();
           return;
         }
-
+        if (answered || !currentQuestion) return;
         answered = true;
         const correctIndex = currentQuestion.correctIndex;
-        const buttons = Array.from(getElement('choices').children);
-
-        buttons.forEach((button, index) => {
+        Array.from(getElement('choices').children).forEach((button, index) => {
           button.disabled = true;
           const status = button.querySelector('.choice-status');
           const choice = currentQuestion.choices[index];
-
           if (index === correctIndex) {
             button.classList.add('correct');
             status.textContent = '✓';
@@ -368,19 +349,19 @@
             button.classList.add('neutral');
           }
         });
-
-        getElement('result-announcement').textContent = selectedIndex === correctIndex
-          ? 'Your selected answer is correct. '
-          : 'Your selected answer is incorrect. The correct choice is marked with a check. ';
-        getElement('explanation').textContent = shortExplanation(currentQuestion.explanation);
+        const explanation = shortExplanation(currentQuestion.explanation);
+        getElement('explanation').textContent = explanation;
         getElement('explanation-panel').hidden = false;
+        const verdict = selectedIndex === correctIndex
+          ? 'Your selected answer is correct.'
+          : `Your selected answer is incorrect. The correct answer is ${currentQuestion.choices[correctIndex]}.`;
+        getElement('feedback').textContent = `${verdict} ${explanation}`;
       }
 
       function validateBank(data) {
         if (!Array.isArray(data) || data.length !== 365) {
           throw new Error('Expected a bank of 365 questions.');
         }
-
         const valid = data.every((question) =>
           question &&
           typeof question.id === 'string' &&
@@ -389,15 +370,11 @@
           question.choices.length === 4 &&
           question.choices.every((choice) => typeof choice === 'string') &&
           Number.isInteger(question.correctIndex) &&
-          question.correctIndex >= 0 &&
-          question.correctIndex < 4 &&
+          question.correctIndex >= 0 && question.correctIndex < 4 &&
           typeof question.explanation === 'string' &&
           question.explanation.trim().length > 0
         );
-
-        if (!valid) {
-          throw new Error('Some questions have missing or invalid fields.');
-        }
+        if (!valid) throw new Error('Some questions have missing or invalid fields.');
       }
 
       async function loadQuestions() {
@@ -406,17 +383,16 @@
           if (!response.ok) {
             throw new Error(`Question bank request failed: HTTP ${response.status}.`);
           }
-
           const data = await response.json();
           validateBank(data);
           bank = data;
           showDailyQuestion();
-
-          setInterval(refreshIfDateChanged, 30000);
+          const refreshIfNeeded = () => {
+            if (localDateKey(new Date()) !== displayedDate) showDailyQuestion();
+          };
+          setInterval(refreshIfNeeded, 30000);
           document.addEventListener('visibilitychange', () => {
-            if (!document.hidden) {
-              refreshIfDateChanged();
-            }
+            if (!document.hidden) refreshIfNeeded();
           });
         } catch (error) {
           getElement('question').textContent = 'Could not load today’s question.';
@@ -426,42 +402,6 @@
         }
       }
 
-      function initialiseGameIcons() {
-        document.querySelectorAll('[data-icon-domain]').forEach((image) => {
-          const wrapper = image.closest('.game-icon');
-          let triedRemote = false;
-
-          function markLoaded() {
-            wrapper.classList.add('has-icon');
-          }
-
-          function tryRemoteIcon() {
-            if (triedRemote) {
-              wrapper.classList.remove('has-icon');
-              image.hidden = true;
-              return;
-            }
-
-            triedRemote = true;
-            image.src = 'https://www.google.com/s2/favicons?sz=64&domain=' +
-              encodeURIComponent(image.dataset.iconDomain);
-          }
-
-          image.addEventListener('load', markLoaded);
-          image.addEventListener('error', tryRemoteIcon);
-
-          // Handle cached images that finished before listeners were attached.
-          if (image.complete) {
-            if (image.naturalWidth > 0) {
-              markLoaded();
-            } else {
-              tryRemoteIcon();
-            }
-          }
-        });
-      }
-
-      initialiseGameIcons();
       loadQuestions();
     </script>
   </body>
